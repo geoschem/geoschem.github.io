@@ -1,0 +1,114 @@
+html {
+  height            : 102%;  /* Always creates a vertical scroll bar, to precisely center text */
+}
+
+.green {
+	color: #009900;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.blue {
+	color: #0000FF;
+}
+
+/* z-index of secondary menu to place it behind the drop downs of primary menu */
+#block-os-igc10-menu {
+  z-index: 1;
+}
+
+/* Font face */
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+/* Remove Harvard branding */
+#branding_footer, #branding_header {
+  background: #1e1e1e;
+  color: #FFF;
+  font-weight: bold;
+  display: none;
+}
+
+/* meeting styles */
+.css-brand--css-geos-meetings-header-h2-xxxlarge {
+  color: #000;
+  font-size: xxx-large !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+}
+
+.css-brand--css-geos-meetings-header-h2 {
+  color: #000;
+  font-size: xx-large !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+.css-brand--css-geos-meetings-header-h3 {
+  color: #000;
+  font-size: x-large !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+/* Size and align GEOS-Chem logo */
+#boxes-box-site_logo {
+  width: 30em;
+  margin: auto;
+}
+
+/* menu style so that links don't wrap*/
+#menu-bar ul.nice-menu .menuparent a {
+  padding-right: 15px;
+  position: relative;
+  font-size: inherit;
+  text-transform: none;
+  font-weight: bold;
+}
+#menu-bar ul.nice-menu .menuparent {
+  padding-right: 0px;
+}
+
+/* Header */
+#header {
+  background: #fff !important;
+}
+
+#menu-bar {
+  border-top: 1px solid #efefef;
+  background: #215990 !important;
+}
+
+#menu-bar ul.nice-menu a.active {
+  background: #fff;
+  color: #215990;
+  font-weight: 800;
+
+
+#menu-bar ul.nice-menu ul, #menu-bar ul.nice-menu a:hover {
+  background: #027ac6;
+  color: #fff;
+  font-weight: 800;
+}
+
+#menu-bar ul.nice-menu .menuparent.over > a, #menu-bar ul.nice-menu .menuparent a:hover {
+  background-color: #fff;
+  color: #027ac6;
+  font-weight: 800;
+}
+
+/* Responsiveness */
+@media (max-width: 1008px) {
+  #menu-bar ul.nice-menu li {
+  background-color: #215990 !important;
+  color: #000 !important;
+  font-weight: bold;
+  }
+  #menu-bar #block-os-primary-menu a {
+  color: #ffffff !important;
+}
+}
