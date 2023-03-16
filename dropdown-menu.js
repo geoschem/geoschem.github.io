@@ -41,20 +41,21 @@ function inlineDropDownMenu() {
   <li class="menu-853557 menuparent    even  "><a  class="menu-heading">Meetings</a><span class="open-submenu"></span>\
     <ul>\
       <li class="menu-853700 menu-path-node-1585685  first   odd  "><a href="steering-committee.html#meetings" >Steering Committee Meetings</a></li>\
-      <li class="menu-856309 menu-path-node-1585795   even  "><a href="gca2.html"  title="">GCA2 Meeting (TBA)</a></li>\
-      <li class="menu-1043764 menu-path-node-1644668   odd  "><a href="igc10.html"  title="">IGC10 Meeting (2022)</a></li>\
-      <li class="menu-857188 menu-path-node-1586483   even  "><a href="gce1.html" >GCE1 Meeting (2020)</a></li>\
-      <li class="menu-857219 menu-path-node-1586486   odd  "><a href="igc9.html" >IGC9 Meeting (2019)</a></li>\
-      <li class="menu-853559 menu-path-https--2acomucaredu-workshop-integration-geos-chem-ncar-models-agenda   even  "><a href="https://www2.acom.ucar.edu/workshop/integration-geos-chem-ncar-models-agenda" >NCAR-GEOS-Chem meeting (2018)</a></li>\
-      <li class="menu-857304 menu-path-node-1586522   odd  "><a href="gca1.html" >GCA1 Meeting (2018)</a></li>\
-      <li class="menu-858721 menu-path-node-1586817   even  "><a href="igc8.html" >IGC8 Meeting (2017)</a></li>\
-      <li class="menu-858767 menu-path-node-1586831   odd  "><a href="igc7.html" >IGC7 Meeting (2015)</a></li>\
-      <li class="menu-859545 menu-path-node-1586997   even  "><a href="igc6.html" >IGC6 Meeting (2013)</a></li>\
-      <li class="menu-859913 menu-path-node-1587046   odd  "><a href="igc5.html" >IGC5 Meeting (2011)</a></li>\
-      <li class="menu-859936 menu-path-node-1587057   even  "><a href="igc4.html" >IGC4 Meeting (2009)</a></li>\
-      <li class="menu-860311 menu-path-node-1587125   odd  "><a href="igc3.html" >IGC3 Meeting (2007)</a></li>\
-      <li class="menu-861155 menu-path-node-1587331   even  "><a href="igc2.html" >IGC2 Meeting (2005)</a></li>\
-      <li class="menu-861301 menu-path-node-1587366   odd   last "><a href="igc1.html" >IGC1 Meeting (2003)</a></li>\
+      <li class="menu-856309 menu-path-node-1585795   even  "><a href="gce2.html"  title="">GCE2 Meeting (2023)</a></li>\
+      <li class="menu-856309 menu-path-node-1585795   odd  "><a href="gca2.html"  title="">GCA2 Meeting (TBA)</a></li>\
+      <li class="menu-1043764 menu-path-node-1644668  even  "><a href="igc10.html"  title="">IGC10 Meeting (2022)</a></li>\
+      <li class="menu-857188 menu-path-node-1586483   odd  "><a href="gce1.html" >GCE1 Meeting (2020)</a></li>\
+      <li class="menu-857219 menu-path-node-1586486   even  "><a href="igc9.html" >IGC9 Meeting (2019)</a></li>\
+      <li class="menu-853559 menu-path-https--2acomucaredu-workshop-integration-geos-chem-ncar-models-agenda   odd  "><a href="https://www2.acom.ucar.edu/workshop/integration-geos-chem-ncar-models-agenda" >NCAR-GEOS-Chem meeting (2018)</a></li>\
+      <li class="menu-857304 menu-path-node-1586522   even  "><a href="gca1.html" >GCA1 Meeting (2018)</a></li>\
+      <li class="menu-858721 menu-path-node-1586817   odd  "><a href="igc8.html" >IGC8 Meeting (2017)</a></li>\
+      <li class="menu-858767 menu-path-node-1586831   even  "><a href="igc7.html" >IGC7 Meeting (2015)</a></li>\
+      <li class="menu-859545 menu-path-node-1586997   odd  "><a href="igc6.html" >IGC6 Meeting (2013)</a></li>\
+      <li class="menu-859913 menu-path-node-1587046   even  "><a href="igc5.html" >IGC5 Meeting (2011)</a></li>\
+      <li class="menu-859936 menu-path-node-1587057   odd  "><a href="igc4.html" >IGC4 Meeting (2009)</a></li>\
+      <li class="menu-860311 menu-path-node-1587125   even  "><a href="igc3.html" >IGC3 Meeting (2007)</a></li>\
+      <li class="menu-861155 menu-path-node-1587331   odd  "><a href="igc2.html" >IGC2 Meeting (2005)</a></li>\
+      <li class="menu-861301 menu-path-node-1587366   even   last "><a href="igc1.html" >IGC1 Meeting (2003)</a></li>\
     </ul>\
   </li>\
   <li class="menu-853563 menuparent    odd  "><a  class="menu-heading">About GEOS-Chem</a><span class="open-submenu"></span>\
