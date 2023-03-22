@@ -10,4 +10,4 @@ This is the offical repository for the [GEOS-Chem web site](https://geoschem.git
 Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/CONTRIBUTING.md)**.
 
 ## How can I report a bug?
-Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md**).
+Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md)**.
