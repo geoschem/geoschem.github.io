@@ -1,6 +1,5 @@
 ![GEOS-Chem Logo](https://github.com/geoschem/geoschem.github.io/blob/main/img/GEOS-Chem_Logo_Light_Background.svg)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4681204.svg)](https://doi.org/10.5281/zenodo.4681204)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/geoschem/geoschem.github.io/blob/master/LICENSE.txt)
 
 ## Description
