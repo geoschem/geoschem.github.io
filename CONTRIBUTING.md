@@ -37,7 +37,7 @@ As the author you are responsible for:
 We accept feature requests through issues on GitHub. To request a new feature, **[open a new issue](https://github.com/geoschem/geoschem.github.io/issues/new/choose)** and select the feature request template. Please include all the information that migth be relevant, including the motivation for the feature.
 
 ## How can I report a bug?
-Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md**).
+Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md)**.
 
 ## Where can I ask for help?
-Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md**).
+Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md)**.
