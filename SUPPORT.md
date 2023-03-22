@@ -18,7 +18,7 @@ with the GEOS-Chem website.  User support and outreach is an important part of o
 Even though we can assist in several ways, we cannot possibly do everything.  We rely on GEOS-Chem users being resourceful and willing to try to resolve problems on their own to the greatest extent possible.
 
 ## How to submit changes
-Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/CONTRIBUTING.md)**.
+Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/CONTRIBUTING.md)**.
 
 ## How to request an enhancement
-Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/CONTRIBUTING.md)**.
+Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/CONTRIBUTING.md)**.

@@ -6,7 +6,7 @@
 This is the offical repository for the [GEOS-Chem web site](https://geoschem.github.io).  Web site files in HTML, CSS, and JavaScript formats are stored here.
 
 ## How to submit changes
-Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/CONTRIBUTING.md)**.
+Please see **[Contributing Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/CONTRIBUTING.md)**.
 
 ## How can I report a bug?
 Please see **[Support Guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/SUPPORT.md)**.
