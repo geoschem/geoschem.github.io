@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GEOS-Chem web site
+    url: http://geos-chem.org
+    about: Click this button to view the GEOS-Chem web site.
