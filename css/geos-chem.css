@@ -64,8 +64,13 @@ body {
 /* menu style so that links don't wrap*/
 #menu-bar ul.nice-menu .menuparent a {
   padding-right: 15px;
-  position: relative;
-  font-size: inherit;
+
+  /* NOTE: Increase bottom & top padding to eliminate space
+     between the menu bar and the dropdowns.                  */
+  padding-bottom: 12px;
+  padding-top: 12px;
+
+  position: relative;<  font-size: inherit;
   text-transform: none;
   font-weight: bold;
 }
