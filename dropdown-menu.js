@@ -46,7 +46,7 @@ function inlineDropDownMenu() {
       <li><a href="igc10.html"  title="">IGC10 Meeting (2022)</a></li>\
       <li><a href="gce1.html" >GCE1 Meeting (2020)</a></li>\
       <li><a href="igc9.html" >IGC9 Meeting (2019)</a></li>\
-      <li><a href="https://www2.acom.ucar.edu/workshop/integration-geos-chem-ncar-models-agenda" >NCAR-GEOS-Chem meeting (2018)</a></li>\
+      <li><a href="https://www2.acom.ucar.edu/event/workshop/integration-geos-chem-ncar-models-agenda" >NCAR-GEOS-Chem meeting (2018)</a></li>\
       <li><a href="gca1.html" >GCA1 Meeting (2018)</a></li>\
       <li><a href="igc8.html" >IGC8 Meeting (2017)</a></li>\
       <li><a href="igc7.html" >IGC7 Meeting (2015)</a></li>\
