@@ -107,7 +107,7 @@
 </p>
 
 <p align="center">
-<a href="#citation">Citing GEOS-Chem</a> | <a href="#name" title="">Name</a> | <a href="#orig">Original references</a> | <a href="#config">Configurations</a> | <a href="#met">Met fields &amp; grids</a> | <a href="#nest">Nesting</a> | <a href="#tran_dep">Transport &amp; deposition</a> | <a href="#rad">Radiation</a><br /><a href="#emis">Emissions</a> | <a href="#chem">Chemistry</a> | <a href="#aer">Aerosols</a> | <a href="#carbgas">Carbon gases</a> | <a href="#hg">Mercury</a> | <a href="#pops" title="">POPs</a> | <a href="#tracers" title="">Transport tracers</a> | <a href="#diags">Diagnostics</a> | <a href="#adj">Model adjoint</a> | <a href="#refs">References</a>
+<a href="#citation">Citing GEOS-Chem</a> | <a href="#name" title="">Name</a> | <a href="#orig">Original references</a> | <a href="#config">Configurations</a> | <a href="#cloud">Cloud</a> | <a href="#met">Met fields &amp; grids</a> | <a href="#nest">Nesting</a> | <a href="#tran_dep">Transport &amp; deposition</a> | <a href="#rad">Radiation</a><br /><a href="#emis">Emissions</a> | <a href="#chem">Chemistry</a> | <a href="#aer">Aerosols</a> | <a href="#carbgas">Carbon gases</a> | <a href="#hg">Mercury</a> | <a href="#pops" title="">POPs</a> | <a href="#tracers" title="">Transport tracers</a> | <a href="#diags">Diagnostics</a> | <a href="#adj">Model adjoint</a> | <a href="#refs">References</a>
 </p>
 
 <p>
@@ -186,6 +186,14 @@ GEOS-Chem is a grid-independent model. It operates on 1-D columns with default o
   <li><em>GEOS-Chem High Performance (GCHP)</em>. This uses archived GEOS meteorological data on their original cubed-sphere grid to compute horizontal and vertical transport. Parallelization is through an MPI distributed memory architecture and scales efficiently on thousands of CPUs. GCHP is described by Eastham et al. [2018]. Improved advection, resolution, performance, and community access are described by Martin et al. [2022].</li>
   <li><em>GEOS-Chem in on-line applications. </em> This uses the GEOS-Chem chemical module coupled with an independent simulation of atmospheric dynamics from a meteorological model, where the meteorological model handles the transport of chemicals together with that of the dynamical variables. The off-line transport component of GEOS-Chem is either totally disabled or limited to fast vertical transport (convective and boundary layer mixing). In this way GEOS-Chem can serve as an on-line atmospheric chemistry module for meteorological models.</li>
 </ul>
+
+<h2>
+<a name="cloud" id="cloud"></a>Cloud
+</h2>
+
+<p>
+GEOS-Chem Classic and GCHP can be run on the cloud as originally described by Zhuang et al. [2019, 2020]. The functionality for GCHP required further maintenance, development, and documentation. This is a new development in 14.2.0.	
+</p>
 
 <h2>
 <a name="met" id="met"></a>Meteorological fields and grid resolution
