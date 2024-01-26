@@ -41,8 +41,9 @@ function inlineDropDownMenu() {
   <li class="menuparent"><a class="menu-heading">Meetings</a>\
     <ul>\
       <li><a href="steering-committee.html#meetings" >Steering Committee Meetings</a></li>\
+      <li><a href="https://sites.wustl.edu/igc11/" title="">IGC11 Meeting (2024)</a></li>\
+      <li><a href="gca2.html"  title="">GCA2 Meeting (TBD)</a></li>\
       <li><a href="gce2.html"  title="">GCE2 Meeting (2023)</a></li>\
-      <li><a href="gca2.html"  title="">GCA2 Meeting (TBA)</a></li>\
       <li><a href="igc10.html"  title="">IGC10 Meeting (2022)</a></li>\
       <li><a href="gce1.html" >GCE1 Meeting (2020)</a></li>\
       <li><a href="igc9.html" >IGC9 Meeting (2019)</a></li>\
