@@ -102,22 +102,34 @@
 <div class="field-item even">
 
 <p style="text-align:center">
-  <em>Last Updated 5 Oct 2023 (version 14.2.0)</em>
+  <em>Last Updated 5 Feb 2024 (version 14.3.0)</em>
 </p>
 
 <p align="center">
-  <a href="#new">New developments (versions 12.9.0 - 14.2.0)</a> | <a href="#older">Older developments</a>
+  <a href="#new">New developments (versions 13.0.0 - 14.3.0)</a> | <a href="#older">Older developments</a>
 </p>
 
 <p>
-  We list below the major new GEOS-Chem developments and their developers from version 12.9.0 (released July 2020) to version 14.2.0 (released Oct 2023). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
+  We list below the major new GEOS-Chem developments and their developers from version 13.0.0 (released March 2021) to version 14.3.0 (released Feb 2024). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
 </p>
 
 <h2>
-  <a name="new" id="new"></a>New developments in GEOS-Chem versions 12.9.0 - 14.2.0
+  <a name="new" id="new"></a>New developments in GEOS-Chem versions 13.0.0 - 14.3.0
 </h2>
 
 <ul>
+  <li>
+    (14.3.0) <strong>Update reactions with new JPL & IUPAC recommendations.</strong> Developer: Kelvin Bates (NOAA CSL). Reference: Bates, K., Evans, M., Henderson, B., and Jacob, D.: Impacts of updated reaction kinetics on the global GEOS-Chem simulation of atmospheric chemistry, EGUsphere [preprint], <a href="https://doi.org/10.5194/egusphere-2023-1374">https://doi.org/10.5194/egusphere-2023-1374</a>, 2024.
+  <br/><br/></li>
+  <li>
+    (14.3.0) <strong>Cloud-J for computing photolysis rates.</strong> Developer: Lizzie Lundgren (Harvard). Reference: Prather, M. J.: Photolysis rates in correlated overlapping cloud fields: Cloud-J 7.3c, Geosci. Model Dev., 8, 2587–2595, <a href="https://doi.org/10.5194/gmd-8-2587-2015">https://doi.org/10.5194/gmd-8-2587-2015</a>, 2015.
+  <br/><br/></li>
+  <li>
+    (14.3.0) <strong>TOMAS in GCHP.</strong> Developer: Betty Croft (Dalhousie). Reference: Croft, B., R.V. Martin, R. Y.-W. Chang, L. Bindle, S.D. Eastham, L.A. Estrada, B. Ford, C. Li, M.S. Long, E.W. Lundgren, S. Sinha, M.P. Sulprizio, Y. Tang, A. van Donkelaar, R.M. Yantosca, D. Zhang, H. Zhu, and J.R. Pierce Towards fine horizontal resolution global simulations of aerosol sectional microphysics: Advances enabled by GCHP-TOMAS. J. Advances in Modeling Earth Systems, submitted.
+  <br/><br/></li>
+  <li>
+    (14.3.0) <strong>GEOS-IT meteorology</strong> Developer: Lizzie Lundgren (Harvard). 
+  <br/><br/></li>
   <li>
     (14.2.0) <strong>Nitrate photolysis.</strong> Developer: Viral Shah (NASA GMAO). Reference: Shah, V., Jacob, D. J., Dang, R., Lamsal, L. N., Strode, S. A., Steenrod, S. D., Boersma, K. F., Eastham, S. D., Fritz, T. M., Thompson, C., Peischl, J., Bourgeois, I., Pollack, I. B., Nault, B. A., Cohen, R. C., Campuzano-Jost, P., Jimenez, J. L., Andersen, S. T., Carpenter, L. J., Sherwen, T., and Evans, M. J.: Nitrogen oxides in the free troposphere: implications for tropospheric oxidants and the interpretation of satellite NO2 measurements, Atmos. Chem. Phys., 23, 1227–1257, <a href="https://doi.org/10.5194/acp-23-1227-2023">https://doi.org/10.5194/acp-23-1227-2023</a>, 2023.
   <br/><br/></li>
@@ -257,6 +269,13 @@
   <li>
     (13.0.0) <b> Updated ODIAC CO2 emissions to 2019. </b> Implementer: Yi Cao (U. Wollongong)<br />References:<br />Oda, T., Maksyutov, S., and Andres, R. J.: The Open-source Data Inventory for Anthropogenic CO2, version 2016 (ODIAC2016): a global monthly fossil fuel CO2 gridded emissions data product for tracer transport simulations and surface flux inversions, Earth Syst. Sci. Data, doi:10.5194/essd-10-87-2018, 2018.<br />Oda, T. and Maksyutov, S.: A very high-resolution (1 kmÃ—1 km) global fossil fuel CO2 emission inventory derived using a point source database and satellite observations of nighttime lights, Atmos. Chem. Phys., 11, 543-556, doi:10.5194/acp-11-543-2011, 2011.
   <br/><br/></li>
+</ul>
+
+<h2>
+  <a name="older" id="older"></a>Older developments
+</h2>
+
+<ul>
   <li>
     (12.9.0) <b>Halogen chemistry [Wang et al., 2021]. </b>Developers: Xuan Wang (City U. of Hong Kong) and Tomas Sherwen (U. York)<br />Reference: Wang, X., D.J. Jacob, W. Downs, S. Zhai, L. Zhu, V. Shah, C.D. Holmes, T. Sherwen, B. Alexander, M.J. Evans, S.D. Eastham, J.A. Neuman, P. Veres, T.K Koenig, R. Volkamer, L.G. Huey, T.J. Bannan, C.J. Percival, B.H. Lee, and J.A. Thornton, <a href="https://acp.copernicus.org/articles/21/13973/2021/" title="">Global tropospheric halogen (Cl, Br, I) chemistry and its impact on oxidants,</a>  Atmos. Chem. Phys., 21, 13973-13996, 2021.
   <br/><br/></li>
@@ -266,13 +285,6 @@
   <li>
     (12.9.0) <b>Updated lightning climatology to the end of 2019. </b> Developer: Lee Murray (U. Rochester)<br />Reference: <a href="http://www.sas.rochester.edu/ees/atmos/data/">Lee Murray's lightning data site</a>
   <br/><br/></li>
-</ul>
-
-<h2>
-  <a name="older" id="older"></a>Older developments
-</h2>
-
-<ul>
   <li>
     (12.8.0) <b>New isoprene chemistry mechanism and updated wet deposition of secondary organics </b> Developer: Kelvin Bates (Harvard)<br />References: <b>(1)</b> Bates, K.H., and D.J. Jacob, A new model mechanism for atmospheric oxidation of isoprene: global effects on oxidants, nitrogen oxides, organic products, and secondary organic aerosol, Atmos. Chem. Phys., 19, 9613-9640, 2019. <b>(2)</b> Safieddine, S.A., and C.L. Heald, A global assessment of dissolved organic carbon in precipitation, Geophys. Res. Lett., 44, 11,672-11,681, 2017.
   <br/><br/></li>
