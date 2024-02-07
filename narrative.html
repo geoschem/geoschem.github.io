@@ -211,11 +211,11 @@ GEOS-Chem in off-line mode (Classic or GCHP) is driven by assimilated meteorolog
 </ul>
 
 <p>
-The GEOS-FP and MERRA-2 archives have 3-hour temporal resolution for 3-D fields and 1-hour resolution for 2-D fields. A C720 GEOS-FP archive at hourly resolution for advection variables is also available for March 2021 to present and this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. The GEOS-IT archive has hourly resolution for all fields and is also available at C180 resolution; this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>.
+The GEOS-FP and MERRA-2 archives have 3-hour temporal resolution for 3-D fields and 1-hour resolution for 2-D fields. A C720 GEOS-FP archive at hourly resolution for advection variables is also available for March 2021 to present. The GEOS-IT archive has hourly resolution for all fields and is also available at C180 resolution; this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>.
 </p>
 
 <p>
-The GEOS data are pre-processed for use in GEOS-Chem, in particular to generate coarser-resolution archives.  The GEOS data can also be used directly without pre-processing and this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>.
+The GEOS data are pre-processed for use in GEOS-Chem, in particular to generate coarser-resolution archives.  The GEOS data can also be used directly without pre-processing.
 </p>
 
 <p>
@@ -234,6 +234,7 @@ The GEOS-Chem chemical module can be used in on-line applications on any grid of
   <li>On-line coupling with the GEOS ESM is described by Hu et al. [2018] and is called <em>GEOS-GC</em></li>
   <li>On-line coupling with the Beijing Climate Center (BCC) climate model is described by Lu et al. [2020] and is called <em>BCC-GC</em></li>
   <li>On-line coupling with the Weather Research Forecast (WRF) model is described by Lin et al. [2020] and Feng et al. [2021] and is called <em>WRF-GC</em>.</li>
+  <li>On-line coupling with the Community Earth System Model (CESM) is described in Fritz et al. [2022] and is called <em>CESM-GC</em></li>.  
 </ul>
 
 <h2>
@@ -317,7 +318,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </p>
 
 <p>
-<em>Lightning</em>. Lightning NOx emissions are as described by Murray et al. [2012] to match OTD/LIS climatological observations of lightning flashes. The option to use climatology has added as a <a href="new-developments.html" title="">new development in version 14.2.0</a>.
+<em>Lightning</em>. Lightning NOx emissions are as described by Murray et al. [2012] to match OTD/LIS climatological observations of lightning flashes. The option to use climatology was added as a <a href="new-developments.html" title="">new development in version 14.2.0</a>.
 </p>
 
 <p>
@@ -542,6 +543,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Fountoukis, C., and A. Nenes, <em>ISORROPIA II: A computationally efficient thermodynamic equilibrium model for K+-Ca2+-Mg2+-NH4+-Na+-SO42-NO3--Cl-H2O aerosols</em>, <u>Atmos. Chem. Phys.</u>, <strong>7</strong>(17), 4639-4659, 2007.</li>
   <li>Franks, P.J., et al., <em>Sensitivity of plants to changing atmospheric CO2 concentration: from the geological past to the next century</em>, <u>New Phytologist</u>, <strong>197.4</strong>, 1077-1094, 2013.</li>
   <li>Friedman, C.L., Y. Zhang, and N.E. Selin, <em>Climate change and emissions impacts on atmospheric PAH transport to the Arctic</em>, <u>Environ. Sci. Technol.</u>, <strong>48</strong> (1), 429-437, 2014</li>
+  <li>Fritz, T. M., Eastham, S. D., Emmons, L. K., Lin, H., Lundgren, E. W., Goldhaber, S., Barrett, S. R. H., and Jacob, D. J.: Implementation and evaluation of the GEOS-Chem chemistry module version 13.1.2 within the Community Earth System Model v2.1, Geosci. Model Dev., 15, 8669–8704, https://doi.org/10.5194/gmd-15-8669-2022, 2022.</li>
   <li>Guenther, A.B., Jiang, X., Heald, C.L., Sakulyanontvittaya, T., Duhl, T., Emmons, L.K., and Wang, X., <em>The Model of Emissions of Gases and Aerosols from Nature version 2.1 (MEGAN2.1): an extended and updated framework for modeling biogenic emissions</em>, <u>Geosci. Model Dev.</u>, <strong>5</strong>, 1471-1492, doi:10.5194/gmd-5-1471-2012, 2012.</li>
   <li>Hammer M.S., R.V. Martin, A van Donkelaar, V. Buchard, O. Torres, D.A. Ridley, and R.J.D. Spurr, <em>Interpreting the ultraviolet aerosol index observed with the OMI satellite instrument to understand absorption by organic aerosols: Implications for atmospheric oxidation and direct radiative effects</em>, <u>Atmos. Chem. Phys.</u>, <strong>16</strong>, 2507-2523, doi:10.5194/acp-16-2507-2016, 2016.</li>
   <li>Heald, C.L., D.A. Ridley, J.H. Kroll, S.R.H. Barrett, K.E. Cady-Pereira, M.J. Alvarado, C.D. Holmes, <em>Beyond Direct Radiative Forcing: The Case for Characterizing the Direct Radiative Effect of Aerosols</em>, <u>Atmos. Chem. Phys.</u>, <strong>14</strong>, 5513-5527, doi:10.5194/acp-14-5513-2014, 2014.</li>
