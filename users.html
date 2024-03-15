@@ -6,16 +6,16 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"><!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-<!--<base href="/people-projects" />-->
+<!--<base href="/users" />-->
 <link rel="shortcut icon" href="img/geos-chem-logo-favicon.png" />
-<link rel="canonical" href="people-projects.html" />
-<link rel="shortlink" href="people-projects.html" />
+<link rel="canonical" href="users.html" />
+<link rel="shortlink" href="users.html" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="GEOS-Chem People and Projects" />
+<meta property="og:title" content="GEOS-Chem Users" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="GEOS-Chem People and Projects" />
+<meta name="twitter:title" content="GEOS-Chem Users" />
 <meta name="twitter:image" content="https://geos-chem.org" />
-<title>GEOS-Chem People and Projects</title>
+<title>GEOS-Chem Users</title>
 <meta http-equiv="x-ua-compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -89,7 +89,7 @@
 <div class="content-inner"><a name="main-content"></a>
 <header id="main-content-header"><a name="main-content"></a>
 <a name="main-content"></a>
-<h1 id="page-title" ng-non-bindable="">GEOS-Chem People and Projects </h1>
+<h1 id="page-title" ng-non-bindable="">GEOS-Chem Users</h1>
 </header>
 
 <!--front panel regions beg-->
@@ -106,7 +106,11 @@
 <div class="field-item even">
 
 <p>
-  This page lists the scientists working with GEOS-Chem and gives a brief statement of their current activity using the model. It provides links to the research web sites of individual groups for more information.
+  This page lists the GEOS-Chem user groups with GEOS-Chem and provides links to groups research web sites for more information. This information is based on the list of <a href="https://geos-chem.readthedocs.io/en/stable/gcclassic-user-guide/rundir-registration.html#rundir-registration" target="_new">registered GEOS-Chem users</a> maintained by the GEOS-Chem Support Team.
+</p>
+
+<p align="center">
+	Last updated: March 2024
 </p>
 
 <!-- Map from original ACMG website -->
@@ -135,6 +139,10 @@
   }).addTo(mymap);
 
   // INSTITUTIONS AND GROUPS
+
+  // Academia Sinica
+  L.marker([25.04223125274816, 121.6161467245319], { icon: blueIcon }).addTo(mymap).bindPopup("<strong>Academia Sinica (Taipei City, Taiwan)</strong><ul><li><a href='https://rcec.sinica.edu.tw/index_en.php' target='_new'>Research Center for Environmental Changes</a></li></ul>");
+
   
   // Addis Abada University Addis Abada, Ethiopia
   L.marker([8.98320686139694, 38.76236070622108], { icon: blueIcon }).addTo(mymap).bindPopup("<a href='https://www.imk-asf.kit.edu/english/716.php'><strong>Addis Abada University<br>Addis Abada, Ethiopia</strong></a>");
