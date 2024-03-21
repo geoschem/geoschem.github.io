@@ -26,7 +26,8 @@ function inlineDropDownMenu() {
       <li><a href="steering-committee.html" >Steering Committee</a></li>\
       <li><a href="working-groups.html" >Working Groups</a></li>\
       <li><a href="support-team.html" >Support Team</a></li>\
-    </ul>\
+      <li><a href="email-lists.html" >Email Lists</a></li>\
+   </ul>\
   </li>\
   <li class="menuparent"><a class="menu-heading">Research</a>\
     <ul>\
@@ -65,8 +66,6 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/Guide_to_GEOS-Chem_simulations" >Simulations</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_benchmarking"  title="">Benchmarking</a></li>\
       <li><a href="https://hemco.readthedocs.io" >HEMCO</a></li>\
-      <li><a href="http://wiki.geos-chem.org/Emissions_overview"  title="">Emissions Overview</a></li>\
-      <li><a href="http://wiki.geos-chem.org/Guide_to_GEOS-Chem_performance"  title="">Performance</a></li>\
       <li><a href="https://gchp.readthedocs.io" >GCHP</a></li>\
       <li><a href="http://wrf.geos-chem.org/" >WRF-GC</a></li>\
       <li><a href="logo.html" >GEOS-Chem logo</a></li>\
