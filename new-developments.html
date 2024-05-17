@@ -102,15 +102,15 @@
 <div class="field-item even">
 
 <p style="text-align:center">
-  <em>Last Updated 5 Feb 2024 (version 14.3.0)</em>
+  <em>Last Updated May 17, 2024 (version 14.4.0)</em>
 </p>
 
 <p align="center">
-  <a href="#new">New developments (versions 13.0.0 - 14.3.0)</a> | <a href="#older">Older developments</a>
+  <a href="#new">New developments (versions 13.1.0 - 14.4.0)</a> | <a href="#older">Older developments</a>
 </p>
 
 <p>
-  We list below the major new GEOS-Chem developments and their developers from version 13.0.0 (released March 2021) to version 14.3.0 (released Feb 2024). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
+  We list below the major new GEOS-Chem developments and their developers from version 13.1.0 (released June 2021) to version 14.4.0 (released May 2024). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
 </p>
 
 <h2>
@@ -118,6 +118,33 @@
 </h2>
 
 <ul>
+  <li>
+    (14.4.0) <strong>Replace ISORROPIA II with HETP aerosol thermodynamics.</strong> Developers: Lizzie Lundgren (Harvard) and Seb Eastham (ICL). Reference: Miller, S. J., Makar, P. A., and Lee, C. J.: HETerogeneous vectorized or Parallel (HETPv1.0): an updated inorganic heterogeneous chemistry solver for the metastable-state NH4+–Na+–Ca2+–K+–Mg2+–SO42−–NO3−–Cl−–H2O system based on ISORROPIA II, Geosci. Model Dev., 17, 2197–2219, <a href="https://doi.org/10.5194/gmd-17-2197-2024">https://doi.org/10.5194/gmd-17-2197-2024</a>, 2024.
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Parameterized effective radius for SNA and OM aerosols.</strong> Developer: Haihui Zhu (WashU). Reference: Zhu, H., Martin, R. V., Croft, B., Zhai, S., Li, C., Bindle, L., Pierce, J. R., Chang, R. Y.-W., Anderson, B. E., Ziemba, L. D., Hair, J. W., Ferrare, R. A., Hostetler, C. A., Singh, I., Chatterjee, D., Jimenez, J. L., Campuzano-Jost, P., Nault, B. A., Dibb, J. E., Schwarz, J. S., and Weinheimer, A.: Parameterization of size of organic and secondary inorganic aerosol for efficient representation of global aerosol optical properties, Atmos. Chem. Phys., 23, 5023–5042, <a href="https://doi.org/10.5194/acp-23-5023-2023">https://doi.org/10.5194/acp-23-5023-2023</a>, 2023. 
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Updated gravitational settling and hygroscopic growth in aerosol dry deposition.</strong> Developer: Yanshun Li (WashU). Reference: Li, Y., Martin, R. V., Li, C., Boys, B. L., van Donkelaar, A., Meng, J., and Pierce, J. R.: Development and evaluation of processes affecting simulation of diel fine particulate matter variation in the GEOS-Chem model, Atmospheric Chemistry and Physics, 23(19), 12525–12543. <a href="https://doi.org/10.5194/acp-23-12525-2023">https://doi.org/10.5194/acp-23-12525-2023</a>, 2023. 
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Global continental chlorine (pCl and HCl) emissions.</strong> Developers: Bingqing Zhang (Georgia Tech) and Pengfei Liu (Georgia Tech). Reference: Zhang, B., Shen, H., Yun, X., Zhong, Q., Henderson, B. H., Wang, X., Shi, L., Gunthe, S. S., Huey, L. G., Tao, S., Russell, A. G., & Liu, P. (2022). Global Emissions of Hydrogen Chloride and Particulate Chloride from Continental Sources. Environmental Science & Technology, 56(7), 3894-3904. <a href="https://doi.org/10.1021/acs.est.1c05634">https://doi.org/10.1021/acs.est.1c05634</a>, 2022. 
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Add diel and day-of-week scale factors to global base emissions.</strong> Developer: Dandan Zhang (WashU).  
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Updated 0.1x0.1 degree timezone file accounting for daylight savings.</strong> Developer: Karn Vohra (UCL).  
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Updated volcano emissions through 2023.</strong> Developer: Melissa Sulprizio (Harvard).  
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>Update surface methane boundary condition using NOAA flask data.</strong> Developer: Lee Murray (U Rochester).  
+  <br/><br/></li>
+  <li>
+    (14.4.0) <strong>GCHP carbon simulation.</strong> Developers: Melissa Sulprizio (Harvard) and Bob Yantosca (Harvard).  
+  <br/><br/></li>
   <li>
     (14.3.0) <strong>Update reactions with new JPL & IUPAC recommendations.</strong> Developer: Kelvin Bates (NOAA CSL). Reference: Bates, K., Evans, M., Henderson, B., and Jacob, D.: Impacts of updated reaction kinetics on the global GEOS-Chem simulation of atmospheric chemistry, EGUsphere [preprint], <a href="https://doi.org/10.5194/egusphere-2023-1374">https://doi.org/10.5194/egusphere-2023-1374</a>, 2024.
   <br/><br/></li>
@@ -251,6 +278,13 @@
   <li>
     (13.1.0) <b>Vertical allocation of CEDS emissions by sector. </b>Developer: Barron Henderson (US EPA)<br />Reference: US EPA, Preparation of Emissions Inventories for the Version 7.1 2016 Hemispheric Emissions Modeling Platform. U.S. Environmental Protection Agency, Research Triangle Park, NC, 2019. <a href="https://www.epa.gov/sites/production/files/2019-12/documents/2016fe_hemispheric_tsd.pdf">https://www.epa.gov/sites/production/files/2019-12/documents/2016fe_hemi...</a> (see Section 2.1.4)
   <br/><br/></li>
+</ul>
+
+<h2>
+  <a name="older" id="older"></a>Older developments
+</h2>
+
+<ul>
   <li>
     (13.0.0) <b> Streets et al. (2019) mercury emissions inventory </b> Developer: Colin Thackray (Harvard U.)<br />Reference: Streets, D.G., et al., Global and regional trends of mercury emissions and concentrations, 2010-2015, Atmos. Environ., 417-427, 2019.
   <br/><br/></li>
@@ -269,13 +303,6 @@
   <li>
     (13.0.0) <b> Updated ODIAC CO2 emissions to 2019. </b> Implementer: Yi Cao (U. Wollongong)<br />References:<br />Oda, T., Maksyutov, S., and Andres, R. J.: The Open-source Data Inventory for Anthropogenic CO2, version 2016 (ODIAC2016): a global monthly fossil fuel CO2 gridded emissions data product for tracer transport simulations and surface flux inversions, Earth Syst. Sci. Data, doi:10.5194/essd-10-87-2018, 2018.<br />Oda, T. and Maksyutov, S.: A very high-resolution (1 kmÃ—1 km) global fossil fuel CO2 emission inventory derived using a point source database and satellite observations of nighttime lights, Atmos. Chem. Phys., 11, 543-556, doi:10.5194/acp-11-543-2011, 2011.
   <br/><br/></li>
-</ul>
-
-<h2>
-  <a name="older" id="older"></a>Older developments
-</h2>
-
-<ul>
   <li>
     (12.9.0) <b>Halogen chemistry [Wang et al., 2021]. </b>Developers: Xuan Wang (City U. of Hong Kong) and Tomas Sherwen (U. York)<br />Reference: Wang, X., D.J. Jacob, W. Downs, S. Zhai, L. Zhu, V. Shah, C.D. Holmes, T. Sherwen, B. Alexander, M.J. Evans, S.D. Eastham, J.A. Neuman, P. Veres, T.K Koenig, R. Volkamer, L.G. Huey, T.J. Bannan, C.J. Percival, B.H. Lee, and J.A. Thornton, <a href="https://acp.copernicus.org/articles/21/13973/2021/" title="">Global tropospheric halogen (Cl, Br, I) chemistry and its impact on oxidants,</a>  Atmos. Chem. Phys., 21, 13973-13996, 2021.
   <br/><br/></li>
@@ -487,53 +514,6 @@
   <br/><br/></li>
   <li>
     (11-01) <strong>QFED and FINN emissions for Hg simulation</strong> Implementer: <a href="http://www.uow.edu.au/~jennyf/" target="_blank">Jenny Fisher</a> (Wollongong).
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>GEOS-Chem HP capability and ESMF compatibility.</strong> Developers: <a href="http://people.seas.harvard.edu/~mlong/" target="_blank">Mike Long</a> (Harvard), <a href="http://people.seas.harvard.edu/~yantosca/" target="_blank">Bob Yantosca</a> (Harvard). Reference: M.S. Long, R. Yantosca, J. E. Nielsen, C.A. Keller, A. da Silva, M.P. Sulprizio, S. Pawson, D.J. Jacob, <em>Development of a grid-independent GEOS-Chem chemical transport model (v9-02) as an atmospheric chemistry module for Earth System Models</em>, <u>Geosci. Model. Dev.</u>, <strong>8</strong>, 595-602, 2015.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Flexible buffering zone for the nested model simulations at 0.25Â° (lat) x 0.3125Â° (lon) resolution.</strong> Developer: <a href="http://www.atmos.pku.edu.cn/lzhang/" target="_blank">Lin Zhang</a>(Peking U.).
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Online radiative transfer.</strong> Developers: <a href="http://www.web.mit.edu/daridley/www/" target="_blank">David Ridley</a> (MIT), <a href="http://web.mit.edu/heald/www/" target="_blank">Colette Heald</a> (MIT). Reference: Heald, C.L., D.A. Ridley, J.H. Kroll, S.R.H. Barrett, K.E. Cady-Pereira, M.J. Alvarado, C.D. Holmes, <em>Beyond Direct Radiative Forcing: The Case for Characterizing the Direct Radiative Effect of Aerosols</em>, <u>Atmos. Chem. Phys.</u>, <strong>14</strong>, 5513-5527, doi:10.5194/acp-14-5513-2014, 2014.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Harvard-NASA Emissions Component (HEMCO).</strong> Developer: <a href="http://www.ckeller.ch/" target="_blank">Christoph Keller</a> (Harvard). Reference: C. A. Keller, M. S. Long, R. M. Yantosca, A. M. Da Silva, S. Pawson, and D. J. Jacob, <em>HEMCO v1.0: A versatile, ESMF-compliant component for calculating emissions in atmospheric models</em>, <u>Geosci. Model Devel.</u>, <strong>7</strong>, 1409-1417, 2014.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>CO2 emissions.</strong> Developer: <a href="http://www.ec.gc.ca/scitech/default.asp?lang=En&amp;n=F97AE834-1&amp;xsl=scitechprofile&amp;xml=F97AE834-A762-47A6-A2D9-9C397FD72F37&amp;formid=6706100A-4FFF-4926-B415-6D10BA6A9F51" target="_blank">Ray Nassar</a> (Environment Canada). Reference: Nassar, R., L. Napier-Linton, K. R. Gurney, R. J. Andres, T. Oda, F. R. Vogel, and F. Deng, <em>Improving the temporal and spatial distribution of CO2 emissions from global fossil fuel emission data sets</em>, <u>J. Geophys. Res. Atmos.</u>, <strong>118</strong>, 917-933, doi:10.1029/2012JD018196, 2013.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>GFED4 biomass burning emissions.</strong> Developers: <a href="http://www.env.duke.edu/people/faculty/prasad/prasad.html" target="_blank">Prasad Kasibhatla</a> (Duke), <a href="http://www.ckeller.ch/" target="_blank">Christoph Keller</a> (Harvard).
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>FINNv1 biomass burning emissions.</strong> Developers: <a href="http://www.uow.edu.au/~jennyf/" target="_blank">Jenny Fisher</a> (University of Wollongong), Christine Wiedinmyer (NCAR), Jingqiu Mao (GFDL). Reference: Wiedinmyer, C., Akagi, S. K., Yokelson, R. J., Emmons, L. K., Al-Saadi, J. A., Orlando, J. J., and Soja, A. J., <em>The Fire INventory from NCAR (FINN): a high resolution global model to estimate the emissions from open burning</em>, <u>Geosci. Model Dev.</u>, <strong>4</strong>, 625-641, doi:10.5194/gmd-4-625-2011, 2011.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Updated biogenic emissions based on MEGAN2.1 and CLM plant functional types.</strong> Developer: <a href="http://www.atmoschem.umn.edu/" target="_blank">Dylan Millet</a> (UMN). Reference: Hu, L., D.B. Millet, M. Baasandorj, T.J. Griffis, P. Turner, D. Helmig, A.J. Curtis, and J. Hueber, <em>Isoprene emissions and impacts over an ecological transition region in the US Upper Midwest inferred from tall tower measurements</em>, <u>J. Geophys. Res.</u>, <strong>120</strong>, 3553-3571, doi: 10.1002/2014JD022732, 2015.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Updated PARANOX ship plume model.</strong> Developers: <a href="http://myweb.fsu.edu/cdholmes/" target="_blank">Chris Holmes</a> (Florida State), Geert Vinken (Eindhoven). Reference: Holmes, C. D., Prather, M. J., and Vinken, G. C. M., <em>The climate impact of ship NOx emissions: an improved estimate accounting for plume chemistry</em>, <u>Atmos. Chem. Phys.</u>, <strong>14</strong>, 6801-6812, doi:10.5194/acp-14-6801-2014, 2014.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>MASAGE NH3.</strong> Developer: <a href="http://scholar.princeton.edu/fpaulot" target="_blank">Fabien Paulot</a> (NOAA). Reference: Paulot F., Jacob, D.J., Pinder R.W., Bash J.O., Travis, K., Henze D.K., <em>Ammonia emissions in the United States, Europe, and China derived by high-resolution inversion of ammonium wet deposition data: Interpretation with a new agricultural emissions inventory (MASAGE_NH3)</em>, <u>J. Geophys. Res.</u>, <strong>119</strong>, 4,343-4,364, 2014.
-  <br/><br/></li>
-  <li>(10-01) <strong>EDGAR v4.2 emissions.</strong> Developers: <a href="http://www.chemeng.tsinghua.edu.cn/scholars/zhangqiang/Qiang-English.htm" target="_blank">Qiang Zhang</a> (Tsinghua), Meng Li (Tsinghua), Sajeev Philip (Dalhousie).
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>HTAP emissions.</strong> Developers: <a href="http://www.chemeng.tsinghua.edu.cn/scholars/zhangqiang/Qiang-English.htm" target="_blank">Qiang Zhang</a> (Tsinghua), Meng Li (Tsinghua).
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>MIX Asian emissions.</strong> Developers: <a href="http://www.chemeng.tsinghua.edu.cn/scholars/zhangqiang/Qiang-English.htm" target="_blank">Qiang Zhang</a> (Tsinghua), Meng Li (Tsinghua). Reference: Li, M., Zhang, Q., Streets, D. G., He, K. B., Cheng, Y. F., Emmons, L. K., Huo, H., Kang, S. C., Lu, Z., Shao, M., Su, H., Yu, X., and Zhang, Y.: <em>Mapping Asian anthropogenic emissions of non-methane volatile organic compounds to multiple chemical mechanisms</em>, <u>Atmos. Chem. Phys.</u>, <strong>14</strong>, 5617-5638, doi:10.5194/acp-14-5617-2014, 2014.
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>NEI2011 North American emissions.</strong> Developer: <a href="https://sites.google.com/site/katherinertravis/" target="_blank">Katie Travis</a> (Harvard).
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Two-way coupling between global and nested GEOS-Chem models.</strong> Developers: <a href="http://www.atmos.pku.edu.cn/acm/contact.html" target="_blank">Jintai Lin</a> (Peking U.), Yingying Yan (Peking U.). Reference: Y.-Y. Yan, Lin, J.-T., Y. Kuang, D.-W. Yang, L. Zhang, <em>Tropospheric carbon monoxide over the Pacific during HIPPO: two-way coupled simulation of GEOS-Chem and its multiple nested models</em>, <u>Atmos. Chem. Phys.</u>, <strong>14</strong>, 12649-12663, doi:10.5194/acp-14-12649-2014, 2014
-  <br/><br/></li>
-  <li>
-    (10-01) <strong>Universal tropospheric-stratospheric Chemistry eXtension (UCX) mechanism.</strong> Developers: <a href="http://lae.mit.edu/sebastian-d-eastham/" target="_blank">Sebastiam Eastham</a> (MIT), <a href="http://aeroastro.mit.edu/barrett" target="_blank">Steven Barrett</a> (MIT). Reference: Eastham, S.D., Weisenstein, D.K., Barrett, S.R.H., <em>Development and evaluation of the unified tropospheric-stratospheric chemistry extension (UCX) for the global chemistry-transport model GEOS-Chem</em>, <u>Atmos. Env.</u>, <strong>89</strong>, 2014.
   <br/><br/></li>
 </ul>
 
