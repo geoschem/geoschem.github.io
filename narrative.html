@@ -103,7 +103,7 @@
 <div class="field-item even">
 
 <p align="center">
-<em>Updated Feb 5, 2024 (version 14.3.0)</em>
+<em>Updated May 17, 2024 (version 14.4.0)</em>
 </p>
 
 <p align="center">
@@ -234,7 +234,7 @@ The GEOS-Chem chemical module can be used in on-line applications on any grid of
   <li>On-line coupling with the GEOS ESM is described by Hu et al. [2018] and is called <em>GEOS-GC</em></li>
   <li>On-line coupling with the Beijing Climate Center (BCC) climate model is described by Lu et al. [2020] and is called <em>BCC-GC</em></li>
   <li>On-line coupling with the Weather Research Forecast (WRF) model is described by Lin et al. [2020] and Feng et al. [2021] and is called <em>WRF-GC</em>.</li>
-  <li>On-line coupling with the Community Earth System Model (CESM) is described in Fritz et al. [2022] and is called <em>CESM-GC</em></li>.  
+  <li>On-line coupling with the Community Earth System Model (CESM) is described in Fritz et al. [2022] and is called <em>CESM-GC.</em></li>  
 </ul>
 
 <h2>
@@ -250,7 +250,7 @@ The current nested version of GEOS-Chem Classic uses GEOS-FP data with 0.25° x 
 </p>
 
 <p>
-GCHP cannot use nested grids but can instead use the stretched-grid configuration of Bindle et al. [2021] to provide high resolution over regions of interest. The refinement region characteristics can be specified at runtime without any preprocessing or generation of boundary condition files. Resolution varies smoothly away from refinement region. This is a <a href="new-developments.html" target="_blank" title="">new development in version 13.0.0</a>.
+GCHP cannot use nested grids but can instead use the stretched-grid configuration of Bindle et al. [2021] to provide high resolution over regions of interest. The refinement region characteristics can be specified at runtime without any preprocessing or generation of boundary condition files. Resolution varies smoothly away from refinement region.
 </p>
 
 <h2>
@@ -266,7 +266,7 @@ The wet deposition scheme in GEOS-Chem is described by Liu et al. [2001] for wat
 </p>
 
 <p>
-Dry deposition is based on the resistance-in-series scheme of Wesely [1989] as implemented by Y. Wang et al. [1998a]. Size-dependent aerosol dry deposition is from Emerson et al. [2020] and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>.; older versions used aerosol dry deposition from Zhang et al. [2001]. Aerosol deposition to snow/ice is described by Fisher et al. [2011]. Gravitational settling is from Fairlie et al. [2007] for dust and Alexander et al. [2005] for coarse sea salt. Sea-salt deposition is from Jaegle et al. [2011]. Cold-temperature HNO3 deposition is from Jaegle et al. [2018]. There is an option for dependence of stomatal conductance on CO2 levels [Franks et al., 2013]. Ozone deposition to the ocean is from Pound et al. [2020]. Ozone deposition to snow and ice is from Barten et al. [2021] and this is a <a href="new-developments.html" target="_blank" title="">new development in version 13.4.0.</a>
+Dry deposition is based on the resistance-in-series scheme of Wesely [1989] as implemented by Y. Wang et al. [1998a]. Size-dependent aerosol dry deposition is from Emerson et al. [2020] and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a> with updates to gravitational setting and hygroscopic growth in aerosol dry deposition from Li et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0</a>.; older versions used aerosol dry deposition from Zhang et al. [2001]. Aerosol deposition to snow/ice is described by Fisher et al. [2011]. Gravitational settling is from Fairlie et al. [2007] for dust and Alexander et al. [2005] for coarse sea salt. Sea-salt deposition is from Jaegle et al. [2011]. Cold-temperature HNO3 deposition is from Jaegle et al. [2018]. There is an option for dependence of stomatal conductance on CO2 levels [Franks et al., 2013]. Ozone deposition to the ocean is from Pound et al. [2020]. Ozone deposition to snow and ice is from Barten et al. [2021] and this is a <a href="new-developments.html" target="_blank" title="">new development in version 13.4.0.</a>
 </p>
 
 <p>
@@ -298,7 +298,7 @@ Emissions of dust aerosol, lightning NOx, biogenic VOCs, soil NOx, and sea salt 
 </p>
 
 <p>
-<em>Anthropogenic</em>. Global anthropogenic emissions up to 2019 are from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020] was a <a href="new-developments.html" target="_blank" title="">new development in version 13.0.0</a>. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019] and this is a <a href="new-developments.html" title="">new development in version 13.</a>1.0. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019] and this is a <a href="new-developments.html" title="">new development in version 13.1.0. </a>
+<em>Anthropogenic</em>. Global anthropogenic emissions up to 2019 are from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019] and this is a <a href="new-developments.html" title="">new development in version 13.</a>1.0. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019] and this is a <a href="new-developments.html" title="">new development in version 13.1.0. </a> Diel and day-of-week scale factors for global anthropogenic emissions, and accounting for daylight savings time are <a href="new-developments.html" title="">new developments in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
 </p>
 
 <p>
@@ -334,7 +334,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </p>
 
 <p>
-<em>Volcanoes</em>. Eruptive and non-eruptive volcanic SO2 emissions for individual years from 1978 to present are from the <a href="http://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO/VOLCANO/v2019-08/README">AEROCOM data base</a>. Extension of the data to May 2020 is a <a href="new-developments.html" title="">new development in version 13.3.0</a>. Older versions did not extend beyond 2018.  For simulations of more recent periods when data are not available the non-eruptive volcanic emissions are set to a climatology and the eruptive emissions are set to zero.
+<em>Volcanoes</em>. Eruptive and non-eruptive volcanic SO2 emissions for individual years from 1978 to present are from the <a href="http://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO/VOLCANO/v2019-08/README">AEROCOM data base</a>. Extension of the data to May 2020 is a <a href="new-developments.html" title="">new development in version 13.3.0</a> and further extension through 2023 is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Older versions did not extend beyond 2018.  For simulations of more recent periods when data are not available the non-eruptive volcanic emissions are set to a climatology and the eruptive emissions are set to zero.
 </p>
 
 <p>
@@ -392,7 +392,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </h3>
 
 <p>
-<em>Sulfate-nitrate-ammonium aerosol</em>. SNA thermodynamics are computed with the ISORROPIA thermodynamic module [Fontoukis and Nenes, 2007], most recently updated to version 2.2. Sulfur oxidation in clouds and aerosols is  coupled with gas-phase chemistry through KPP and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
+<em>Sulfate-nitrate-ammonium aerosol</em>. SNA thermodynamics are computed with the HETP thermodynamic module [Miller et al. 2024] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; older versions used the ISORROPIA thermodynamic module [Fontoukis and Nenes, 2007] version 2.2. Sulfur oxidation in clouds and aerosols is  coupled with gas-phase chemistry through KPP and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
 </p>
 
 <p>
@@ -408,6 +408,10 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
+<em>Aerosol size.</em> Aerosol size for SNA and organic aerosol is from a parameterization of Zhu et al. [2023] and this is a <a href="new-developments.html" title="">new development in version 14.4.0.</a> 	
+</p>
+	
+<p>
 <em>Marine POA</em>. There is an option to emit marine POA following Gantt et al. [2015].
 </p>
 
@@ -420,7 +424,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Aerosol optical depth. </em>Aerosol optical depth affecting photolysis rates is calculated in GEOS-Chem using RH-dependent aerosol optical properties from Latimer and Martin [2019]. Dust optics are from Ridley et al. [2012]. 
+<em>Aerosol optical depth. </em>Aerosol optical depth affecting photolysis rates is calculated in GEOS-Chem using RH-dependent aerosol optical properties from Zhu et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; older versions used aerosol optical properties from Latimer and Martin [2019]. Dust optics are from Ridley et al. [2012]. 
 </p>
 
 <p>
@@ -432,11 +436,11 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </h2>
 
 <p>
-<em>CO2</em>. The current form of the simulation is described by Nassar et al. [2010]. Anthropogenic emissions are from ODIAC2019 [Oda and Maksyutov, 2011; Oda et al., 2018] and this is a <a href="new-developments.html" title="">new development in version 13.0.0</a>.
+<em>CO2</em>. The current form of the simulation is described by Nassar et al. [2010]. Anthropogenic emissions are from ODIAC2019 [Oda and Maksyutov, 2011; Oda et al., 2018].
 </p>
 
 <p>
-<em>Methane</em>. The current form of the simulation is described by Maasakkers et al. [2019]. Updated soil uptake is from the MeMo model v1.0 [Murguia-Flores et al., 2018]. Default global anthropogenic emissions are from EDGAR version 7; this update from EDGAR version 6 is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. Updated emission from fuel exploitation is from Scarpelli et al. [2022a] and is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. older versions used Scarpelli et al. [2020] which was a <a href="new-developments.html" target="_blank" title="">new development in version 13.0.0</a>. Anthropogenic emissions from Mexico are from Scarpelli et al. [2020b] and this is a <a href="new-developments.html" title="">new development in version 13.1.0.</a> Anthropogenic emissions from Canada are from Scarpelli et al. [2022b] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a> Methane emissions from hydropower reservoirs is from Delwiche et al. [2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0.</a>
+<em>Methane</em>. The current form of the simulation is described by Maasakkers et al. [2019]. Updated soil uptake is from the MeMo model v1.0 [Murguia-Flores et al., 2018]. Default global anthropogenic emissions are from EDGAR version 7; this update from EDGAR version 6 is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. Updated emission from fuel exploitation is from Scarpelli et al. [2022a] and is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. older versions used Scarpelli et al. [2020]. Anthropogenic emissions from Mexico are from Scarpelli et al. [2020b] and this is a <a href="new-developments.html" title="">new development in version 13.1.0.</a> Anthropogenic emissions from Canada are from Scarpelli et al. [2022b] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a> Methane emissions from hydropower reservoirs is from Delwiche et al. [2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0.</a> An updated surface methane boundary condition using NOAA flask data is a <a href="new-developments.html" title="">new development in 14.4.0.</a> 
 </p>
 
 <p>
@@ -444,7 +448,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Carbon simulation</em>. A carbon simulation (CO2-CO-CH4-OCS) via KPP is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>.
+<em>Carbon simulation</em>. A carbon simulation (CO2-CO-CH4-OCS) via KPP is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>. Extension of this capability to GCHP is a <a href="new-developments.html" target="_blank" title="">new development in 14.4.0.</a>
 </p>
 
 <h2>
