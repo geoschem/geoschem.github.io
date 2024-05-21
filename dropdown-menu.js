@@ -31,7 +31,7 @@ function inlineDropDownMenu() {
   </li>\
   <li class="menuparent"><a class="menu-heading">Research</a>\
     <ul>\
-      <li><a href="people.html"  title="">People and Projects</a></li>\
+      <li><a href="people.html" >People and Projects</a></li>\
       <li><a href="https://scholar.google.com/citations?user=ho-sNj4AAAAJ" >Publications</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_model_development_priorities" >Model Development Priorities</a></li>\
       <li><a href="narrative.html"  title="">Narrative Description (and how to cite GEOS-Chem)</a></li>\
@@ -43,9 +43,9 @@ function inlineDropDownMenu() {
     <ul>\
       <li><a href="steering-committee.html#meetings" >Steering Committee Meetings</a></li>\
       <li><a href="https://sites.wustl.edu/igc11/" title="">IGC11 Meeting (2024)</a></li>\
-      <li><a href="gca2.html"  title="">GCA2 Meeting (TBD)</a></li>\
-      <li><a href="gce2.html"  title="">GCE2 Meeting (2023)</a></li>\
-      <li><a href="igc10.html"  title="">IGC10 Meeting (2022)</a></li>\
+      <li><a href="gca2.html" >GCA2 Meeting (TBD)</a></li>\
+      <li><a href="gce2.html" >GCE2 Meeting (2023)</a></li>\
+      <li><a href="igc10.html" >IGC10 Meeting (2022)</a></li>\
       <li><a href="gce1.html" >GCE1 Meeting (2020)</a></li>\
       <li><a href="igc9.html" >IGC9 Meeting (2019)</a></li>\
       <li><a href="https://www2.acom.ucar.edu/event/workshop/integration-geos-chem-ncar-models-agenda" >NCAR-GEOS-Chem meeting (2018)</a></li>\
@@ -65,8 +65,10 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_versions" >Version History</a></li>\
       <li><a href="http://wiki.geos-chem.org/Guide_to_GEOS-Chem_simulations" >Simulations</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_benchmarking"  title="">Benchmarking</a></li>\
-      <li><a href="https://hemco.readthedocs.io" >HEMCO</a></li>\
+      <li><a href="http://wiki.geos-chem.org/Guide_to_compilers_for_GEOS-Chem" >Compilers</a></li>\
+      <li><a href="https://geos-chem.readthedocs.io" >GEOS-Chem Classic</a></li>\
       <li><a href="https://gchp.readthedocs.io" >GCHP</a></li>\
+      <li><a href="https://hemco.readthedocs.io" >HEMCO</a></li>\
       <li><a href="http://wrf.geos-chem.org/" >WRF-GC</a></li>\
       <li><a href="logo.html" >GEOS-Chem logo</a></li>\
     </ul>\
@@ -79,13 +81,13 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_overview#GEOS-Chem_Guides" >GEOS-Chem Guides</a></li>\
       <li><a href="presentations.html" >Presentations on new GEOS-Chem model developments</a></li>\
       <li><a href="http://wiki.geos-chem.org/Frequently_asked_questions_about_GEOS-Chem" >GEOS-Chem FAQ</a></li>\
-      <li><a href="https://geos-chem.readthedocs.io/en/latest/gcc-guide/05-run/run-speedup.html" >Speeding up GEOS-Chem</a></li>\
+      <li><a href="https://geos-chem.readthedocs.io/en/gcclassic-user-guide/run-speedup.html" >Speeding up GEOS-Chem</a></li>\
       <li><a href="cube-sphere.html" >Cubed-sphere grid illustrations</a></li>\
     </ul>\
   </li>\
   <li class="menuparent"><a class="menu-heading">Tools</a>\
     <ul>\
-      <li><a href="http://wiki.geos-chem.org/Python_tools_for_use_with_GEOS-Chem" >GCPy and Python tools</a></li>\
+      <li><a href="http://gcpy.readthedocs.org" >GCPy</a></li>\
       <li><a href="http://wiki.geos-chem.org/Software_maintained_by_GEOS-Chem_community_members" >Tools maintained by GEOS-Chem users</a></li>\
     </ul>\
   </li>\
