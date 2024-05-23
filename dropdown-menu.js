@@ -66,10 +66,12 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/Guide_to_GEOS-Chem_simulations" >Simulations</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_benchmarking"  title="">Benchmarking</a></li>\
       <li><a href="http://wiki.geos-chem.org/Guide_to_compilers_for_GEOS-Chem" >Compilers</a></li>\
+      <li><a href="https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/debug-guide.html" >Debugging tips</a></li>\
       <li><a href="https://geos-chem.readthedocs.io" >GEOS-Chem Classic</a></li>\
       <li><a href="https://gchp.readthedocs.io" >GCHP</a></li>\
       <li><a href="https://hemco.readthedocs.io" >HEMCO</a></li>\
       <li><a href="http://wrf.geos-chem.org/" >WRF-GC</a></li>\
+      <li><a href="http://imi.readthedocs.io/" >Integrated Methane Inversion (IMI)</a></li>\
       <li><a href="logo.html" >GEOS-Chem logo</a></li>\
     </ul>\
   </li>\
@@ -79,9 +81,9 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/" >GEOS-Chem Wiki</a></li>\
       <li><a href="http://youtube.geos-chem.org/" >GEOS-Chem Youtube channel</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_overview#GEOS-Chem_Guides" >GEOS-Chem Guides</a></li>\
-      <li><a href="presentations.html" >Presentations on new GEOS-Chem model developments</a></li>\
+      <li><a href="presentations.html" >Presentations on recent GEOS-Chem developments</a></li>\
       <li><a href="http://wiki.geos-chem.org/Frequently_asked_questions_about_GEOS-Chem" >GEOS-Chem FAQ</a></li>\
-      <li><a href="https://geos-chem.readthedocs.io/en/gcclassic-user-guide/run-speedup.html" >Speeding up GEOS-Chem</a></li>\
+      <li><a href="https://geos-chem.readthedocs.io/en/latest/gcclassic-user-guide/run-speedup.html" >Speeding up GEOS-Chem</a></li>\
       <li><a href="cube-sphere.html" >Cubed-sphere grid illustrations</a></li>\
     </ul>\
   </li>\
