@@ -111,7 +111,7 @@
   <a href="#name" >Name</a> |
   <a href="#orig">Original references</a> |
   <a href="#config">Configurations</a> |
-  <a href="#config">Cloud</a> |
+  <a href="#cloud">Cloud</a> |
   <a href="#met">Met fields &amp; grids</a> |
   <a href="#nest">Nesting</a>
   <br />
@@ -152,7 +152,7 @@ The narrative below is reviewed and updated by the <a href="steering-committee.h
 </h2>
 
 <p>
-GEOS-Chem should be referenced by its version number X.Y.Z and corresponding DOI. See the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions" target="_blank">history of model versions and their DOIs</a>. The website <a href="http://www.geos-chem.org">http://www.geos-chem.org</a> is also a useful reference. In addition, we strongly encourage you to cite GEOS-Chem journal publications, both for your general use of GEOS-Chem and for your specific applications. We also encourage you to name GEOS-Chem in your Abstract (or in your title, if appropriate) so that your paper gets picked up by GEOS-Chem searches and gets listed in the GEOS-Chem publications page. Consult the narrative below for referencing specific components of the model. For questions on citations please contact the relevant <a href="working-groups.html">Working Group Chair or Model Scientist</a>.
+GEOS-Chem should be referenced by its version number X.Y.Z and corresponding DOI. See the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions" target="_blank">history of model versions and their DOIs</a>. The website (<a href="http://www.geos-chem.org">http://www.geos-chem.org</a> is also a useful reference. In addition, we strongly encourage you to cite GEOS-Chem journal publications, both for your general use of GEOS-Chem and for your specific applications. We also encourage you to name GEOS-Chem in your Abstract (or in your title, if appropriate) so that your paper gets picked up by GEOS-Chem searches and gets listed in the GEOS-Chem publications page. Consult the narrative below for referencing specific components of the model. For questions on citations please contact the relevant <a href="working-groups.html">Working Group Chair or Model Scientist</a>.
 </p>
 
 <h2>
@@ -227,9 +227,9 @@ GEOS-Chem in off-line mode (Classic or GCHP) is driven by assimilated meteorolog
 </p>
 
 <ul>
-  <li>the operational data stream starting in 2012 from the GEOS Forward Processing (<a href="http://wiki.geos-chem.org/GEOS-FP" target="_blank">GEOS-FP</a>) (native resolution 0.25° x 0.3125°, 72 levels)</li>
-  <li>the consistent <a href="http://wiki.geos-chem.org/MERRA-2" target="_blank">MERRA-2</a> reanalysis for 1979-present (native resolution 0.5° x 0.625°, 72 levels)</li>
-  <li>the consistent <a href="http://wiki.geos-chem.org/GEOS-IT" target="_blank">GEOS-IT</a> reanalysis for 1998-present (native resolution 0.5° x 0.625°, 72 levels) and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a></li>
+  <li>the operational data stream starting in 2012 from the GEOS Forward Processing (<a href="http://wiki.geos-chem.org/GEOS-FP" target="_blank">GEOS-FP</a>) (native resolution 0.25&deg; x 0.3125&deg;, 72 levels)</li>
+  <li>the consistent <a href="http://wiki.geos-chem.org/MERRA-2" target="_blank">MERRA-2</a> reanalysis for 1979-present (native resolution 0.5&deg; x 0.625&deg;, 72 levels)</li>
+  <li>the consistent <a href="http://wiki.geos-chem.org/GEOS-IT" target="_blank">GEOS-IT</a> reanalysis for 1998-present (native resolution 0.5&deg; x 0.625&deg;, 72 levels) and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>.</li>
 </ul>
 
 <p>
@@ -264,11 +264,11 @@ The GEOS-Chem chemical module can be used in on-line applications on any grid of
 </h2>
 
 <p>
-The nested capability for GEOS-Chem was first implemented and described by Y. X. Wang et al. [2004]. It allows simulations at the native-grid horizontal resolution of the GEOS data over a user-selected regional domain with dynamic boundary conditions from a coarser global simulation. The nesting can either be 1-way, with no influence from the nested domain on the global domain, or 2-way where the two domains interact with each other. The 2-way nesting capability with multiple nests is described by Yan et al. [2014] and on <a href="http://wiki.geos-chem.org/Two-way_coupling_between_global_and_nested_GEOS-Chem_models" target="_blank">this wiki page</a>.
+The nested capability for GEOS-Chem was first implemented and described by Y. X. Wang et al. [2004]. It allows simulations at the native-grid horizontal resolution of the GEOS data over a user-selected regional domain with dynamic boundary conditions from a coarser global simulation. The nesting can either be 1-way, with no influence from the nested domain on the global domain, or 2-way where the two domains interact with each other. The 2-way nesting capability with multiple nests is described by Yan et al. [2014].
 </p>
 
 <p>
-The current nested version of GEOS-Chem Classic uses GEOS-FP data with 0.25° x 0.3125° resolution or MERRA-2 data with 0.5° x 0.625° resolution within the nested domain. The capability to operate at 0.25° x 0.3125°resolution with full aerosol-oxidant chemistry was originally developed by Zhang et al. [2015] for East Asia and Kim et al. [2015] for North America. <a href="http://wiki.geos-chem.org/FlexGrid">FlexGrid</a> allows users to define any nested domain at runtime, with no pre-processing of meteorological or other data files, requiring only the generation of boundary condition files at the global model resolution.
+The current nested version of GEOS-Chem Classic uses GEOS-FP data with 0.25&deg; x 0.3125&deg; resolution or MERRA-2 data with 0.5&deg; x 0.625&deg; resolution within the nested domain. The capability to operate at 0.25&deg; x 0.3125&deg;resolution with full aerosol-oxidant chemistry was originally developed by Zhang et al. [2015] for East Asia and Kim et al. [2015] for North America. <a href="http://wiki.geos-chem.org/FlexGrid" target="_new">FlexGrid</a> allows users to define any nested domain at runtime, with no pre-processing of meteorological or other data files, requiring only the generation of boundary condition files at the global model resolution.
 </p>
 
 <p>
@@ -288,7 +288,7 @@ The wet deposition scheme in GEOS-Chem is described by Liu et al. [2001] for wat
 </p>
 
 <p>
-Dry deposition is based on the resistance-in-series scheme of Wesely [1989] as implemented by Y. Wang et al. [1998a]. Size-dependent aerosol dry deposition is from Emerson et al. [2020] and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>. Updates to gravitational setting and hygroscopic growth in aerosol dry deposition are from Li et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0</a>. Aerosol deposition to snow/ice is described by Fisher et al. [2011]. Sea-salt deposition is from Jaegle et al. [2011]. Cold-temperature HNO3 deposition is from Jaegle et al. [2018]. There is an option for dependence of stomatal conductance on CO2 levels [Franks et al., 2013]. Ozone deposition to the ocean is from Pound et al. [2020]. Ozone deposition to snow and ice is from Barten et al. [2021] and this is a <a href="new-developments.html" target="_blank" title="">new development in version 13.4.0.</a>
+Dry deposition is based on the resistance-in-series scheme of Wesely [1989] as implemented by Y. Wang et al. [1998a]. Size-dependent aerosol dry deposition is from Emerson et al. [2020] and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>. Updates to gravitational setting and hygroscopic growth in aerosol dry deposition are from Li et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0</a>. Aerosol deposition to snow/ice is described by Fisher et al. [2011]. Sea-salt deposition is from Jaegle et al. [2011]. Cold-temperature HNO3 deposition is from Jaegle et al. [2018]. There is an option for dependence of stomatal conductance on CO2 levels [Franks et al., 2013]. Ozone deposition to the ocean is from Pound et al. [2020]. Ozone deposition to snow and ice is from Barten et al. [2021] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
 </p>
 
 <p>
@@ -320,7 +320,8 @@ Emissions of dust aerosol, lightning NOx, biogenic VOCs, soil NOx, and sea salt 
 </p>
 
 <p>
-<em>Anthropogenic</em>. Global anthropogenic emissions up to 2019 are from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019] and this is a <a href="new-developments.html" title="">new development in version 13.</a>1.0. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019] and this is a <a href="new-developments.html" title="">new development in version 13.1.0. </a> Diel and day-of-week scale factors for anthropogenic emissions are based primarily on the US EPA National Emissions Inventory [Vukovich and Eyth, 2016] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Accounting for daylight savings time is a <a href="new-developments.html" title="">new development in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
+<em>Anthropogenic</em>. Global anthropogenic emissions up to 2019 are
+from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21" target="_new">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019] and this is a <a href="new-developments.html" title="">new development in version 13.</a>1.0. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019] and this is a <a href="new-developments.html" title="">new development in version 13.1.0. </a> Diel and day-of-week scale factors for anthropogenic emissions are based primarily on the US EPA National Emissions Inventory [Vukovich and Eyth, 2016] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Accounting for daylight savings time is a <a href="new-developments.html" title="">new development in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
 </p>
 
 <p>
