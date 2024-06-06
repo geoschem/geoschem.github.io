@@ -1,7 +1,6 @@
 # Support Guidelines
 
-GEOS-Chem support is maintained by the **GEOS-Chem Support Team
-(GCST)**, which is based jointly at Harvard University and Washington University in St. Louis.
+GEOS-Chem support is maintained by the **GEOS-Chem Support Team (GCST)**, which is based jointly at Harvard University and Washington University in St. Louis.
 
 We track bugs, user questions, and feature requests through **[GitHub issues](https://www.youtube.com/watch?v=dFBhdotYVf8)**. Please help out as you can in response to issues and user questions.
 
@@ -13,7 +12,7 @@ We use GitHub issues to support user questions. To ask a question, **[open a new
 
 ## What type of support can I expect?
 We will be happy to assist you in resolving bugs and technical issues
-with the GEOS-Chem website.  User support and outreach is an important part of our  mission to support the [International GEOS-Chem User Community](https://geoschem.github.io/people.html).
+with the GEOS-Chem website.  User support and outreach is an important part of our  mission to support the [International GEOS-Chem User Community](https://geoschem.github.io/users.html).
 
 Even though we can assist in several ways, we cannot possibly do everything.  We rely on GEOS-Chem users being resourceful and willing to try to resolve problems on their own to the greatest extent possible.
 

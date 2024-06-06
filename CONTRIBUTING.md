@@ -2,7 +2,7 @@
 
 Thank you for looking into contributing to GEOS-Chem! GEOS-Chem is a grass-roots model that relies on contributions from community members like you. Whether you're new to GEOS-Chem or a longtime user, you're a valued member of the community, and we want you to feel empowered to contribute.
 
-Updates to the GEOS-Chem model benefit both you and the [entire GEOS-Chem community](https://geoschem.github.io/people.html).  You benefit through [coauthorship and citations](https://geoschem.github.io/new-developments.html).  Priority development needs are identified at GEOS-Chem users' meetings with updates between meetings based on [GEOS-Chem Steering Committee (GCSC)](https://geoschem.github.io/steering-cmte.html) input through [Working Groups](https://geoschem.github.io/working-groups.html).
+Updates to the GEOS-Chem model benefit both you and the [entire GEOS-Chem community](https://geoschem.github.io/users.html).  You benefit through [coauthorship and citations](https://geoschem.github.io/new-developments.html).  Priority development needs are identified at GEOS-Chem users' meetings with updates between meetings based on [GEOS-Chem Steering Committee (GCSC)](https://geoschem.github.io/steering-cmte.html) input through [Working Groups](https://geoschem.github.io/working-groups.html).
 
 ## We use GitHub
 We use GitHub to host the GEOS-Chem website files. to track issues, user questions, and feature requests, and to accept pull requests: [https://github.com/geoschem/geoschem.github.io](https://github.com/geoschem/geoschem.github.io). Please help out as you can in response to issues and user questions.
