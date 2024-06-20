@@ -3,10 +3,6 @@
 Name:
 Institution:
 
-### Confirm you have reviewed the following documentation
-
-- [ ] [Contributing guidelines](https://github.com/geoschem/geoschem.github.io/blob/main/CONTRIBUTING.md)
-
 ### Describe the update
 
 Please provide a clear and concise overview of the update.
