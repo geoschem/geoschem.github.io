@@ -46,7 +46,7 @@
             event.preventDefault();
             const password = document.getElementById('password').value;
             const hashedPassword = md5(password);
-            const response = await fetch('http://3.86.54.238/authenticate.php', {
+            const response = await fetch('https://api.zengfankun.com/authenticate.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
