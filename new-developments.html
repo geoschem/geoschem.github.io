@@ -102,22 +102,43 @@
 <div class="field-item even">
 
 <p style="text-align:center">
-  <em>Last Updated May 17, 2024 (version 14.4.0)</em>
+  <em>Last Updated November 8, 2024 (version 14.4.0)</em>
 </p>
 
 <p align="center">
-  <a href="#new">New developments (versions 13.1.0 - 14.4.0)</a> | <a href="#older">Older developments</a>
+  <a href="#new">New developments (versions 13.2.0 - 14.5.0)</a> | <a href="#older">Older developments</a>
 </p>
 
 <p>
-  We list below the major new GEOS-Chem developments and their developers from version 13.1.0 (released June 2021) to version 14.4.0 (released May 2024). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
+  We list below the major new GEOS-Chem developments and their developers from version 13.2.0 (released September 2021) to version 14.5.0 (released November 2024). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
 </p>
 
 <h2>
-  <a name="new" id="new"></a>New developments in GEOS-Chem versions 13.1.0 - 14.4.0
+  <a name="new" id="new"></a>New developments in GEOS-Chem versions 13.2.0 - 14.5.0
 </h2>
 
 <ul>
+  <li>
+    (14.5.0) <strong>Chemistry for RCOOH, monoterpenes, new PNs and ANs.</strong> Developer: Katie Travis (NASA Langley). Reference: Travis, K. R., Nault, B. A., Crawford, J. H., Bates, K. H., Blake, D. R., Cohen, R. C., Fried, A., Hall, S. R., Huey, L. G., Lee, Y. R., Meinardi, S., Min, K.-E., Simpson, I. J., and Ullman, K.: Impact of improved representation of volatile organic compound emissions and production of NOx reservoirs on modeled urban ozone production, Atmos. Chem. Phys., 24, 9555–9572, <a href="https://doi.org/10.5194/acp-24-9555-2024">https://doi.org/10.5194/acp-24-9555-2024</a>, 2024.
+  <br/><br/></li>
+  <li>
+    (14.5.0) <strong>Update to ALK4 and R4N2 chemistry.</strong> Developer: Jered Brewer (UMN). Reference: Brewer, J. F., Jacob, D. J., Jathar, S. H., He, Y., Akherati, A., Zhai, S., et al. A scheme for representing aromatic secondary organic aerosols in chemical transport models: Application to source attribution of organic aerosols over South Korea during the KORUS-AQ campaign. Journal of Geophysical Research: Atmospheres, 128, e2022JD037257, <a href="https://doi.org/10.1029/2022JD037257">https://doi.org/10.1029/2022JD037257</a>, 2023.
+  <br/><br/></li>
+  <li>
+    (14.5.0) <strong>Adding PPN photolysis.</strong> Developer: Bex Horner (UCL). Reference: Horner, R. P., Marais, E. A., Wei, N., Ryan, R. G., and Shah, V.: Vertical profiles of global tropospheric nitrogen dioxide (NO2) obtained by cloud-slicing TROPOMI, EGUsphere [preprint], <a href="https://doi.org/10.5194/egusphere-2024-1541">https://doi.org/10.5194/egusphere-2024-1541</a>, 2024.
+  <br/><br/></li>
+  <li>
+    (14.5.0) <strong>Adding emission factors for ALK6, C4H6, EBZ, STYR, TMB emissions in GFED and FINN biomass burning.</strong> Developer: Kelvin Bates (Colorado). 
+  <br/><br/></li>
+  <li>
+    (14.5.0) <strong>Pass non-zero Ca2, Mg, and K cations to HETP.</strong> Developers: Becky Alexander (UW) and Lizzie Lundgren (Harvard). 
+  <br/><br/></li>
+  <li>
+    (14.5.0) <strong>Allow per-species definition of KPP absolute and relative solver tolerances.</strong> Developers: Obin Sturm (USC) and Bob Yantosca (Harvard). 
+  <br/><br/></li>
+  <li>
+    (14.5.0) <strong>Cloud-J v8.0 including UV H2O absorption.</strong> Developers: Lizzie Lundgren (Harvard) and Michael Prather (UCl). 
+  <br/><br/></li>
   <li>
     (14.4.0) <strong>Replace ISORROPIA II with HETP aerosol thermodynamics.</strong> Developers: Lizzie Lundgren (Harvard) and Seb Eastham (ICL). Reference: Miller, S. J., Makar, P. A., and Lee, C. J.: HETerogeneous vectorized or Parallel (HETPv1.0): an updated inorganic heterogeneous chemistry solver for the metastable-state NH4+–Na+–Ca2+–K+–Mg2+–SO42−–NO3−–Cl−–H2O system based on ISORROPIA II, Geosci. Model Dev., 17, 2197–2219, <a href="https://doi.org/10.5194/gmd-17-2197-2024">https://doi.org/10.5194/gmd-17-2197-2024</a>, 2024.
   <br/><br/></li>
@@ -269,6 +290,13 @@
   <li>
     (13.2.0) <strong>Improved wet scavenging (as option). </strong>Developers: Gan Luo and Fangqun Yu (SUNY Albany) Reference: Luo, G., Yu, F., and Moch, J. M.: Further improvement of wet process treatments in GEOS-Chem v12.6.0: impact on global distributions of aerosols and aerosol precursors, Geosci. Model Dev., 13, 2879–2903, <a href="https://doi.org/10.5194/gmd-13-2879-2020">https://doi.org/10.5194/gmd-13-2879-2020</a>, 2020.
   <br/><br/></li>
+</ul>
+
+<h2>
+  <a name="older" id="older"></a>Older developments
+</h2>
+
+<ul>
   <li>
     (13.1.0) <b>HEMCO 3.0 emission module.</b> Developer: Haipeng Lin (Harvard U.)<br />Reference:Lin, H., D.J. Jacob, E.W. Lundgren, M.P. Sulprizio, C.A. Keller, T.M. Fritz, S.D. Eastham, L.K. Emmons, P.C. Campbell, B. Baker, R.D. Saylor, and R. Montuoro, Harmonized Emissions Component (HEMCO) 3.0 as a versatile emissions component for atmospheric models: application in the GEOS-Chem, NASA GEOS, WRF-GC, CESM2, NOAA GEFS-Aerosol, and NOAA UFS models , Geosci. Model Dev. Discuss. [preprint], <a href="https://doi.org/10.5194/gmd-2021-130">https://doi.org/10.5194/gmd-2021-130</a>, in review, 2021.
   <br/><br/></li>
@@ -284,13 +312,6 @@
   <li>
     (13.1.0) <b>Vertical allocation of CEDS emissions by sector. </b>Developer: Barron Henderson (US EPA)<br />Reference: US EPA, Preparation of Emissions Inventories for the Version 7.1 2016 Hemispheric Emissions Modeling Platform. U.S. Environmental Protection Agency, Research Triangle Park, NC, 2019. <a href="https://www.epa.gov/sites/production/files/2019-12/documents/2016fe_hemispheric_tsd.pdf">https://www.epa.gov/sites/production/files/2019-12/documents/2016fe_hemi...</a> (see Section 2.1.4)
   <br/><br/></li>
-</ul>
-
-<h2>
-  <a name="older" id="older"></a>Older developments
-</h2>
-
-<ul>
   <li>
     (13.0.0) <b> Streets et al. (2019) mercury emissions inventory </b> Developer: Colin Thackray (Harvard U.)<br />Reference: Streets, D.G., et al., Global and regional trends of mercury emissions and concentrations, 2010-2015, Atmos. Environ., 417-427, 2019.
   <br/><br/></li>
