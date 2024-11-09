@@ -103,7 +103,7 @@
 <div class="field-item even">
 
 <p align="center">
-<em>Updated May 17, 2024 (version 14.4.0)</em>
+<em>Updated November 9, 2024 (version 14.5.0)</em>
 </p>
 
 <p align="center">
@@ -140,7 +140,7 @@ We give here a narrative description of the <a href="http://wiki.geos-chem.org/G
 </ul>
 
 <p>
-We strongly encourage you to be generous in citations—this not only recognizes the developer's work but also increases the traceability of your paper. Offering co-authorship to developers is encouraged for new developments flagged in this narrative if they are important for your work. It may also be appropriate to offer co-authorship for older model developments if they were new when you started your work. See the <a href="new-developments.html">New GEOS-Chem Developments page</a> for more specific information on the developer(s) to be credited, and contact the <a href="working-groups.html">Model Scientist or appropriate Working Group chair</a> if you need guidance.
+We encourage you to be generous in citations—this not only recognizes the developer's work but also increases the traceability of your paper. Offering co-authorship to developers is encouraged for new developments flagged in this narrative if they are important for your work. It may also be appropriate to offer co-authorship for older model developments if they were new when you started your work. See the <a href="new-developments.html">New GEOS-Chem Developments page</a> for more specific information on the developer(s) to be credited, and contact the <a href="working-groups.html">Model Scientist or appropriate Working Group chair</a> if you need guidance.
 </p>
 
 <p>
@@ -304,7 +304,7 @@ GEOS-Chem can calculate the radiative forcing from changes in atmospheric compos
 </p>
 
 <p>
-Photolysis frequencies for stratospheric and tropospheric chemistry are calculated with the Cloud-J code of Prather [2015] and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>. Previous versions used the Fast-JX code of Bian and Prather [2002] as implemented in GEOS-Chem by Mao et al. [2010] for the troposphere and Eastham et al. [2014] for the stratosphere. Fractional cloud optical depths are represented with the approximate random overlap method [Liu et al., 2006, 2009]. The effect of aerosol extinction is as described by Latimer and Martin [2019]. There is an option to add absorption of UV by brown carbon [Hammer et al., 2016].
+Photolysis frequencies for stratospheric and tropospheric chemistry are calculated with Cloud-J v8.0 including UV H2O absorption and this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. Versions 14.3.0 - 14.4.3 used the Cloud-J code of Prather [2015] and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>. Previous versions used the Fast-JX code of Bian and Prather [2002] as implemented in GEOS-Chem by Mao et al. [2010] for the troposphere and Eastham et al. [2014] for the stratosphere. Fractional cloud optical depths are represented with the approximate random overlap method [Liu et al., 2006, 2009]. The effect of aerosol extinction is as described by Latimer and Martin [2019]. There is an option to add absorption of UV by brown carbon [Hammer et al., 2016].
 </p>
 
 <h2>
@@ -337,7 +337,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </p>
 
 <p>
-<em>Open Fires</em>. Emissions from open fires for individual years are from the GFED4.1s inventory with options to use instead the FINNv1.5 inventory [Wiedinmyer et al., 2011], the QFED inventory, or the GFAS inventory. The GFED4 biomass burning data have been extended through October 2022; this is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. The option to use a climatology of GFED4 biomass burning data is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. BB4CMIP historical fire emissions for 1750-2014 are from van Merle et al. [2017]. VOC fire emissions [Carter et al., 2022] are a <a href="new-developments.html" title="">new development in version 14.2.0</a>.
+<em>Open Fires</em>. Emissions from open fires for individual years are from the GFED4.1s inventory with options to use instead the FINNv1.5 inventory [Wiedinmyer et al., 2011], the QFED inventory, or the GFAS inventory. Emission factors for ALK6, C4H6, EBZ, STYR, and TMB emissions in GFED and FINN are a <a href="new-developments.html" title="">new development in version 14.5.0</a>. The GFED4 biomass burning data have been extended through October 2022; this is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. The option to use a climatology of GFED4 biomass burning data is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. BB4CMIP historical fire emissions for 1750-2014 are from van Merle et al. [2017]. VOC fire emissions [Carter et al., 2022] are a <a href="new-developments.html" title="">new development in version 14.2.0</a>.
 </p>
 
 <p>
@@ -369,7 +369,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </h2>
 
 <p>
-	GEOS-Chem simulates detailed oxidant-aerosol chemistry in the troposphere and stratosphere. The chemical solver is KPP 3.0 [Lin et al., 2023] as implemented in GEOS-Chem with the <a href="http://wiki.geos-chem.org/FlexChem">FlexChem interface</a>, and includes the option to use an adaptive chemical solver.  KPP 3.0 is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>.
+	GEOS-Chem simulates detailed oxidant-aerosol chemistry in the troposphere and stratosphere. The chemical solver is KPP 3.0 [Lin et al., 2023] as implemented in GEOS-Chem with the <a href="http://wiki.geos-chem.org/FlexChem">FlexChem interface</a>, and includes the option to use an adaptive chemical solver.  KPP 3.0 is a <a href="new-developments.html" target="_blank" title="">new development in version 14.1.0</a>. The ability for per-species definition of KPP absolute and relative solver tolerances is a <a href="new-developments.html" title="">new development in version 14.5.0</a>.
 </p>
 
 <h3>
@@ -392,6 +392,9 @@ Chemical mechanism kinetics generally follow JPL/IUPAC recommendations as most r
   <li>Mercury redox chemistry [Shah et al., 2022]; this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. Older versions used Horowitz et al. [2017]</li>
   <li>Aerosol nitrate photolysis [Shah et al., 2023]; this is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. Older versions had an option to add aerosol nitrate photolysis following Kasibhatla et al. [2018].</li>
   <li>Lumped furans [Carter et al., 2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0</a>.</li>
+  <li>RCOOH, monoterpenes, new PNs and ANs [Travis et al., 2024];  this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>.</li>
+  <li>Update to ALK4 and R4N2 chemistry [Brewer et al., 2023];  this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>.</li>
+  <li>PPN photolysis [Horner et al., 2024];  this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>.</li>	
 </ul>
 
 <p>
@@ -415,7 +418,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </h3>
 
 <p>
-<em>Sulfate-nitrate-ammonium aerosol</em>. SNA thermodynamics are computed with the HETP thermodynamic module [Miller et al. 2024] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; older versions used the ISORROPIA thermodynamic module [Fontoukis and Nenes, 2007] version 2.2. Sulfur oxidation in clouds and aerosols is  coupled with gas-phase chemistry through KPP and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
+<em>Sulfate-nitrate-ammonium aerosol</em>. SNA thermodynamics are computed with the HETP thermodynamic module [Miller et al. 2024] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; passing of non-zero Ca2, Mg, and K cations to HETP is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. Older versions used the ISORROPIA thermodynamic module [Fontoukis and Nenes, 2007] version 2.2. Sulfur oxidation in clouds and aerosols is  coupled with gas-phase chemistry through KPP and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
 </p>
 
 <p>
@@ -543,6 +546,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Bindle, L., Martin, R. V., Cooper, M. J., Lundgren, E. W., Eastham, S. D., Auer, B. M., Clune, T. L., Weng, H., Lin, J., Murray, L. T., Meng, J., Keller, C. A., Putman, W. M., Pawson, S., and Jacob, D. J.: Grid-stretching capability for the GEOS-Chem 13.0.0 atmospheric chemistry model, Geosci. Model Dev., 14, 5977–5997, https://doi.org/10.5194/gmd-14-5977-2021, 2021.</li>
   <li>Bouwman, A. F., D. S. Lee, W. A. H. Asman, F. J. Dentener, K. W. Van Der Hoek, and J. G. J. Olivier (1997), <em>A global high-resolution emission inventory for ammonia</em>, <u>Global Biogeochem. Cycles</u>, <strong>11(4)</strong>, 561-587.</li>
   <li>Breider, T.J., L.J. Mickley, D.J. Jacob, C. Ge, J. Wang, M.P. Sulprizio, B. Croft, D.A. Ridley, J.R. McConnell, S. Sharma, L. Husain, V.A. Dutkiewicz, K. Eleftheriadis, H. Skov, and P.K. Hopke, <em>Multi-decadal trends in aerosol radiative forcing over the Arctic: contribution of changes in anthropogenic aerosol to Arctic warming since 1980</em>, <u>J. Geophys. Res.</u>, <strong>122(6)</strong>, 3573-3594, doi:10.1002/2016JD025321, 2017.</li>
+  <li>Brewer, J. F., Jacob, D. J., Jathar, S. H., He, Y., Akherati, A., Zhai, S., et al. A scheme for representing aromatic secondary organic aerosols in chemical transport models: Application to source attribution of organic aerosols over South Korea during the KORUS-AQ campaign. Journal of Geophysical Research: Atmospheres, 128, e2022JD037257, <a href="https://doi.org/10.1029/2022JD037257">https://doi.org/10.1029/2022JD037257</a>, 2023.</li>
   <li>Carter, T. S., Heald, C. L., Kroll, J. H., Apel, E. C., Blake, D., Coggon, M., Edtbauer, A., Gkatzelis, G., Hornbrook, R. S., Peischl, J., Pfannerstill, E. Y., Piel, F., Reijrink, N. G., Ringsdorf, A., Warneke, C., Williams, J., Wisthaler, A., and Xu, L.: An improved representation of fire non-methane organic gases (NMOGs) in models: emissions to reactivity, Atmos. Chem. Phys., 22, 12093–12111, https://doi.org/10.5194/acp-22-12093-2022, 2022.</li>	
   <li>Chen, Q., J.A. Schmidt, V. Shah, L. Jaegle, T. Sherwen, and B. Alexander, <em>Sulfate production by reactive bromine: Implications for the global sulfur and reactive bromine budgets</em>, <u>Geophys. Res. Lett.</u>, <strong>44</strong>, 7069-7078, 2017.</li>
   <li>Chen, X., Millet, D. B., Singh, H. B., Wisthaler, A., Apel, E. C., Atlas, E. L., Blake, D. R., Bourgeois, I., Brown, S. S., Crounse, J. D., de Gouw, J. A., Flocke, F. M., Fried, A., Heikes, B. G., Hornbrook, R. S., Mikoviny, T., Min, K.-E., MÃ¼ller, M., Neuman, J. A., O'Sullivan, D. W., Peischl, J., Pfister, G. G., Richter, D., Roberts, J. M., Ryerson, T. B., Shertz, S. R., Thompson, C. R., Treadaway, V., Veres, P. R., Walega, J., Warneke, C., Washenfelder, R. A., Weibring, P., and Yuan, B., <em>On the sources and sinks of atmospheric VOCs: an integrated analysis of recent aircraft campaigns over North America</em>, <u>Atmos. Chem. Phys.</u>, <strong>19</strong>, 9097-9123, <a href="https://doi.org/10.5194/acp-19-9097-2019">https://doi.org/10.5194/acp-19-9097-2019</a>, 2019.</li>
@@ -578,6 +582,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Holmes, C.D., M. J. Prather, O.A. SÃ¸vde, and G. Myhre, <em>Future methane, hydroxyl, and their uncertainties: key climate and emission parameters for future predictions</em>, <u>Atmos. Chem. Phys.</u>, <strong>13</strong>, 285-302, doi:10.5194/acp-13-285-2013, 2013.</li>
   <li>Holmes, C. D., Prather, M. J., and Vinken, G. C. M., <em>The climate impact of ship NOx emissions: an improved estimate accounting for plume chemistry</em>, <u>Atmos. Chem. Phys.</u>, <strong>14</strong>, 6801-6812, doi:10.5194/acp-14-6801-2014, 2014.</li>
   <li>Holmes, C. D., Bertram, T. H., Confer, K. L., Graham, K. A., Ronan, A. C., Wirks, C. K., &amp; Shah, V., <em>The role of clouds in the tropospheric NOx cycle: A new modeling approach for cloud chemistry and its global implications</em>, <u>Geophysical Research Letters</u>, <strong>46(9)</strong>, 4980-4990. <a href="https://doi.org/10.1029/2019GL081990">https://doi.org/10.1029/2019GL081990</a>, 2019.</li>
+  <li>Horner, R. P., Marais, E. A., Wei, N., Ryan, R. G., and Shah, V.: Vertical profiles of global tropospheric nitrogen dioxide (NO2) obtained by cloud-slicing TROPOMI, EGUsphere [preprint], <a href="https://doi.org/10.5194/egusphere-2024-1541">https://doi.org/10.5194/egusphere-2024-1541</a>, 2024.</li>
   <li>Horowitz, H.M., D.J. Jacob, Y. Zhang, T.S. Dibble, F. Slemr, H.M. Amos, J.A. Schmidt, E.S. Corbitt, E.A. Marais, and E.M. Sunderland, <em>A new mechanism for atmospheric mercury redox chemistry: implications for the global mercury budget</em>, <u>Atmos. Chem. Phys.</u>, <strong>17</strong>, 6353-6371, 2017.</li>
   <li>Hu, L., D.B. Millet, M. Baasandorj, T.J. Griffis, P. Turner, D. Helmig, A.J. Curtis, and J. Hueber, <em>Isoprene emissions and impacts over an ecological transition region in the US Upper Midwest inferred from tall tower measurements</em>, <u>J. Geophys. Res.</u>, <strong>120</strong>, 3553-3571, doi: 10.1002/2014JD022732, 2015.</li>
   <li>Hu, L., C. A. Keller, M. S. Long, T. Sherwen, B. Auer, A. Da Silva, J. E. Nielsen, S. Pawson, M. A. Thompson, A. L. Trayanov, K. R. Travis, S. K. Grange, M. J. Evans, and D. J. Jacob, <em>Global simulation of tropospheric chemistry at 12.5â€‰km resolution: performance and evaluation of the GEOS-Chem chemical module (v10-1) within the NASA GEOS Earth System Model (GEOS-5 ESM)</em>, <u>Geosci. Model Dev.</u>, <strong>11</strong>, 4603-4620, 2018</li>
@@ -659,6 +664,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Stettler, M.E.J., S. Eastham, S.R.H. Barrett, <em>Air quality and public health impacts of UK airports. Part I: Emissions</em>, <u>Atmos. Environ.</u>, <strong>45</strong>, 5415-5424, 2011.</li>
   <li>Streets, D.G., et al., Global and regional trends of mercury emissions and concentrations, 2010-2015, Atmos. Environ., 417-427, 2019.</li>
   <li>Strode, S., L. Jaeglé, N.E. Selin, D.J. Jacob, R.J. Park, R.M. Yantosca, R.P. Mason, and F. Slemr, <em>Air-sea exchange in the global mercury cycle</em>, <u>Glob. Biogeochem. Cycles</u>, <strong>21</strong>, GB1017, doi:10.1029/2006GB002766, 2007.</li>
+  <li>Travis, K. R., Nault, B. A., Crawford, J. H., Bates, K. H., Blake, D. R., Cohen, R. C., Fried, A., Hall, S. R., Huey, L. G., Lee, Y. R., Meinardi, S., Min, K.-E., Simpson, I. J., and Ullman, K.: Impact of improved representation of volatile organic compound emissions and production of NOx reservoirs on modeled urban ozone production, Atmos. Chem. Phys., 24, 9555–9572, <a href="https://doi.org/10.5194/acp-24-9555-2024">https://doi.org/10.5194/acp-24-9555-2024</a>, 2024.</li> 	
   <li>Travis, K.R., and D.J. Jacob, <em>Systematic bias in evaluating chemical transport models with maximum daily 8-hour average (MDA8) surface ozone for air quality applications: a case study with GEOS-Chem v9.02</em>, <u>Geophys. Model Dev.</u>, <strong>12</strong>, 3641-3648, 2019.</li>
   <li>Trivitayanurak, W., P. Adams, D. Spracklen, and K. Carslaw, <em>Tropospheric aerosol microphysics simulation with assimilated meteorology: model description and intermodel comparison</em>, <u>Atmos. Chem. Phys.</u>, <strong>8</strong>, 3149-3168, 2008.</li>
   <li>Tzompa-Sosa, Z.A., E. Mahieu, B. Franco, C.A. Keller, A.J. Turner, D. Helmig, A. Fried, D. Richter, P. Weibring, J. Walega, T.I. Yacovitch, S.C. Herndon, D.R. Blake, F. Hase, J.W. Hannigan, S. Conway, K. Strong, M. Schneider, and E.V. Fischer, <em>Revisiting global fossil fuel and biofuel emissions of ethane</em>, <u>J. Geophys. Res.</u>, <strong>12</strong>, 2493-2512, 2016.</li>
