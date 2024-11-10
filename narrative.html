@@ -245,7 +245,7 @@ GEOS-Chem simulations can be conducted at the native spatial resolution of the G
 </p>
 
 <p>
-	GEOS-Chem can also use off-line meteorological fields from the GISS GCM for future climates and paleoclimates. These implementations are referred to as the GCAP and ICECAP models. GCAP 2.0 is described by Murray et al. [2021] and is a <a href="new-developments.html" title="">new development in version 13.1.0</a>.
+	GEOS-Chem can also use off-line meteorological fields from the GISS GCM for future climates and paleoclimates. These implementations are referred to as the GCAP and ICECAP models. GCAP 2.0 is described by Murray et al. [2021].
 </p>
 
 <p>
@@ -312,7 +312,7 @@ Photolysis frequencies for stratospheric and tropospheric chemistry are calculat
 </h2>
 
 <p>
-All GEOS-Chem emissions are configured at run-time using the HEMCO 3.0 facility described by Lin et al. [2021]; this is a <a href="new-developments.html" title="">new development in version 13.1.0</a>. HEMCO allows users to mix and match inventories from the GEOS-Chem library or add their own, apply scaling factors, overlay and mask inventories, etc. without having to edit or compile the code. HEMCO also has extensions to compute emissions with meteorological dependencies and to process other input/output data in GEOS-Chem. HEMCO 3.0 has a number of new features including greater modularity for adaptation to other models and an intermediate grid for more accurate regional masking of emissions.
+All GEOS-Chem emissions are configured at run-time using the HEMCO 3.0 facility described by Lin et al. [2021]. HEMCO allows users to mix and match inventories from the GEOS-Chem library or add their own, apply scaling factors, overlay and mask inventories, etc. without having to edit or compile the code. HEMCO also has extensions to compute emissions with meteorological dependencies and to process other input/output data in GEOS-Chem. HEMCO 3.0 has a number of new features including greater modularity for adaptation to other models and an intermediate grid for more accurate regional masking of emissions.
 </p>
 
 <p>
@@ -321,7 +321,7 @@ Emissions of dust aerosol, lightning NOx, biogenic VOCs, soil NOx, and sea salt 
 
 <p>
 <em>Anthropogenic</em>. Global anthropogenic emissions up to 2019 are
-from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21" target="_new">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019] and this is a <a href="new-developments.html" title="">new development in version 13.</a>1.0. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019] and this is a <a href="new-developments.html" title="">new development in version 13.1.0. </a> Diel and day-of-week scale factors for anthropogenic emissions are based primarily on the US EPA National Emissions Inventory [Vukovich and Eyth, 2016] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Accounting for daylight savings time is a <a href="new-developments.html" title="">new development in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
+from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21" target="_new">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019]. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019]. Diel and day-of-week scale factors for anthropogenic emissions are based primarily on the US EPA National Emissions Inventory [Vukovich and Eyth, 2016] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Accounting for daylight savings time is a <a href="new-developments.html" title="">new development in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
 </p>
 
 <p>
@@ -418,7 +418,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </h3>
 
 <p>
-<em>Sulfate-nitrate-ammonium aerosol</em>. SNA thermodynamics are computed with the HETP thermodynamic module [Miller et al. 2024] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; passing of non-zero Ca2, Mg, and K cations to HETP is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. Older versions used the ISORROPIA thermodynamic module [Fontoukis and Nenes, 2007] version 2.2. Sulfur oxidation in clouds and aerosols is  coupled with gas-phase chemistry through KPP and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
+<em>Sulfate-nitrate-ammonium aerosol</em>. SNA thermodynamics are computed with the HETP thermodynamic module [Miller et al. 2024] and is a <a href="new-developments.html" title="">new development in 14.4.0</a>; passing of non-zero Ca2, Mg, and K cations to HETP is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. Older versions used the ISORROPIA thermodynamic module [Fontoukis and Nenes, 2007] version 2.2. Sulfur oxidation in clouds and aerosols is  coupled with gas-phase chemistry through KPP and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
 </p>
 
 <p>
@@ -466,7 +466,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Methane</em>. The current form of the simulation is described by Maasakkers et al. [2019]. Updated soil uptake is from the MeMo model v1.0 [Murguia-Flores et al., 2018]. Default global anthropogenic emissions are from EDGAR version 8; this update from EDGAR version 7 is a <a href="new-developments.html" title="">new development in 14.3.1</a>. Updated emission from fuel exploitation is from Scarpelli et al. [2022a] and is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. older versions used Scarpelli et al. [2020]. Anthropogenic emissions from Mexico are from Scarpelli et al. [2020b] and this is a <a href="new-developments.html" title="">new development in version 13.1.0.</a> Anthropogenic emissions from Canada are from Scarpelli et al. [2022b] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a> Methane emissions from hydropower reservoirs is from Delwiche et al. [2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0.</a> An updated surface methane boundary condition using NOAA flask data is a <a href="new-developments.html" title="">new development in 14.4.0.</a> 
+<em>Methane</em>. The current form of the simulation is described by Maasakkers et al. [2019]. Updated soil uptake is from the MeMo model v1.0 [Murguia-Flores et al., 2018]. Default global anthropogenic emissions are from EDGAR version 8; this update from EDGAR version 7 is a <a href="new-developments.html" title="">new development in 14.3.1</a>. Updated emission from fuel exploitation is from Scarpelli et al. [2022a] and is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. older versions used Scarpelli et al. [2020]. Anthropogenic emissions from Mexico are from Scarpelli et al. [2020b]. Anthropogenic emissions from Canada are from Scarpelli et al. [2022b] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a> Methane emissions from hydropower reservoirs is from Delwiche et al. [2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0.</a> An updated surface methane boundary condition using NOAA flask data is a <a href="new-developments.html" title="">new development in 14.4.0.</a> 
 </p>
 
 <p>
@@ -486,7 +486,7 @@ The original GEOS-Chem coupled atmosphere-ocean simulation of mercury was descri
 </p>
 
 <p>
-Anthropogenic emissions are from Y. Zhang et al. [2016]. Updated Hg0 emission factors are a <a href="new-developments.html" target="_blank" title="">new development in 14.2.0</a>. Future SRES emission scenarios have been implemented by Corbitt et al. [2011]. Options are available to use anthropogenic emissions from Streets et al. [2019] or from EDGAR v4.2 [Muntean et al., 2018], and these are <a href="new-developments.html" title="">new developments in version 13.0</a>.
+Anthropogenic emissions are from Y. Zhang et al. [2016]. Updated Hg0 emission factors are a <a href="new-developments.html" target="_blank" title="">new development in 14.2.0</a>. Future SRES emission scenarios have been implemented by Corbitt et al. [2011]. Options are available to use anthropogenic emissions from Streets et al. [2019] or from EDGAR v4.2 [Muntean et al., 2018].
 </p>
 
 <h2>
