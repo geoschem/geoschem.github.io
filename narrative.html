@@ -152,7 +152,7 @@ The narrative below is reviewed and updated by the <a href="steering-committee.h
 </h2>
 
 <p>
-GEOS-Chem should be referenced by its version number X.Y.Z and corresponding DOI. See the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions" target="_blank">history of model versions and their DOIs</a>. The website (<a href="http://www.geos-chem.org">http://www.geos-chem.org</a> is also a useful reference. In addition, we strongly encourage you to cite GEOS-Chem journal publications, both for your general use of GEOS-Chem and for your specific applications. We also encourage you to name GEOS-Chem in your Abstract (or in your title, if appropriate) so that your paper gets picked up by GEOS-Chem searches and gets listed in the GEOS-Chem publications page. Consult the narrative below for referencing specific components of the model. For questions on citations please contact the relevant <a href="working-groups.html">Working Group Chair or Model Scientist</a>.
+GEOS-Chem should be referenced by its version number X.Y.Z and corresponding DOI. See the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions" target="_blank">history of model versions and their DOIs</a>. The website (<a href="http://www.geos-chem.org">http://www.geos-chem.org</a>) is also a useful reference. In addition, we strongly encourage you to cite GEOS-Chem journal publications, both for your general use of GEOS-Chem and for your specific applications. We also encourage you to name GEOS-Chem in your Abstract (or in your title, if appropriate) so that your paper gets picked up by GEOS-Chem searches and gets listed in the GEOS-Chem publications page. Consult the narrative below for referencing specific components of the model. For questions on citations please contact the relevant <a href="working-groups.html">Working Group Chair or Model Scientist</a>.
 </p>
 
 <h2>
@@ -201,7 +201,7 @@ Bey et al. [2001] is the first reference to GEOS-Chem that includes a detailed m
 </h2>
 
 <p>
-GEOS-Chem is a grid-independent model. It operates on 1-D columns with default or user-specified horizontal gridpoints, vertical gridpoints, and timesteps. The <em>GEOS-Chem chemical module</em> updates column concentrations for the effects of emissions, chemistry, aerosol microphysics, and deposition at each time step. This chemical module can be implemented in three different configurations:
+GEOS-Chem is a grid-independent model. It operates on 1-D columns with default or user-specified horizontal gridpoints, vertical gridpoints, and timesteps. The <em>GEOS-Chem chemical module</em> updates column concentrations for the effects of emissions, radiation, chemistry, aerosol microphysics, and deposition at each time step. This chemical module can be implemented in three different configurations:
 </p>
 
 <ul>
@@ -256,7 +256,7 @@ The GEOS-Chem chemical module can be used in on-line applications on any grid of
   <li>On-line coupling with the GEOS ESM is described by Hu et al. [2018] and is called <em>GEOS-GC</em></li>
   <li>On-line coupling with the Beijing Climate Center (BCC) climate model is described by Lu et al. [2020] and is called <em>BCC-GC</em></li>
   <li>On-line coupling with the Weather Research Forecast (WRF) model is described by Lin et al. [2020] and Feng et al. [2021] and is called <em>WRF-GC</em>.</li>
-  <li>On-line coupling with the Community Earth System Model (CESM) is described in Fritz et al. [2022] and is called <em>CESM-GC.</em></li>  
+  <li>On-line coupling with the Community Earth System Model (CESM) is described in Fritz et al. [2022] and Lin et al. [2024] and is called <em>CESM-GC.</em></li>  
 </ul>
 
 <h2>
@@ -304,7 +304,7 @@ GEOS-Chem can calculate the radiative forcing from changes in atmospheric compos
 </p>
 
 <p>
-Photolysis frequencies for stratospheric and tropospheric chemistry are calculated with Cloud-J v8.0 including UV H2O absorption and this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. Versions 14.3.0 - 14.4.3 used the Cloud-J code of Prather [2015] and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>. Previous versions used the Fast-JX code of Bian and Prather [2002] as implemented in GEOS-Chem by Mao et al. [2010] for the troposphere and Eastham et al. [2014] for the stratosphere. Fractional cloud optical depths are represented with the approximate random overlap method [Liu et al., 2006, 2009]. The effect of aerosol extinction is as described by Latimer and Martin [2019]. There is an option to add absorption of UV by brown carbon [Hammer et al., 2016].
+Photolysis frequencies for stratospheric and tropospheric chemistry are calculated with Cloud-J v8.0 including UV H2O absorption [Prather and Zhu, 2024] and this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. There is an option to remove UV H2O absorption. Versions 14.3.0 - 14.4.3 used the Cloud-J code of Prather [2015] and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>. Previous versions used the Fast-JX code of Bian and Prather [2002] as implemented in GEOS-Chem by Mao et al. [2010] for the troposphere and Eastham et al. [2014] for the stratosphere, with fractional cloud optical depths represented by the approximate random overlap method [Liu et al., 2006, 2009]. The effect of aerosol extinction is as described by Latimer and Martin [2019]. There is an option to add absorption of UV by brown carbon [Hammer et al., 2016].
 </p>
 
 <h2>
@@ -603,6 +603,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Lin, H., Xu Feng, Tzung-May Fu, Heng Tian, Yaping Ma, Lijuan Zhang, Daniel J. Jacob, Robert M. Yantosca, Melissa P. Sulprizio, Elizabeth W. Lundgren, Jiawei Zhuang, Qiang Zhang, Xiao Lu, Lin Zhang, Lu Shen, Jianping Guo, Sebastian D. Eastham, and Christoph A. Keller, <em>WRF-GC: online coupling of WRF and GEOS-Chem for regional atmospheric chemistry modeling, Part 1: description of the one-way model (v1.0)</em>, <u>Geosci. Model Dev.</u>, <strong>13</strong>, 3241-3265, 2020.</li>
   <li>Lin, H., Jacob, D. J., Lundgren, E. W., Sulprizio, M. P., Keller, C. A., Fritz, T. M., Eastham, S. D., Emmons, L. K., Campbell, P. C., Baker, B., Saylor, R. D., and Montuoro, R.: Harmonized Emissions Component (HEMCO) 3.0 as a versatile emissions component for atmospheric models: application in the GEOS-Chem, NASA GEOS, WRF-GC, CESM2, NOAA GEFS-Aerosol, and NOAA UFS models, Geosci. Model Dev., 14, 5487–5506, https://doi.org/10.5194/gmd-14-5487-2021, 2021.</li>
   <li>Lin, H., M.S. Long, R. Sander, R.M. Yantosca, L.A. Estrada, L. Shen, and D.J. Jacob, An adaptive auto-reduction solver for speeding up integration of chemical kinetics in atmospheric chemistry models: implementation and evaluation in the Kinetic Pre-Processor (KPP) version 3.0.0, submitted to JAMES,  <a href="https://doi.org/10.31223/X5505V">https://doi.org/10.31223/X5505V</a>, 2023.</li>
+  <li>Lin, H., L.K. Emmons, E.W. Lundgren, L.H. Yang, X. Feng, R. Dang, S. Zhai, Y. Tang, M.M. Kelp, N.K. Colombi, S.D. Eastham, T.M. Fritz, and D.J. Jacob, Intercomparison of GEOS-Chem and CAM-chem tropospheric oxidant chemistry within the Community Earth System Model version 2 (CESM2), Atmos. Chem. Phys., 24, 8607–8624, https://doi.org/10.5194/acp-24-8607-2024, 2024.
   <li>Lin, J.-T., and M. McElroy, <em>Impacts of boundary layer mixing on pollutant vertical profiles in the lower troposphere: Implications to satellite remote sensing</em>, <u>Atmospheric Environment</u>, <strong>44</strong>(14), 1726-1739, doi:10.1016/j.atmosenv.2010.02.009, 2010.</li>
   <li>Lin, S.-J., and R.B. Rood, 1996: <em>Multidimensional flux form semi-Lagrangian transport schemes</em>, <u>Mon. Wea. Rev.</u>, <strong>124</strong>, 2046-2070.</li>
   <li>Liu, H., D.J. Jacob, I. Bey, and R.M. Yantosca, <em>Constraints from 210Pb and 7Be on wet deposition and transporting a global threee-dimensional chemical tracer model driven by asimilated meteorological fields</em>, <u>J. Geophys. Res.</u>, <strong>106</strong>, 12,109-12,128, 2001.</li>
@@ -641,6 +642,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Philip, S., R.V. Martin, G. Snider, C. Weagle, A. van Donkelaar, M. Brauer, D. Henze, Z. Klimont, C. Venkataraman, S. Guttikunda, and Q. Zhang, <em>Anthropogenic fugitive, combustion and industrial dust is a significant, underrepresented fine particulate matter source in global atmospheric models</em>, <u>Environ. Res. Lett.</u>, <strong>12</strong>, 044018, 2017.</li>
   <li>Pound, R.J., T. Sherwen, D. Helmig, L.J. Carpenter, and M.J. Evans, <em>Influences of oceanic ozone deposition on tropospheric photochemistry</em>, <u>Atmos. Chem. Phys.</u>, <strong>20</strong>, 4227-4239, 2020.</li>
   <li>Prather, M. J.: Photolysis rates in correlated overlapping cloud fields: Cloud-J 7.3c, Geosci. Model Dev., 8, 2587–2595, https://doi.org/10.5194/gmd-8-2587-2015, 2015.</li>
+  <li>Prather, M. J., and Zhu, L. Resetting tropospheric OH and CH4 lifetime with ultraviolet H2O absorption. Science 385, 201–204, 2024.
   <li>Putnam, W.M., and S.-J. Lin, <em>Finite-volume transport on various cubed-sphere grids</em>, <u>J. Comput. Phys.</u>, <strong>227</strong>, 55-78, 2007.</li>
   <li>Pye, H.O.T., Chan, A. W.H., Barkley, M.P., and Seinfeld, J.H., <em>Global modeling of organic aerosol: the importance of reactive nitrogen (NOx and NO3)</em>, <u>Atmos. Chem. Phys.</u>, <strong>10</strong>, 11261-11276, doi:10.5194/acp-10-11261-2010, 2010.</li>
   <li>Ridley, D.A., C.L. Heald, and B.J. Ford, <em>North African dust export and deposition: A satellite and model perspective</em>, <u>J. Geophys. Res.</u>, <strong>117</strong>, D02202, doi:10.1029/2011JD016794, 2012.</li>
