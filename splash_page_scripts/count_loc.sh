@@ -66,7 +66,6 @@ function count_lines() {
     outputDir="${2}"              # Path where results will be written
     git_cmd="git -C ${codeDir}"   # Use Git on the source code path
     tags=$(${git_cmd} tag)        # List of Git tags
-    echo $git_cmd
     
     # Start on the main branch
     ${git_cmd} checkout main --quiet 2>/dev/null
@@ -102,7 +101,6 @@ function count_lines() {
             # Get datetime info and append it to the YAML file
             dateStr=$(${git_cmd} log -1 --pretty=format:"%ci")
             unixStr=$(${git_cmd} show -s --format="%ct")
-	    echo $dateStr $unixStr
             echo "datetime:"               >> "${outFile}"
             echo "  date: ${dateStr:0:10}" >> "${outFile}"
             echo "  unix_time: ${unixStr}" >> "${outFile}"

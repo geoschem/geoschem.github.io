@@ -9,7 +9,11 @@ display on the splash page.
 Lines of code
 -------------
 
-./count_loc.sh:   Counts the number of lines of code in a repository.
-                  Requires the "cloc" package.
+./count_loc.sh:         Counts the number of lines of code in a repository.
+                        Requires the "cloc" package.
 
-./display_loc.sh: Plots the output from count_loc.sh.
+./display_loc_gcc.sh:   Plots the output from count_loc.sh
+                        (for GEOS-Chem Classic)
+
+./display_loc_gchp.sh:  Plots the output from count_loc.sh
+                        (for GCHP)
