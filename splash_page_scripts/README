@@ -1,0 +1,15 @@
+README -- Describes contents of splash_page_scripts
+21 Mar 2025
+GEOS-Chem Support Team
+
+This folder contains scripts to generate plots and/or tables for the
+GEOS-Chem website splash page.  Several metrics will be generated for
+display on the splash page.
+
+Lines of code
+-------------
+
+./count_loc.sh:   Counts the number of lines of code in a repository.
+                  Requires the "cloc" package.
+
+./display_loc.sh: Plots the output from count_loc.sh.
