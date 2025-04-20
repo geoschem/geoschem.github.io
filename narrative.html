@@ -103,7 +103,7 @@
 <div class="field-item even">
 
 <p align="center">
-<em>Updated November 9, 2024 (version 14.5.0)</em>
+<em>Updated April 20, 2025 (version 14.6.0)</em>
 </p>
 
 <p align="center">
@@ -280,11 +280,11 @@ GCHP cannot use nested grids but can instead use the stretched-grid configuratio
 </h2>
 
 <p>
-GEOS-Chem Classic uses the TPCORE advection algorithm of Lin and Rood [1996] on the latitude-longitude grid of the archived GEOS meteorological data. GCHP uses the FV3 advection algorithm of Putnam and Lin [2007] on a cubed sphere grid after remapping the archived GEOS meteorological data on that grid. Convective transport in GEOS-Chem is computed from the convective mass fluxes in the meteorological archive as described by Wu et al. [2007]. Boundary layer mixing in GEOS-Chem uses the non-local scheme implemented by Lin and McElroy [2010]; an option allows instead for full instantaneous mixing up to the GEOS-diagnosed mixing depth.
+GEOS-Chem Classic uses the TPCORE advection algorithm of Lin and Rood [1996] on the latitude-longitude grid of the archived GEOS meteorological data. GCHP uses the FV3 advection algorithm of Putnam and Lin [2007] on a cubed sphere grid after remapping (if needed) the archived GEOS meteorological data on that grid. Convective transport in GEOS-Chem is computed from the convective mass fluxes in the meteorological archive as described by Wu et al. [2007]. Boundary layer mixing in GEOS-Chem uses the non-local scheme implemented by Lin and McElroy [2010]; an option allows instead for full instantaneous mixing up to the GEOS-diagnosed mixing depth.
 </p>
 
 <p>
-The wet deposition scheme in GEOS-Chem is described by Liu et al. [2001] for water-soluble aerosols and by Amos et al. [2012] for gases. Henry's law constants are from the compilation by Sander [2015] including for water-soluble organics [Safieddine and Heald, 2017]. Scavenging of aerosol by snow and cold/mixed precipitation is described by Q. Wang et al. [2011, 2014]. Faster scavenging as described by Luo et al. [2020] is an option in the model (<a href="new-developments.html" title="">new development in version 13.2.0</a>.). 
+The wet deposition scheme in GEOS-Chem is described by Liu et al. [2001] for water-soluble aerosols and by Amos et al. [2012] for gases. Henry's law constants are from the compilation by Sander [2015] including for water-soluble organics [Safieddine and Heald, 2017]. Scavenging of aerosol by snow and cold/mixed precipitation is described by Q. Wang et al. [2011, 2014]. Faster scavenging as described by Luo et al. [2020] is an option in the model. 
 </p>
 
 <p>
@@ -304,7 +304,7 @@ GEOS-Chem can calculate the radiative forcing from changes in atmospheric compos
 </p>
 
 <p>
-Photolysis frequencies for stratospheric and tropospheric chemistry are calculated with Cloud-J v8.0 including UV H2O absorption [Prather and Zhu, 2024] and this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. There is an option to remove UV H2O absorption. Versions 14.3.0 - 14.4.3 used the Cloud-J code of Prather [2015] and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>. Previous versions used the Fast-JX code of Bian and Prather [2002] as implemented in GEOS-Chem by Mao et al. [2010] for the troposphere and Eastham et al. [2014] for the stratosphere, with fractional cloud optical depths represented by the approximate random overlap method [Liu et al., 2006, 2009]. The effect of aerosol extinction is as described by Latimer and Martin [2019]. There is an option to add absorption of UV by brown carbon [Hammer et al., 2016].
+Photolysis frequencies for stratospheric and tropospheric chemistry are calculated with Cloud-J v8.0 including UV H2O absorption [Prather and Zhu, 2024] and this is a <a href="new-developments.html" title="">new development in version 14.5.0</a>. There is an option to remove UV H2O absorption. Versions 14.3.0 - 14.4.3 used the Cloud-J code of Prather [2015] and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>. Previous versions used the Fast-JX code of Bian and Prather [2002] as implemented in GEOS-Chem by Mao et al. [2010] for the troposphere and Eastham et al. [2014] for the stratosphere, with fractional cloud optical depths represented by the approximate random overlap method [Liu et al., 2006, 2009]. Aerosol optical properties used in radiative transfer calculations are described in the aerosol section.
 </p>
 
 <h2>
@@ -321,7 +321,7 @@ Emissions of dust aerosol, lightning NOx, biogenic VOCs, soil NOx, and sea salt 
 
 <p>
 <em>Anthropogenic</em>. Global anthropogenic emissions up to 2019 are
-from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21" target="_new">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019]. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019]. Diel and day-of-week scale factors for anthropogenic emissions are based primarily on the US EPA National Emissions Inventory [Vukovich and Eyth, 2016] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Accounting for daylight savings time is a <a href="new-developments.html" title="">new development in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
+from the CEDS v2 inventory (<a href="https://data.pnnl.gov/dataset/CEDS-4-21-21" target="_new">CEDS v_2021_04_21 gridded emissions data | Datahub (pnnl.gov)</a> as of version 13.2.0, and are available at 0.1 degree resolution which is a <a href="new-developments.html" title="">new development in version 14.6.0</a>. An  older CEDS version from McDuffie et al. [2020]. The option to use HTAPv3 emissions [Crippa et al. 2023] at 0.1 degree resolution is a <a href="new-developments.html">new development in version 14.1.0</a>. EDGAR v4.3.2 [Crippa et al., 2018] with trash emissions from Wiedinmyer et al. [2014] is available as an alternative option to CEDS (trash emissions are already included in CEDS). Ethane emissions from Tzompa-Sosa et al. [2016] and propane emissions from Xiao et al. [2008] overwrite the corrsponding CEDS and EDGAR v4.3.2 emissions in the default model. Diurnal variation of Chinese power plant emissions is from X. Liu et al. [2019]. Vertical allocation of emissions by sector follows Hemispheric CMAQ [US EPA, 2019]. Diel and day-of-week scale factors for anthropogenic emissions are based primarily on the US EPA National Emissions Inventory [Vukovich and Eyth, 2016] and is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Accounting for daylight savings time is a <a href="new-developments.html" title="">new development in 14.4.0.</a> Global continental chlorine emissions are from Zhang et al. [2022] and are a <a href="new-developments.html" title="">new development in 14.4.0.</a>
 </p>
 
 <p>
@@ -329,7 +329,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </p>
 
 <p>
-<em>Aircraft.</em> Aircraft emissions are from the AEIC 2019 inventory with reference to Simone et al. [2013] and this is a  <a href="new-developments.html" title="">new development in version 13.4.0</a>. Older versions used the AEIC for 2005 inventory [Stettler et al., 2011].
+<em>Aircraft.</em> Aircraft emissions are from the AEIC 2019 inventory with reference to Simone et al. [2013] and this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. Older versions used the AEIC for 2005 inventory [Stettler et al., 2011].
 </p>
 
 <p>
@@ -426,11 +426,11 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Dust aerosol</em>. The dust simulation in GEOS-Chem is described by Fairlie et al. [2007]. Dust size distributions are from Li Zhang et al. [2013]. Fine anthropogenic dust from combustion and industrial sources is from the AFCID inventory of Philip et al. [2017].
+<em>Dust aerosol</em>. The dust simulation in GEOS-Chem is described by Fairlie et al. [2007]. Dust size distributions are from Singh et al. [2024] and this is a <a href="new-developments.html" title="">new development in version 14.6.0</a>; Older versions used dust size distributions from Li Zhang et al. [2013]. Fine anthropogenic dust from combustion and industrial sources is from the AFCID inventory of Philip et al. [2017].
 </p>
 
 <p>
-<em>Sea salt</em>. The sea salt aerosol simulation in GEOS-Chem is described by Jaegle et al. [2011]. An update to include emissions from blowing snow [Huang and Jaegle, 2017] is a <a href="new-developments.html" title="">new development in version 13.2.0.</a>
+<em>Sea salt</em>. The sea salt aerosol simulation in GEOS-Chem is described by Jaegle et al. [2011]. Emissions from blowing snow [Huang and Jaegle, 2017] are included as of version 13.2.0.
 </p>
 
 <p>
@@ -442,7 +442,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Trace metals. </em>Simulation of 12 aerosol-borne trace metals is from Xu et al. [2019] and is a <a href="new-developments.html" title="">new development in version 13.2.0</a>.
+<em>Trace metals. </em>Simulation of 12 aerosol-borne trace metals is from Xu et al. [2019].
 </p>
 
 <p>
@@ -450,7 +450,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Aerosol optical depth. </em>Aerosol optical depth affecting photolysis rates is calculated in GEOS-Chem using RH-dependent aerosol optical properties from Zhu et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; older versions used aerosol optical properties from Latimer and Martin [2019]. Dust optics are from Ridley et al. [2012]. 
+<em>Aerosol optical properties. </em>RH-dependent aerosol optical properties affecting photolysis rates are calculated from Zhu et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0.</a>; older versions used aerosol optical properties from Latimer and Martin [2019]. Extinction of radiation by mineral dust accounts for its nonsphericity [Singh et al., 2024] and this is a <a href="new-developments.html" title="">new development in 14.6.0.</a>; older versions used dust optical properties described by Ridley et al. [2012]. There is an option to add absorption of UV by brown carbon [Hammer et al., 2016] 
 </p>
 
 <p>
@@ -466,7 +466,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Methane</em>. The current form of the simulation is described by Maasakkers et al. [2019]. Updated soil uptake is from the MeMo model v1.0 [Murguia-Flores et al., 2018]. Default global anthropogenic emissions are from EDGAR version 8; this update from EDGAR version 7 is a <a href="new-developments.html" title="">new development in 14.3.1</a>. Updated emission from fuel exploitation is from Scarpelli et al. [2022a] and is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. older versions used Scarpelli et al. [2020]. Anthropogenic emissions from Mexico are from Scarpelli et al. [2020b]. Anthropogenic emissions from Canada are from Scarpelli et al. [2022b] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a> Methane emissions from hydropower reservoirs is from Delwiche et al. [2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0.</a> An updated surface methane boundary condition using NOAA flask data is a <a href="new-developments.html" title="">new development in 14.4.0.</a> 
+<em>Methane</em>. The current form of the simulation is described by Maasakkers et al. [2019]. Updated soil uptake is from the MeMo model v1.0 [Murguia-Flores et al., 2018]. Default global anthropogenic emissions are from EDGAR version 8; this update from EDGAR version 7 is a <a href="new-developments.html" title="">new development in 14.3.1</a>. Updated emissions from fuel exploitation are from Scarpelli et al. [2025] and is a <a href="new-developments.html" title="">new development in version 14.6.0</a>; older versions used Scarpelli et al. [2022a] and this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. Anthropogenic emissions from Mexico are from Scarpelli et al. [2020b]. Anthropogenic emissions from Canada are from Scarpelli et al. [2022b] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a> Methane emissions from hydropower reservoirs is from Delwiche et al. [2022]; this is a <a href="new-developments.html" title="">new development in version 14.2.0.</a> Rice emissions are from Chen et al. [2025] and this is a <a href="new-developments.html" title="">new development in version 14.6.0</a>. An updated surface methane boundary condition using NOAA flask data is a <a href="new-developments.html" title="">new development in 14.4.0.</a> 
 </p>
 
 <p>
@@ -486,7 +486,7 @@ The original GEOS-Chem coupled atmosphere-ocean simulation of mercury was descri
 </p>
 
 <p>
-Anthropogenic emissions are from Y. Zhang et al. [2016]. Updated Hg0 emission factors are a <a href="new-developments.html" target="_blank" title="">new development in 14.2.0</a>. Future SRES emission scenarios have been implemented by Corbitt et al. [2011]. Options are available to use anthropogenic emissions from Streets et al. [2019] or from EDGAR v4.2 [Muntean et al., 2018].
+Anthropogenic emissions are from Y. Zhang et al. [2016]. Updated Hg0 emission factors are a <a href="new-developments.html" target="_blank" title="">new development in 14.2.0</a>. Anthropogenic emissions from Australia are from MacFarlane et al. [2022] and this is a <a href="new-developments.html" title="">new development in version 14.6.0</a>. Future SRES emission scenarios have been implemented by Corbitt et al. [2011]. Options are available to use anthropogenic emissions from Streets et al. [2019] or from EDGAR v4.2 [Muntean et al., 2018].
 </p>
 
 <h2>
@@ -550,6 +550,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Carter, T. S., Heald, C. L., Kroll, J. H., Apel, E. C., Blake, D., Coggon, M., Edtbauer, A., Gkatzelis, G., Hornbrook, R. S., Peischl, J., Pfannerstill, E. Y., Piel, F., Reijrink, N. G., Ringsdorf, A., Warneke, C., Williams, J., Wisthaler, A., and Xu, L.: An improved representation of fire non-methane organic gases (NMOGs) in models: emissions to reactivity, Atmos. Chem. Phys., 22, 12093–12111, https://doi.org/10.5194/acp-22-12093-2022, 2022.</li>	
   <li>Chen, Q., J.A. Schmidt, V. Shah, L. Jaegle, T. Sherwen, and B. Alexander, <em>Sulfate production by reactive bromine: Implications for the global sulfur and reactive bromine budgets</em>, <u>Geophys. Res. Lett.</u>, <strong>44</strong>, 7069-7078, 2017.</li>
   <li>Chen, X., Millet, D. B., Singh, H. B., Wisthaler, A., Apel, E. C., Atlas, E. L., Blake, D. R., Bourgeois, I., Brown, S. S., Crounse, J. D., de Gouw, J. A., Flocke, F. M., Fried, A., Heikes, B. G., Hornbrook, R. S., Mikoviny, T., Min, K.-E., MÃ¼ller, M., Neuman, J. A., O'Sullivan, D. W., Peischl, J., Pfister, G. G., Richter, D., Roberts, J. M., Ryerson, T. B., Shertz, S. R., Thompson, C. R., Treadaway, V., Veres, P. R., Walega, J., Warneke, C., Washenfelder, R. A., Weibring, P., and Yuan, B., <em>On the sources and sinks of atmospheric VOCs: an integrated analysis of recent aircraft campaigns over North America</em>, <u>Atmos. Chem. Phys.</u>, <strong>19</strong>, 9097-9123, <a href="https://doi.org/10.5194/acp-19-9097-2019">https://doi.org/10.5194/acp-19-9097-2019</a>, 2019.</li>
+  <li>Chen, Z., et al., <em>Global Rice Paddy Inventory (GRPI): a high-resolution inventory of methane emissions from rice agriculture based on Landsat satellite inundation data</em>, <a href="https://eartharxiv.org/repository/view/7890/">https://eartharxiv.org/repository/view/7890/</a>, submitted 2025.</li>
   <li>Corbitt, E.S., D.J. Jacob, C.D. Holmes, D.G. Streets, and E.M. Sunderland, <em>Global mercury source-receptor relationships for mercury deposition under present-day and 2050 emissions scenarios</em>, <u>Environ. Sci. Technol.</u>, <strong>45</strong>, 10477-10484, 2011.</li>
   <li>Crippa, M., et al., <em>Gridded emissions of air pollutants for the period 1970-2012 within EDGAR v4.3.2</em>, <u>Earth Syst. Sci. Data</u>, <strong>10</strong>, 1987-2013, doi:10.5194/essd-10-1987-2018, 2018.</li>
   <li>Crippa, M., Guizzardi, D., Butler, T., Keating, T., Wu, R., Kaminski, J., Kuenen, J., Kurokawa, J., Chatani, S., Morikawa, T., Pouliot, G., Racine, J., Moran, M. D., Klimont, Z., Manseau, P. M., Mashayekhi, R., Henderson, B. H., Smith, S. J., Suchyta, H., Muntean, M., Solazzo, E., Banja, M., Schaaf, E., Pagani, F., Woo, J. H., Kim, J., Monforti-Ferrario, F., Pisoni, E., Zhang, J., Niemi, D., Sassi, M., Ansari, T., and Foley, K.: HTAP_v3 emission mosaic: a global effort to tackle air quality issues by quantifying global anthropogenic air pollutant sources, Earth Syst. Sci. Data Discuss., 2023, 1-34, 10.5194/essd-2022-442, 2023.</li>
@@ -615,6 +616,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>G. Luo, F. Yu, J. Schwab, <em>Revised treatment of wet scavenging processes dramatically improves GEOS-Chem 12.0.0 simulations of nitric acid, nitrate, and ammonium over the United States</em>, <u>Geosci. Model Dev.</u>, <strong>12</strong>, 3439-3447, 2019.</li>
   <li>Luo, G., Yu, F., and Moch, J. M.: Further improvement of wet process treatments in GEOS-Chem v12.6.0: impact on global distributions of aerosols and aerosol precursors, Geosci. Model Dev., 13, 2879–2903, <a href="https://doi.org/10.5194/gmd-13-2879-2020">https://doi.org/10.5194/gmd-13-2879-2020</a>, 2020.</li>
   <li>Maasakkers, J.D., D.J. Jacob, M.P. Sulprizio, T. Scarpelli, H. Nesser, J.-X. Sheng, Y. Zhang, M. Hersher, A.A. Bloom, K.W. Bowman, J.R. Worden, G. Janssens-Maenhout, and R.J. Parker, <em>Global distribution of methane emissions, emission trends, and OH concentrations and trends inferred from an inversion of GOSAT satellite data for 2010-2015</em>, <u>Atmos. Chem. Phys.</u>, <strong>19</strong>, 7859-7881, 2019.</li>
+  <li>MacFarlane, S., J. A. Fisher, H. M. Horowitz, and V. Shah, <em>Two decades of changing anthropogenic mercury emissions in Australia: inventory development, trends, and atmospheric implications</em>, <u>Environmental Science: Processes & Impacts</u>, <strong>24(9)</strong>, 1474-1493, <a href="doi:10.1039/D2EM00019A">doi:10.1039/D2EM00019A</a>, 2022.</li>
   <li>Mao, J., D.J. Jacob, M.J. Evans, J.R. Olson, X. Ren, W.H. Brune, J.M. St. Clair, J.D. Crounse, K.M. Spencer, M.R. Beaver, P.O. Wennberg, M.J. Cubison, J.L. Jimenez, A. Fried, P. Weibring, J.G. Walega, S.R. Hall, A.J. Weinheimer, R.C. Cohen, G. Chen, J.H. Crawford, L. Jaeglé, J.A. Fisher, R.M. Yantosca, P. Le Sager, and C. Carouge, <em>Chemistry of hydrogen oxide radicals (HOx) in the Arctic troposphere in spring</em>, <u>Atmos. Chem. Phys.</u>, <strong>10</strong>, 5823-5838, 2010.</li>
   <li>Mao, J., S. Fan, D.J. Jacob, K.R. Travis, <em>Radical loss in the atmosphere from Cu-Fe redox coupling in aerosols</em>, <u>Atmos. Chem. Phys</u>, <strong>13</strong>,509-519, 2013.</li>
   <li>Marais, E. and C. Wiedinmyer, <em>Air quality impact of Diffuse and Inefficient Combustion Emissions in Africa (DICE-Africa</em>), <u>Environ. Sci. Technol.</u>, <strong>50</strong>(19), 10739-10745, doi:10.1021/acs.est.6b02602, 2016.</li>
@@ -652,6 +654,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Scarpelli, T.R., D.J. Jacob, C.A. Octaviano Villasana, I.F. Ramirez Hernandez, P.R. Cardenas Moreno, E.A. Cortes Alfaro, M.A. Garcia Garcia, and D. Zavala-Araiza, A gridded inventory of anthropogenic methane emissions from Mexico based on Mexico's National Inventory of Greenhouse Gases and Compounds, Environ. Res. Lett., 15, 105015, 2020.</li>
   <li>Scarpelli, T.R., D.J. Jacob, S. Grossman, X. Lu, Z. Qu, M.P. Sulprizio, Y. Zhang, F. Reuland, D. Gordon, and J.R. Worden, Updated Global Fuel Exploitation Inventory (GFEI) for methane emissions from the oil, gas, and coal sectors: evaluation with inversions of atmospheric methane observations, <i> </i>Atmos. Chem. Phys., 22, 3235-3249, 2022a.</li>
   <li>Scarpelli, T.R., D.J. Jacob, M. Moran, F. Reuland, and D. Gordon, A gridded inventory of Canada's anthropogenic methane emissions, Environ. Res. Lett., 17, 014007, 2022.</li>
+  <li>Scarpelli, T. R., Roy, E., Jacob, D. J., Sulprizio, M. P., Tate, R. D., and Cusworth, D. H.: Using new geospatial data and 2020 fossil fuel methane emissions for the Global Fuel Exploitation Inventory (GFEI) v3, Earth Syst. Sci. Data Discuss. [preprint], https://doi.org/10.5194/essd-2024-552, 2025.</li>
   <li>Selin, N.E., D.J. Jacob, R.J. Park, R.M. Yantosca, S. Strode, L. Jaeglé, and D. Jaffe, <em>Chemical cycling and deposition of atmospheric mercury: Global constraints from observations</em>, <u>J. Geophys. Res.</u>, <strong>112</strong>, D02308, doi:10.1029/2006JD007450, 2007.</li>
   <li>Selin, N.E., D.J. Jacob, R.M. Yantosca, S. Strode, L. Jaeglé, and E.M. Sunderland, <em>Global 3-D land-ocean-atmosphere model for mercury: present-day vs. pre-industrial cycles and anthropogenic enrichment factors for deposition</em>, <u>Glob. Biogeochem. Cycles</u>, <strong>22</strong>, GB2011, 2008.</li>
   <li>Shah, V., D.J. Jacob, J.M. Moch, X. Wang, and S. Zhai, <em>Global modeling of cloudwater acidity, rainwater acidity, and acid inputs to ecosystems</em>, <u>Atmos. Chem. Phys.</u>, <strong>20</strong>, 12223-12245, 2020.</li>
@@ -659,6 +662,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Shah, V., Jacob, D. J., Dang, R., Lamsal, L. N., Strode, S. A., Steenrod, S. D., Boersma, K. F., Eastham, S. D., Fritz, T. M., Thompson, C., Peischl, J., Bourgeois, I., Pollack, I. B., Nault, B. A., Cohen, R. C., Campuzano-Jost, P., Jimenez, J. L., Andersen, S. T., Carpenter, L. J., Sherwen, T., and Evans, M. J.: Nitrogen oxides in the free troposphere: implications for tropospheric oxidants and the interpretation of satellite NO2 measurements, Atmos. Chem. Phys., 23, 1227–1257, https://doi.org/10.5194/acp-23-1227-2023, 2023.</li>
   <li>Sherwen, T.,J.A. Schmidt, M.J. Evans, L.J. Carpenter, K. Grossmann, S.D. Eastham, D.J. Jacob, B. Dix, T.K. Koenig, R. Sinreich, I. Ortega, R. Volkamer, A. Saiz-Lopez, C. Prados-Roman, A.S. Mahajan, and C. Ordonez, <em>Global impacts of tropospheric halogens (Cl, Br, I) on oxidants and composition in GEOS-Chem</em>, <u>Atmos. Chem. Phys.</u>, <strong>16</strong>, 12239-12271, 2016.</li>
   <li>Simone, N. W., Stettler, M. E. J., and Barrett, S. R. H.: Rapid estimation of global civil aviation emissions with uncertainty quantification, Transportation Research Part D: Transport and Environment, 25, 33–41, <a href="https://doi.org/10.1016/j.trd.2013.07.001">https://doi.org/10.1016/j.trd.2013.07.001</a>, 2013.</li>
+  <li>Singh, I., R. V. Martin, L. Bindle, D. Chatterjee, C. Li, C. Oxford, X. Xu, and J. Wang, Effect of Dust Morphology on Aerosol Optics in the GEOS-Chem Chemical Transport Model, on UV-Vis Trace Gas Retrievals, and on Surface Area Available for Reactive Uptake, Journal of Advances in Modeling Earth Systems, 16(10), e2023MS003746, <a href="doi:https://doi.org/10.1029/2023MS003746">doi:https://doi.org/10.1029/2023MS003746</a>, 2024.</li>
   <li>Smith-Downey, N.V., Sunderland, E.M., and Jacob, D.J., <em>Anthropogenic impacts on global storage and emissions of mercury from terrestrial soils: insights from a new global model </em>, <u>J. Geophys. Res.</u>, <strong>115</strong>, G03008, 2010.</li>
   <li>Song, S., N.E. Selin, A.L. Soerensen, H. Angot, R. Artz, S. Brooks, E.-G. Brunke, G. Conley, A. Dommergue, R. Ebinghaus, T.M. Holsen, D.A. Jaffe, S. Kang, P. Kelley, W.T. Luke, O. Magand, K. Marumoto, K.A. Pfaffhuber, X. Ren, G.-R. Sheu, F. Slemr, T. Warneke, A. Weigelt, P. Weiss-Penzias, D.C. Wip, and Q. Zhang, <em>Top-down constraints on atmospheric mercury emissions and implications for global biogeochemical cycling</em>, <u>Atmos. Chem. Phys.</u>, <strong>15</strong>, 7103-7125, doi:10.5194/acp-15-7103-2015, 2015.</li>
   <li>Soerensen, A.L., E.M. Sunderland, C.D. Holmes, D.J. Jacob, R.M. Yantosca, H. Skov, J.H. Christensen, and R.P. Mason, <em>An improved global model for air-sea exchange of mercury: High concentrations over the North Atlantic</em>, <u>Environ. Sci. Technol.</u>, <strong>44</strong>, 8574-8580, 2010.</li>
