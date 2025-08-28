@@ -112,6 +112,7 @@ body {
 }
 
 /* Responsiveness */
+/*
 @media (max-width: 1008px) {
     #menu-bar ul.nice-menu li {
 	background-color: #215990 !important;
@@ -121,4 +122,30 @@ body {
     #menu-bar #block-os-primary-menu a {
 	color: #ffffff !important;
     }
+}
+*/
+
+/* Mobile: stack top-level items and reveal submenus on focus/tap */
+@media (max-width: 1008px) {
+  /* Make top-level items block so they’re easy to tap */
+  #menu-bar ul.nice-menu > li > a {
+    display: block;
+  }
+
+  /* Submenus should be flow layout on mobile */
+  #menu-bar ul.nice-menu ul {
+    position: static;   /* not absolute */
+    display: none;      /* hidden until focused */
+    box-shadow: none;
+  }
+
+  /* Show the submenu when the parent li is focused or 'over' (for older JS) */
+  #menu-bar ul.nice-menu li:focus-within > ul, #menu-bar ul.nice-menu li.over > ul {
+    display: block;
+  }
+
+  /* Make the li focusable even if the anchor already is */
+  #menu-bar ul.nice-menu li {
+    outline: none;
+  }
 }
