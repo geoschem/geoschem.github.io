@@ -1,4 +1,5 @@
-/* Always creates a vertical scroll bar, to precisely center text */
+/* Set height to 102% to always create a vertical
+   scroll bar and to precisely center text        */
 html {
     height: 102%;
 }
@@ -15,7 +16,8 @@ html {
     color: #0000ff;
 }
 
-/* z-index of secondary menu to place it behind the drop downs of primary menu */
+/* z-index of secondary menu to place it
+   behind the drop downs of primary menu */
 #block-os-igc10-menu {
     z-index: 1;
 }
@@ -67,7 +69,7 @@ body {
     padding-right: 15px;
 
     /* NOTE: Increase bottom & top padding to eliminate space
-     between the menu bar and the dropdowns.                  */
+       between the menu bar and the dropdowns.                  */
     padding-bottom: 12px;
     padding-top: 12px;
 
@@ -81,40 +83,32 @@ body {
     padding-right: 0px;
 }
 
+/* Header */
+#header {
+    background: #ffffff !important;
+}
+
 #menu-bar {
-  border-top: 1px solid #efefef;
-  background: #215990 !important;
+    border-top: 1px solid #efefef;
+    background: #215990 !important;
 }
 
 #menu-bar ul.nice-menu a.active {
-    background: #fff;
+    background: #ffffff;
     color: #215990;
     font-weight: 800;
 }
 
-#menu-bar ul.nice-menu ul,
-#menu-bar ul.nice-menu a:hover {
+#menu-bar ul.nice-menu ul, #menu-bar ul.nice-menu a:hover {
     background: #027ac6;
     color: #ffffff;
     font-weight: 800;
 }
 
-#menu-bar ul.nice-menu .menuparent.over > a,
-#menu-bar ul.nice-menu .menuparent a:hover {
+#menu-bar ul.nice-menu .menuparent.over > a, #menu-bar ul.nice-menu .menuparent a:hover {
     background-color: #ffffff;
     color: #027ac6;
     font-weight: 800;
-}
-
-/* Optional: make sure menus can overlay other content */
-#menu-bar {
-    position: relative;
-    z-index: 1000;
-}
-
-#menu-bar ul.nice-menu ul {
-    position: absolute;
-    z-index: 2000;
 }
 
 /* Responsiveness */
