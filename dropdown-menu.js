@@ -42,6 +42,7 @@ function inlineDropDownMenu() {
   <li class="menuparent"><a class="menu-heading">Meetings</a>\
     <ul>\
       <li><a href="steering-committee.html#meetings" >Steering Committee Meetings</a></li>\
+      <li><a href="igc12.html">IGC12 Meeting (2026)</a></li>\
       <li><a href="gce3.html" >GCE3 Meeting (2025)</a></li>\
       <li><a href="gca2.html" >GCA2 Meeting (2025)</a></li>\
       <li><a href="igc11.html">IGC11 Meeting (2024)</a></li>\
