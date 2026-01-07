@@ -74,7 +74,7 @@ function inlineDropDownMenu() {
       <li><a href="https://gchp.readthedocs.io" >GCHP</a></li>\
       <li><a href="https://hemco.readthedocs.io" >HEMCO</a></li>\
       <li><a href="http://wrf.geos-chem.org/" >WRF-GC</a></li>\
-      <li><a href="http://imi.readthedocs.io/" >Integrated Methane Inversion (IMI)</a></li>\
+      <li><a href="https://carboninversion.com/" >Integrated Methane Inversion (IMI)</a></li>\
       <li><a href="logo.html" >GEOS-Chem logo</a></li>\
     </ul>\
   </li>\
