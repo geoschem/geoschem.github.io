@@ -64,6 +64,7 @@ function inlineDropDownMenu() {
   </li>\
   <li class="menuparent"><a class="menu-heading">About GEOS-Chem</a>\
     <ul>\
+      <li><a href="stats.html" >GEOS-Chem by the Numbers</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_versions" >Version History</a></li>\
       <li><a href="http://wiki.geos-chem.org/Guide_to_GEOS-Chem_simulations" >Simulations</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_benchmarking"  title="">Benchmarking</a></li>\
