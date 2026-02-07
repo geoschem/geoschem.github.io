@@ -102,22 +102,40 @@
 <div class="field-item even">
 
 <p style="text-align:center">
-  <em>Last Updated April 19, 2025 (version 14.6.0)</em>
+  <em>Last Updated February 7, 2026 (version 14.7.0)</em>
 </p>
 
 <p align="center">
-  <a href="#new">New developments (versions 13.3.0 - 14.6.0)</a> | <a href="#older">Older developments</a>
+  <a href="#new">New developments (versions 13.4.0 - 14.7.0)</a> | <a href="#older">Older developments</a>
 </p>
 
 <p>
-  We list below the major new GEOS-Chem developments and their developers from version 13.3.0 (released November 2021) to version 14.6.0 (released April 2025). If these developments have benefited your work we strongly encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
+  We list below the major new GEOS-Chem developments and their developers from version 13.4.0 (released May 2022) to version 14.7.0 (released February 2026). If these developments have benefited your work we encourage you to offer co-authorship on publications to the relevant developers. This page is reviewed by the <a href="steering-committee.html">GEOS-Chem Steering Committee</a> at every new X.Y version release. <a href="#older">Older developments</a> are adequately credited by citation following the guidelines in the <a href="narrative.html">Narrative GEOS-Chem Description page</a>. A full version history of GEOS-Chem development can be found on the <a href="http://wiki.geos-chem.org/GEOS-Chem_versions">GEOS-Chem versions wiki page</a>. For questions or guidance please contact the relevant <a href="working-groups.html">Working Group Chair</a> or Model Scientist. For new developments in the adjoint model see the<em> </em><a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank"><em>adjoint wiki page</em></a><em>.</em>
 </p>
 
 <h2>
-  <a name="new" id="new"></a>New developments in GEOS-Chem versions 13.3.0 - 14.6.0
+  <a name="new" id="new"></a>New developments in GEOS-Chem versions 13.4.0 - 14.7.0
 </h2>
 
 <ul>
+  <li>
+    (14.7.0) <strong>Updated mineral dust module for emissions, deposition, and size distribution.</strong> Developer: Dandan Zhang (WashU). Reference: Zhang, D., R. V. Martin, X. Liu, A. van Donkelaar, C. R. Oxford, Y. Li, J. Meng, D. M. Leung, J. F. Kok, L. Li, H. Zhu, J. R. Turner, Y. Yan, M. Brauer, Y. Rudich, and E. Windwer (2025), Improving annual fine mineral dust representation from the surface to the column in GEOS-Chem 14.4.1, Geosci. Model Dev., 18(19), 6767-6803, <a href="https://doi.org/10.5194/gmd-18-6767-2025">https://doi.org/10.5194/gmd-18-6767-2025</a>, 2025.
+  <br/><br/></li>  
+  <li>
+    (14.7.0) <strong>Updated wet scavenging option.</strong> Developers: Gan Luo (U Albany) and FAngqun Yu (U Albany). Reference: Luo, G., & Yu, F. (2023). Impact of air refreshing and cloud ice uptake limitations on vertical profiles and wet depositions of nitrate, ammonium, and sulfate. Geophysical Research Letters, 50, e2023GL104258, <a href="https://doi.org/10.1029/2023GL104258">https://doi.org/10.1029/2023GL104258</a>, 2023.
+  <br/><br/></li>  
+  <li>
+    (14.7.0) <strong>Add FINN2.5 biomass burning emissions option.</strong> Developer: Eloise Marais (UCL). Reference: Wiedinmyer, C., Kimura, Y., McDonald-Buller, E. C., Emmons, L. K., Buchholz, R. R., Tang, W., Seto, K., Joseph, M. B., Barsanti, K. C., Carlton, A. G., and Yokelson, R.: The Fire Inventory from NCAR version 2.5: an updated global fire emissions model for climate and chemistry applications, Geosci. Model Dev., 16, 3873–3891, <a href="https://doi.org/10.5194/gmd-16-3873-2023">https://doi.org/10.5194/gmd-16-3873-2023</a>, 2023. 
+  <br/><br/></li>
+  <li>
+    (14.7.0) <strong>Updated convective washout for Grell-Freitas and Luo wet deposition.</strong> Developers: Yuanjian Zhang (WashU) and Viral Shah (NASA GMAO). 
+  <br/><br/></li>
+  <li>
+    (14.6.3) <strong>GEOS-IT meteorology.</strong> Developers: Viral Shah (NASA GMAO), Yuanjian Zhang (WashU), and Lizzie Lundgren (Harvard). 
+  <br/><br/></li>
+  <li>
+    (14.6.0) <strong>12 km capability for GEOS-Chem Classic.</strong> Developer: Xiaolin Wang (Harvard). Reference: Wang, X., Sulprizio, M. P., Zhuge, Y., Martin, R. V., and Jacob, D. J.: Technical note: 12-km resolution capability for the global GEOS-Chem model of atmospheric composition, EGUsphere [preprint], <a href="https://doi.org/10.5194/egusphere-2025-5811">https://doi.org/10.5194/egusphere-2025-5811</a>, 2026.
+  <br/><br/></li>  
   <li>
     (14.6.0) <strong>Nonspherical representation of mineral dust optics.</strong> Developer: Inderjeet Singh (WashU). Reference: Singh, I., R. V. Martin, L. Bindle, D. Chatterjee, C. Li, C. Oxford, X. Xu, and J. Wang, Effect of Dust Morphology on Aerosol Optics in the GEOS-Chem Chemical Transport Model, on UV-Vis Trace Gas Retrievals, and on Surface Area Available for Reactive Uptake, Journal of Advances in Modeling Earth Systems, 16(10), e2023MS003746, <a href="doi:https://doi.org/10.1029/2023MS003746">https://doi.org/10.1029/2023MS003746</a>, 2024.
   <br/><br/></li>  
@@ -193,9 +211,6 @@
   <br/><br/></li>
   <li>
     (14.3.0) <strong>TOMAS in GCHP.</strong> Developer: Betty Croft (Dalhousie). Reference: Croft, B., R.V. Martin, R. Y.-W. Chang, L. Bindle, S.D. Eastham, L.A. Estrada, B. Ford, C. Li, M.S. Long, E.W. Lundgren, S. Sinha, M.P. Sulprizio, Y. Tang, A. van Donkelaar, R.M. Yantosca, D. Zhang, H. Zhu, and J.R. Pierce Towards fine horizontal resolution global simulations of aerosol sectional microphysics: Advances enabled by GCHP-TOMAS. J. Advances in Modeling Earth Systems, submitted.
-  <br/><br/></li>
-  <li>
-    (14.3.0) <strong>GEOS-IT meteorology.</strong> Developer: Lizzie Lundgren (Harvard). 
   <br/><br/></li>
   <li>
     (14.2.1) <strong>Update Hg0 emission factors.</strong> Developer: Eric Roy (MIT).
@@ -276,6 +291,13 @@
   <li>
     (13.4.0) <strong>Updated radon-222 emission inventory.  </strong>Developer: Bo Zhang (NIA). Reference: Zhang, B., H. Liu, et al., Simulation of radon-222 with the GEOS-Chem global model: emissions, seasonality, and convective transport, Atmos. Chem. Phys., 21, 1861–1887, 2021.
   <br/><br/></li>
+</ul>
+
+<h2>
+  <a name="older" id="older"></a>Older developments
+</h2>
+
+<ul>
   <li>
     (13.3.0) <b>Extended AeroCom volcanic emissions to May 2020.</b> Developer: Christoph A. Keller (NASA/GSFC)
   <br/><br/></li>
@@ -297,13 +319,6 @@
   <li>
     (13.3.0) <strong>Bug fix to cloud entrainment for nitrogen oxides and halogens uptake. </strong>The entrainment limitation was not correctly implemented in older versions. The bug was fixed by Viral Shah (Harvard).
   <br/><br/></li>
-</ul>
-
-<h2>
-  <a name="older" id="older"></a>Older developments
-</h2>
-
-<ul>
   <li>
     (13.2.0)<b> Trace metals simulation.  </b>Developer: Jun-Wei Xu (Dalhousie U.).  Reference: Xu, J.-W., R.V. Martin, B.H. Henderson, J. Meng, Y.B. Oztaner, J.L. Hand, A. Hakami, M. Strum, and S.B. Phillips, Simulation of airborne trace metals in fine particulate matter over North America, Atmos. Environ., 214, 116883, 2019.
   <br/><br/></li>
