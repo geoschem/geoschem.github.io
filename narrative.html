@@ -103,7 +103,7 @@
 <div class="field-item even">
 
 <p align="center">
-<em>Updated April 20, 2025 (version 14.6.0)</em>
+<em>Updated February 6, 2026 (version 14.7.0)</em>
 </p>
 
 <p align="center">
@@ -227,19 +227,21 @@ GEOS-Chem in off-line mode (Classic or GCHP) is driven by assimilated meteorolog
 </p>
 
 <ul>
-  <li>the operational data stream starting in 2012 from the GEOS Forward Processing (<a href="http://wiki.geos-chem.org/GEOS-FP" target="_blank">GEOS-FP</a>) (native resolution 0.25&deg; x 0.3125&deg;, 72 levels)</li>
+  <li>the operational data stream starting in 2012 from the GEOS Forward Processing (<a href="http://wiki.geos-chem.org/GEOS-FP" target="_blank">GEOS-FP</a>) (native resolution 0.25&deg; x 0.3125&deg;, 72 levels for 2012-2021). A native 0.125&deg; × 0.15625&deg; (called 12 km for brevity) data stream is a new development in 14.6.0.</li>
   <li>the consistent <a href="http://wiki.geos-chem.org/MERRA-2" target="_blank">MERRA-2</a> reanalysis for 1979-present (native resolution 0.5&deg; x 0.625&deg;, 72 levels)</li>
-  <li>the consistent <a href="http://wiki.geos-chem.org/GEOS-IT" target="_blank">GEOS-IT</a> reanalysis for 1998-present (native resolution 0.5&deg; x 0.625&deg;, 72 levels) and this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>.</li>
+  <li>the consistent <a href="http://wiki.geos-chem.org/GEOS-IT" target="_blank">GEOS-IT</a> reanalysis for 1998-present (native resolution 0.5&deg; x 0.625&deg;, 72 levels) and this is a <a href="new-developments.html" title="">new development in version 14.6.3</a>.</li>
 </ul>
 
 <p>
-The GEOS-FP and MERRA-2 archives have 3-hour temporal resolution for 3-D fields and 1-hour resolution for 2-D fields. A C720 GEOS-FP archive at hourly resolution for advection variables is also available for March 2021 to present. The GEOS-IT archive has hourly resolution for all fields and is also available at C180 resolution; this is a <a href="new-developments.html" title="">new development in version 14.3.0</a>.
+The GEOS-FP and MERRA-2 archives have 3-hour temporal resolution for 3-D fields and 1-hour resolution for 2-D fields. A C720 GEOS-FP archive at hourly resolution for advection variables is also available for March 2021 to present. The GEOS-IT archive has hourly resolution for all fields and is also available at C180 resolution; this is a <a href="new-developments.html" title="">new development in version 14.6.3</a>.
 </p>
 
 <p>
 The GEOS data are pre-processed for use in GEOS-Chem, in particular to generate coarser-resolution archives.  The GEOS data can also be used directly without pre-processing.
 </p>
 
+<p>
+The GEOS-FP data for June 2020 onward adn the GEOS-IT data use a new convective scheme [Freitas et al., 2021]; addressing this change for GEOS-Chem is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. 
 <p>
 GEOS-Chem simulations can be conducted at the native spatial resolution of the GEOS fields or at coarser resolutions. Simulations focused on the troposphere can reduce the number of vertical levels from 72 to 47 by coarsening the vertical resolution in the stratosphere and mesosphere. GEOS-Chem Classic simulations can also be conducted in nested mode (see Nesting below). The default timesteps are optimized to balance accuracy and speed as described by Philip et al. [2016].
 </p>
@@ -268,7 +270,7 @@ The nested capability for GEOS-Chem was first implemented and described by Y. X.
 </p>
 
 <p>
-The current nested version of GEOS-Chem Classic uses GEOS-FP data with 0.25&deg; x 0.3125&deg; resolution or MERRA-2 data with 0.5&deg; x 0.625&deg; resolution within the nested domain. The capability to operate at 0.25&deg; x 0.3125&deg;resolution with full aerosol-oxidant chemistry was originally developed by Zhang et al. [2015] for East Asia and Kim et al. [2015] for North America. <a href="http://wiki.geos-chem.org/FlexGrid" target="_new">FlexGrid</a> allows users to define any nested domain at runtime, with no pre-processing of meteorological or other data files, requiring only the generation of boundary condition files at the global model resolution.
+The current nested version of GEOS-Chem Classic uses GEOS-FP data with 0.25&deg; x 0.3125&deg; resolution with the option of 0.125&deg; × 0.15625&deg; (called 12 km for brevity) resolution for 2021 onward, or MERRA-2 data with 0.5&deg; x 0.625&deg; resolution within the nested domain. The capability to operate at 0.25&deg; x 0.3125&deg;resolution with full aerosol-oxidant chemistry was originally developed by Zhang et al. [2015] for East Asia and Kim et al. [2015] for North America. The capability to operate at 12 km resolution was developed by X. Wang et al. [2026] and this is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. <a href="http://wiki.geos-chem.org/FlexGrid" target="_new">FlexGrid</a> allows users to define any nested domain at runtime, with no pre-processing of meteorological or other data files, requiring only the generation of boundary condition files at the global model resolution.
 </p>
 
 <p>
@@ -284,11 +286,11 @@ GEOS-Chem Classic uses the TPCORE advection algorithm of Lin and Rood [1996] on 
 </p>
 
 <p>
-The wet deposition scheme in GEOS-Chem is described by Liu et al. [2001] for water-soluble aerosols and by Amos et al. [2012] for gases. Henry's law constants are from the compilation by Sander [2015] including for water-soluble organics [Safieddine and Heald, 2017]. Scavenging of aerosol by snow and cold/mixed precipitation is described by Q. Wang et al. [2011, 2014]. Faster scavenging as described by Luo et al. [2020] is an option in the model. 
+The wet deposition scheme in GEOS-Chem is described by Liu et al. [2001] for water-soluble aerosols and by Amos et al. [2012] for gases. Henry's law constants are from the compilation by Sander [2015] including for water-soluble organics [Safieddine and Heald, 2017]. Scavenging of aerosol by snow and cold/mixed precipitation is described by Q. Wang et al. [2011, 2014]. Faster scavenging as described by Luo et al. [2023] is an option in the model and this is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. 
 </p>
 
 <p>
-Dry deposition is based on the resistance-in-series scheme of Wesely [1989] as implemented by Y. Wang et al. [1998a]. Size-dependent aerosol dry deposition is from Emerson et al. [2020] and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>. Updates to gravitational setting and hygroscopic growth in aerosol dry deposition are from Li et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0</a>. Aerosol deposition to snow/ice is described by Fisher et al. [2011]. Sea-salt deposition is from Jaegle et al. [2011]. Cold-temperature HNO3 deposition is from Jaegle et al. [2018]. There is an option for dependence of stomatal conductance on CO2 levels [Franks et al., 2013]. Ozone deposition to the ocean is from Pound et al. [2020]. Ozone deposition to snow and ice is from Barten et al. [2021] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
+Dry deposition is based on the resistance-in-series scheme of Wesely [1989] as implemented by Y. Wang et al. [1998a]. Size-dependent aerosol dry deposition is from Emerson et al. [2020]. Updates to gravitational setting and hygroscopic growth in aerosol dry deposition are from Li et al. [2023] and this is a <a href="new-developments.html" title="">new development in 14.4.0</a>. Updates to wet and dry deposition of minteral dust for 7 dust size bins are from D. Zhang et al. [2025] and this is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. Aerosol deposition to snow/ice is described by Fisher et al. [2011]. Sea-salt deposition is from Jaegle et al. [2011]. Cold-temperature HNO3 deposition is from Jaegle et al. [2018]. There is an option for dependence of stomatal conductance on CO2 levels [Franks et al., 2013]. Ozone deposition to the ocean is from Pound et al. [2020]. Ozone deposition to snow and ice is from Barten et al. [2021] and this is a <a href="new-developments.html" title="">new development in version 13.4.0.</a>
 </p>
 
 <p>
@@ -316,7 +318,7 @@ All GEOS-Chem emissions are configured at run-time using the HEMCO 3.0 facility 
 </p>
 
 <p>
-Emissions of dust aerosol, lightning NOx, biogenic VOCs, soil NOx, and sea salt aerosol are dependent on the local meteorological conditions. These emissions are computed off-line at the native resolution of the GEOS meteorological data and then archived along with the GEOS data as input to GEOS-Chem. In that way, emissions in GEOS-Chem remain the same at any model resolution. Users can also choose to compute emissions on-line rather than using the off-line emission files. Off-line biogenic VOCs, soil NOx and sea salt aerosol emissions are described in Weng et al. [2020]. Off-line dust emissions are described in Meng et al. [2021]. Updated biogenic VOC and soil NOx emissions are a <a href="new-developments.html" target="_blank" title="">new development in version 14.0.0</a>.
+Emissions of dust aerosol, lightning NOx, biogenic VOCs, soil NOx, and sea salt aerosol are dependent on the local meteorological conditions. These emissions are computed off-line at the native resolution of the GEOS meteorological data and then archived along with the GEOS data as input to GEOS-Chem. In that way, emissions in GEOS-Chem remain the same at any model resolution. Users can also choose to compute emissions on-line rather than using the off-line emission files. Off-line biogenic VOCs, soil NOx and sea salt aerosol emissions are described in Weng et al. [2020]. Off-line dust emissions are described in Meng et al. [2021]. Updates to offline emissions using the dust emission scheme of D. Zhang et al. [2025] is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. Updated biogenic VOC and soil NOx emissions are a <a href="new-developments.html" target="_blank" title="">new development in version 14.0.0</a>.
 </p>
 
 <p>
@@ -337,7 +339,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </p>
 
 <p>
-<em>Open Fires</em>. Emissions from open fires for individual years are from the GFED4.1s inventory with options to use instead the FINNv1.5 inventory [Wiedinmyer et al., 2011], the QFED inventory, or the GFAS inventory. Emission factors for ALK6, C4H6, EBZ, STYR, and TMB emissions in GFED and FINN are a <a href="new-developments.html" title="">new development in version 14.5.0</a>. The GFED4 biomass burning data have been extended through October 2022; this is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. The option to use a climatology of GFED4 biomass burning data is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. BB4CMIP historical fire emissions for 1750-2014 are from van Merle et al. [2017]. VOC fire emissions [Carter et al., 2022] are a <a href="new-developments.html" title="">new development in version 14.2.0</a>.
+<em>Open Fires</em>. Emissions from open fires for individual years are from the GFED4.1s inventory with options to use instead the FINNv2.5 inventory [Wiedinmyer et al., 2023] and this is a <a href="new-developments.html" title="">new development in version 14.7.0</a>, the QFED inventory, or the GFAS inventory. Emission factors for ALK6, C4H6, EBZ, STYR, and TMB emissions in GFED and FINN are a <a href="new-developments.html" title="">new development in version 14.5.0</a>. The GFED4 biomass burning data have been extended through October 2022; this is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. The option to use a climatology of GFED4 biomass burning data is a <a href="new-developments.html" title="">new development in version 14.2.0</a>. BB4CMIP historical fire emissions for 1750-2014 are from van Merle et al. [2017]. VOC fire emissions [Carter et al., 2022] are a <a href="new-developments.html" title="">new development in version 14.2.0</a>.
 </p>
 
 <p>
@@ -357,7 +359,7 @@ Future projections of anthropogenic emissions following the RCP scenarios have b
 </p>
 
 <p>
-<em>Volcanoes</em>. Eruptive and non-eruptive volcanic SO2 emissions for individual years from 1978 to present are from the <a href="http://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO/VOLCANO/v2019-08/README">AEROCOM data base</a>. Extension of the data to May 2020 is a <a href="new-developments.html" title="">new development in version 13.3.0</a> and further extension through 2023 is a <a href="new-developments.html" title="">new development in 14.4.0.</a>. Older versions did not extend beyond 2018.  For simulations of more recent periods when data are not available the non-eruptive volcanic emissions are set to a climatology and the eruptive emissions are set to zero.
+<em>Volcanoes</em>. Eruptive and non-eruptive volcanic SO2 emissions for individual years from 1978 to present are from the <a href="http://ftp.as.harvard.edu/gcgrid/data/ExtData/HEMCO/VOLCANO/v2019-08/README">AEROCOM data base</a>. Extension of the data through 2023 is a <a href="new-developments.html" title="">new development in 14.4.0</a>. Older versions did not extend beyond 2018.  For simulations of more recent periods when data are not available the non-eruptive volcanic emissions are set to a climatology and the eruptive emissions are set to zero.
 </p>
 
 <p>
@@ -382,11 +384,11 @@ Chemical mechanism kinetics generally follow JPL/IUPAC recommendations as most r
 
 <ul>
   <li>Isoprene [Bates and Jacob, 2019].</li>
-  <li>Aromatics [Bates et al., 2021]; this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>. Older versions used parameterized aromatic chemistry from Fischer et al. [2014], mainly for PAN formation.</li>
-  <li>Ethylene and acetylene chemistry [Kwon et al., 2021]; this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>.</li>
-  <li>Methanol [Chen et al., 2019]. The CH3O2 + OH reaction was subsequently added as a source of methanol following Bates et al. [2021] and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>.</li>
+  <li>Aromatics [Bates et al., 2021]. Older versions used parameterized aromatic chemistry from Fischer et al. [2014], mainly for PAN formation.</li>
+  <li>Ethylene and acetylene chemistry [Kwon et al., 2021].</li>
+  <li>Methanol [Chen et al., 2019]. The CH3O2 + OH reaction was subsequently added as a source of methanol following Bates et al. [2021].</li>
   <li>Methyl, ethyl, and propyl nitrates [Fisher et al., 2018].</li>
-  <li>Hydroxymethanesulfonate (HMS) chemistry [Moch et al., 2020]; this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>.</li>
+  <li>Hydroxymethanesulfonate (HMS) chemistry [Moch et al., 2020].</li>
   <li>Tropospheric halogen chemistry [Wang et al., 2021]. Older versions used a scheme based on Sherwen et al. [2016] and Chen et al. [2017]. Sea salt debromination was restored in the standard model in version 14.2.0; it was an option in versions 13.4.0-14.1.0.</li>
   <li>Criegees [Millet et al., 2015].</li>
   <li>Mercury redox chemistry [Shah et al., 2022]; this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>. Older versions used Horowitz et al. [2017]</li>
@@ -406,7 +408,7 @@ Reactive uptake of NO2, NO3, and N2O5 by aerosols is as described by Holmes et a
 </p>
 
 <p>
-Reactive uptake of nitrogen oxides by clouds accounts for entrainment in the subgrid cloudy fraction of gridboxes. The same treatment is also applied for halogen reactive uptake by clouds starting with version 12.9.0. However, a bug caused the limitation by entrainment not to be implemented properly until version 13.3.0 and this is a <a href="new-developments.html" title="">new development in version 13.3.0</a>.
+Reactive uptake of nitrogen oxides by clouds accounts for entrainment in the subgrid cloudy fraction of gridboxes. The same treatment is also applied for halogen reactive uptake by clouds starting with version 12.9.0, with corrected limitation by entrainment in version 13.3.0.
 </p>
 
 <p>
@@ -426,7 +428,7 @@ GEOS-Chem simulations prior to version 13.2.0 could be configured to have full c
 </p>
 
 <p>
-<em>Dust aerosol</em>. The dust simulation in GEOS-Chem is described by Fairlie et al. [2007]. Dust size distributions are from Singh et al. [2024] and this is a <a href="new-developments.html" title="">new development in version 14.6.0</a>; Older versions used dust size distributions from Li Zhang et al. [2013]. Fine anthropogenic dust from combustion and industrial sources is from the AFCID inventory of Philip et al. [2017].
+<em>Dust aerosol</em>. The dust simulation in GEOS-Chem is described by D. Zhang et al. [2025] and this is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. Dust size distributions are from Singh et al. [2024] and this is a <a href="new-developments.html" title="">new development in version 14.6.0</a>; Older versions used the dust simulation of Fairlie et al. [2007] and dust size distributions from Li Zhang et al. [2013]. Fine anthropogenic dust from combustion and industrial sources is from the AFCID inventory of Philip et al. [2017].
 </p>
 
 <p>
@@ -518,7 +520,7 @@ Surface ozone and HNO3 concentrations can be diagnosed below the lowest model gr
 </p>
 
 <p>
-The model PM2.5 diagnostic is calculated as described by Latimer and Martin [2019]. The PM10 diagnostic is calculated as described by Zhai et al. [2021] and this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>.
+The model PM2.5 diagnostic is calculated as described by Latimer and Martin [2019] with updates to mineral dust aerodynamic diameter by D. Zhang et al. [2025] and this is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. The PM10 diagnostic is calculated as described by Zhai et al. [2021] and this is a <a href="new-developments.html" title="">new development in version 13.4.0</a>.
 </p>
 
 <h2>
@@ -693,6 +695,7 @@ See the <a href="http://wiki.geos-chem.org/GEOS-Chem_Adjoint" target="_blank">GE
   <li>Zhai, S., et al., Interpretation of geostationary satellite aerosol optical depth (AOD) over East Asia in relation to fine particulate matter (PM2.5): insights from the KORUS-AQ aircraft campaign and seasonality, Atmos. Chem. Phys., 21, 16775-16791, 2021.</li>
   <li>Zhang, B., H. Liu, et al., Simulation of radon-222 with the GEOS-Chem global model: emissions, seasonality, and convective transport, Atmos. Chem. Phys., 21, 1861–1887, 2021.</li>
   <li>Zhang, B., et al., Global Emissions of Hydrogen Chloride and Particulate Chloride from Continental Sources, Environ. Sci. Tech., 56(7), 3894-3904, doi.org/10.1021/acs.est.1c05634, 2022.</li>
+  <li>Zhang, D., R. V. Martin, X. Liu, A. van Donkelaar, C. R. Oxford, Y. Li, J. Meng, D. M. Leung, J. F. Kok, L. Li, H. Zhu, J. R. Turner, Y. Yan, M. Brauer, Y. Rudich, and E. Windwer (2025), Improving annual fine mineral dust representation from the surface to the column in GEOS-Chem 14.4.1, Geosci. Model Dev., 18(19), 6767-6803, <a href="https://doi.org/10.5194/gmd-18-6767-2025">https://doi.org/10.5194/gmd-18-6767-2025</a>, 2025.</li>
   <li>Zhang, L., Gong, S., Padro, J., and Barrie, L.: A size-segregated particle dry deposition scheme for an atmospheric aerosol module, Atmos. Environ., 35, 549-560, <a href="https://doi.org/10.1016/S1352-2310">https://doi.org/10.1016/S1352-2310</a>(00)00326-5, 2001.</li>
   <li>Zhang, L., L. Liu, Y. Zhao, S. Gong, Z. Zhang, D.K. Henze, S.L. Capps, T.-M. Fu, Q. Zhang, and Y. Wang (2015), Source attribution of particulate matter pollution over North China with the adjoint method, <i>Environ. Res. Lett., 10, </i>084011.</li>
   <li>Zhang, Y., D.J. Jacob, H.M. Horowitz, L. Chen, H.M. Amos, D.P. Krabbenhoft, F. Slemr, V. St. Louis, and E.M. Sunderland, <em>Observed decrease in atmospheric mercury explained by global decline in anthropogenic emissions</em>, <u>PNAS</u>, doi:10.1073/pnas.1516312113, 2016.</li>
