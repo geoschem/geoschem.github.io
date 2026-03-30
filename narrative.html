@@ -243,7 +243,7 @@ The GEOS data are pre-processed for use in GEOS-Chem, in particular to generate 
 <p>
 The GEOS-FP data for June 2020 onward adn the GEOS-IT data use a new convective scheme [Freitas et al., 2021]; addressing this change for GEOS-Chem is a <a href="new-developments.html" title="">new development in version 14.7.0</a>. 
 <p>
-GEOS-Chem simulations can be conducted at the native spatial resolution of the GEOS fields or at coarser resolutions. Simulations focused on the troposphere can reduce the number of vertical levels from 72 to 47 by coarsening the vertical resolution in the stratosphere and mesosphere. GEOS-Chem Classic simulations can also be conducted in nested mode (see Nesting below). The default timesteps are optimized to balance accuracy and speed as described by Philip et al. [2016].
+GEOS-Chem simulations can be conducted at the native spatial resolution of the GEOS fields or at coarser resolutions. Simulations focused on the troposphere can reduce the number of vertical levels from 72 to 47 by coarsening the vertical resolution in the stratosphere and mesosphere. This <a href="https://wiki.seas.harvard.edu/geos-chem/index.php?title=GEOS-Chem_14.7.0#1-year_transport_GEOS-Chem_Classic_version_comparison_(14.7.0_on_72_levels_vs_14.7.0_on_47_levels)" target="_blank">does not affect tropospheric transport</a>, but it has a <a href="https://github.com/geoschem/geos-chem/issues/3238" target="_blank">slight effect on tropospheric photolysis rate constants</a>.  GEOS-Chem Classic simulations can also be conducted in nested mode (see Nesting below). The default timesteps are optimized to balance accuracy and speed as described by Philip et al. [2016].
 </p>
 
 <p>
