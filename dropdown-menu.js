@@ -36,7 +36,7 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_model_development_priorities" >Model Development Priorities</a></li>\
       <li><a href="narrative.html"  title="">Narrative Description (and how to cite GEOS-Chem)</a></li>\
       <li><a href="new-developments.html" >New GEOS-Chem developments</a></li>\
-      <li><a href="http://wiki.geos-chem.org/GEOS-Chem_newsletters" >GEOS-Chem Newsletters</a></li>\
+      <li><a href="newsletters.html" >GEOS-Chem Newsletters</a></li>\
     </ul>\
   </li>\
   <li class="menuparent"><a class="menu-heading">Meetings</a>\
