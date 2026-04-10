@@ -1,19 +1,22 @@
-List of Developers for GEOS-Chem, GCHP, HEMCO, and Related Software
-(24 Apr 2023)
+List of Developers for GEOS-Chem, HEMCO, and Related Software
+(08 Apr 2026)
 ===============================================================================
 
 ADAMS, Peter
+AKINJOLE, Samuel
 ALEXANDER, Becky
 ALVARADO, Matthew
 AMOS, Helen
 ANGOT, Helene
 AUSMEEL, Stina
 AUVRAY, Marion
+BALASUS, Nicholas
 BARAY, Sabour
 BARKLEY, Michael
 BARRET, Steven
 BARRET, Brice
 BATES, Kelvin
+BERTOLACCI, Michael
 BEY, Isabelle
 BINDLE, Liam
 BOERSMA, Folkert
@@ -22,6 +25,7 @@ BONILLA, Eimy
 BOVY, Benoit
 BOWMAN, Kevin
 BOYS, Brian
+BRANFORD, Simon
 BRATTICH, Erika
 BREIDER, Tom
 BREWER, Jared
@@ -38,9 +42,10 @@ CAO, Liangzhong
 CAO, Yi
 CAPPS, Shannon
 CAROUGE, Claire
-CARTER, Therese
+CARTER, Therese (Tess)
 CAZORLA, Maria
 CHALIYAKUNNEL, Sreelekha
+CHAN, Yuk Chun
 CHAN MILLER, Christopher
 CHEN, Han
 CHEN, Jing
@@ -50,7 +55,9 @@ CHEN, Qianjie
 CHEN, Xin
 CHEN, Yang
 CHOI, Yunsoo
+CHEN, Zichong
 CHRISTIAN, Kenneth
+CLARIZIO, Tessa
 CLUNE, Tom
 COOPER, Matt
 CORBITT, Bess
@@ -85,7 +92,7 @@ FISCHER, Emily
 FISHER, Jenny
 FITE, Charley
 FLEMING, Eric
-FLO-GAYA, Judit
+FLO GAYA, Judit
 FORD, Bonne
 FRANCIS, Timmy
 FREESE, Lyssa
@@ -96,13 +103,16 @@ FU, Joshua
 GANTT, Brett
 GE, Cui
 GEDDES, Jeffrey
+GEYMAN, Benjamin
 GIANG, Amanda
 GIANNAKOPOULOS, Christos
 GOUNIA, Harriet
 GRAEF, Edward
 GREENSLADE, Jesse
+GRIFFITHS, Alan
 GU, Xiaoguang
 HAMMER, Melanie
+HANCOCK, Sarah
 HASKINS, Jessica
 HE, Cenlin
 HE, Jourdan
@@ -112,8 +122,10 @@ HENZE, Daven
 HO, Wai-Lo
 HORDIICHUK, Myroslav
 HOLMES, Christopher
+HORNER, Rebekah (Bex)
 HOROWITZ, Hannah
 HOSSENI, Zahra
+HOUGH, Ian
 HU, Lu
 HUANG, Jianping
 HUANG, Jiayue
@@ -133,6 +145,7 @@ JUNG, Jaegun
 KASIBHATLA, Prasad
 HUDMAN KAY, Rynda
 KELLER, Christoph
+KELP, Makoto
 KIKUCHI, Tetsuro
 KIM, Hyeonmin
 KIM, Sungshik
@@ -154,6 +167,7 @@ LE SAGER, Philippe
 LEE, Chulkyu
 LEE, Colin
 LEE, Meemong
+LEE, Tabitha
 LEHMANN, Ralph
 LEIBENSPERGER, Eric
 LERICHE, Maud
@@ -179,11 +193,13 @@ LIU, Tina
 LIU, Yang
 LIU, Ying
 LOGAN, Jennifer
+LOMAN, Matthew
 LONG, Mike
 LU, Xiao
 LUNDGREN, Lizzie
 LUO, Gan
 MAASAKKERS, J. D. (Bram)
+MACFARLANE, Stephen
 MACINTYRE, Helen
 MACKENZIE, Dave
 MAHIEU, Emmanuel
@@ -193,6 +209,7 @@ MARKS, Marguerite
 MARKUS, Arjen
 MARTIN, Randall
 MARVIN, Maggie
+MAYHEW, Alfred
 MCDUFFIE, Erin
 MCGUFFIN, Dana
 MCLINDEN, Chris
@@ -205,7 +222,7 @@ MILLET, Dylan
 MING, Kai
 MOCH, Jonathan
 MOORE, Neil
-MOORING, Tood
+MOORING, Todd
 MORENA, Jessica
 MORIN, Gabriel
 MORRIS, Eleanor
@@ -214,8 +231,10 @@ MURPHY, Killian
 MURRAY, Lee
 NAM, Jun
 NASSAR, Ray
+NASSAU, Racine
 NATHAN, Brian
 NENES, Athanasios
+NESSER, Hannah
 NEVISON, Cynthia
 NIELSEN, Eric
 NOTHOLT, Justus
@@ -247,6 +266,7 @@ REINHART, Wes
 RIDLEY, David
 RIZZA, Umberto
 ROTHENBERG, Daniel
+ROY, Eric
 SAFIEDDINE, Sarah
 SANDU, Adrian
 SANTILLANA, Mauricio
@@ -265,6 +285,7 @@ SHEN, Lu
 SHERWEN, Tomas
 SHUTTER, Joshua
 SILVA, Sam
+SINGH, Inderjeet
 SMITH-DOWNEY, Nicole
 SOERENSEN, Anne Laerke
 SOFEN, Eric
@@ -277,16 +298,20 @@ STERN, Rebecca
 STEVENS, Robin
 STREETS, David
 STRODE, Sarah
+STURM, Obin
 SU, Flora
 SULPRIZIO, Melissa
+SUN, Jordan
 SUN, Minmin
 SUNDERLAND, Elsie
 SUNTHARALINGAM, Parvada
 SURL, Luke
+SUSELJ, Kay
 SUTHERLAND, Bethany
 SUTO, Kimito
 SZELAG, Monika
 TAI, Amos
+TANG, Yidan
 TANIMOTO, Hiroshi
 TANNAHILL, John
 TAO, Shu
@@ -304,17 +329,23 @@ TURNER, Alexander
 TURQUETY, Solene
 TZOMPA-SOSA, Zitely
 UNGER, Nadine
-VAL-MARTIN, Maria
-VAN, Aaron Donkelaar
+VAL MARTIN, Maria
+VAN DONKELAAR, Aaron 
 VAROTSOS, Kostas
 VINKEN, Geert
+VITT, Francis
+VOHRA, Karn
 WAGSTROM, Kristina
 WALKER, Thomas
+WALLWORK, Joe
+WANG, Daisy
 WANG, James
 WANG, Jun
 WANG, Qiaoqiao
-WANG, Xuan
 WANG, Xiaoli
+WANG, Xiaolin
+WANG, Xuan
+WANG, Yi
 WANG, Yuhang
 WANG, Yuting
 WANG, Yuxuan
@@ -333,6 +364,7 @@ WU, Shiliang
 XIAO, Yaping
 XU, Junwei
 YAN, Yingying
+YANG, Laura
 YANNETTI, Matt
 YANTOSCA, Bob
 YATTEAU, Jack
@@ -355,6 +387,8 @@ ZHANG, Li
 ZHANG, Lin
 ZHANG, Qiang
 ZHANG, Yanxu
+ZHANG, Yuanjian
+ZHU, Haihui
 ZHU, Lei
 ZHU, Liye
 ZHUANG, Jiawei
