@@ -93,7 +93,7 @@ function inlineDropDownMenu() {
   <li class="menuparent"><a class="menu-heading">Tools</a>\
     <ul>\
       <li><a href="http://gcpy.readthedocs.org" >GCPy</a></li>\
-      <li><a href="http://wiki.geos-chem.org/Software_maintained_by_GEOS-Chem_community_members" >Tools maintained by GEOS-Chem users</a></li>\
+      <li><a href="community-tools.html" >Tools maintained by GEOS-Chem users</a></li>\
     </ul>\
   </li>\
 </ul>';
