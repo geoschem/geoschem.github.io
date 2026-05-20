@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
-<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
-<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
-<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"><!--<![endif]-->
 <head>
 <meta charset="utf-8" />
 <!--<base href="/overview" />-->
@@ -19,23 +14,12 @@
 <title>GEOS-Chem Overview</title>
 <meta http-equiv="x-ua-compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link type="text/css" rel="stylesheet" href="css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4%EF%B9%96m=1675397288.css" media="all" />
-<link type="text/css" rel="stylesheet" href="css/css_1kR8T1_c-l5pBT6ZwbDT7BFda-4fyqW9Jjum29_2IY8%EF%B9%96m=1675397312.css" media="all" />
-<link type="text/css" rel="stylesheet" href="css/css_YnlUIvHP13qgpYEqubzE8JyDwlSxUnVibfnVkSoSDb0%EF%B9%96m=1675397273.css" media="all" />
 <link type="text/css" rel="stylesheet" href="css/css_Ku-3OcT9qU9h7dnGig5e23q6EVryY8orK4wzVDxsweE%EF%B9%96m=1675397367.css" media="all" />
 <link type="text/css" rel="stylesheet" href="css/css_vprtFTrWyg23GbY50_zJZHWGYMNfS8vsrRS26i4-ISk%EF%B9%96m=1675397406.css" media="screen" />
-<link type="text/css" rel="stylesheet" href="css/css_dW-aNNrctRhQNc-KECjtQd0PxuW-h19IEum-TX2MeEk%EF%B9%96m=1675397301.css" media="print" />
-<link type="text/css" rel="stylesheet" href="css/css_SH2Lx3Qprh0GZo_9xRp85U9NsWfkSXn_Bi-rJoMY1sw%EF%B9%96m=1675397273.css" media="screen" />
-<link type="text/css" rel="stylesheet" href="css/css_uaIDKcYMUK5osSQXuirpr3ZleXtnnpBN-eiECm7N0M0%EF%B9%96m=1675397395.css" media="all" />
 <link type="text/css" rel="stylesheet" href="css/blue_sky.css" media="all" />
 <link type="text/css" rel="stylesheet" href="css/responsive.blue_sky.css" media="all" />
 <link type="text/css" rel="stylesheet" href="css/geos-chem.css" media="all"/>
 <script type="text/javascript" src="dropdown-menu.js"></script>
-<!--[if lte IE 8]>
-<script type="text/javascript">
-  var os_c = document.createElement;os_c('header');os_c('nav');os_c('section');os_c('article');os_c('aside');os_c('footer');os_c('hgroup');os_c('figure');
-</script>
-<![endif]-->
 </head>
 
 <div id="page" class="container page header-main content-top footer-none">
@@ -96,123 +80,107 @@
 <div class="field-items">
 <div class="field-item even">
 
-<p align="justify">
-GEOS-Chem enables simulations of atmospheric composition on
-local to global scales. It can be used off-line as a 3-D
-chemical transport model driven by assimilated meteorological
-observations from the Goddard Earth Observing System (GEOS) of
-the NASA <a href="http://gmao.gsfc.nasa.gov/"
-target="_blank">Global Modeling Assimilation Office
-(GMAO)</a>. It can also be used on-line as a chemical module
-coupled to weather and climate models. GEOS-Chem is developed
-and used by <a href="users.html">hundreds of research groups worldwide </a>as a
-versatile tool for application to a wide range of atmospheric
-composition problems. It is open-access and can be downloaded
-through github. It is also fully supported for use on the
-Amazon Web Services cloud.
-</p>
+<p>GEOS-Chem enables simulations of atmospheric composition on local
+  to global scales. It can be used off-line as a 3-D chemical
+  transport model driven by assimilated meteorological observations
+  from the Goddard Earth Observing System (GEOS) of the
+  NASA <a href="http://gmao.gsfc.nasa.gov/" target="_blank">Global
+  Modeling Assimilation Office (GMAO)</a>. It can also be used on-line
+  as a chemical module coupled to weather and climate
+  models. GEOS-Chem is developed and used
+  by <a href="users.html">hundreds of research groups worldwide </a>as
+  a versatile tool for application to a wide range of atmospheric
+  composition problems. It is open-access and can be downloaded
+  through github. It is also fully supported for use on the Amazon Web
+  Services cloud.</p>
 
-<p align="justify">
-The off-line version of GEOS-Chem allows immediate simulations
-of atmospheric composition for any period from 1979 to present
-using the continuous global archive of NASA GEOS data packaged
-with GEOS-Chem. The operational GEOS-Forward Processing
-product (<a href="https://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-FP"
-target="_blank">GEOS-FP</a>) for 2012-present has a horizontal
-resolution of 0.25° latitude x 0.3125° longitude with 72
-vertical levels. The
-<a href="https://wiki.seas.harvard.edu/geos-chem/index.php/MERRA-2"
-target="_blank">MERRA-2</a> reanalysis product for
-1979-present has a horizontal resolution of 0.5° latitude x
-0.625° longitude, again with 72 vertical levels. Off-line
-simulations can be conducted with OpenMP shared-memory
-parallelization (GEOS-Chem Classic, called GC-Classic) or with
-MPI distributed-memory parallelization
-(<a href="https://gchp.readthedocs.io" target="_blank">GEOS-Chem
+<p>The off-line version of GEOS-Chem allows immediate simulations of
+  atmospheric composition for any period from 1979 to present using
+  the continuous global archive of NASA GEOS data packaged with
+  GEOS-Chem. The operational GEOS-Forward Processing product
+  (<a href="https://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-FP"
+  target="_blank">GEOS-FP</a>) for 2012-present has a horizontal
+  resolution of 0.25° latitude x 0.3125° longitude with 72 vertical
+  levels. The
+  <a href="https://wiki.seas.harvard.edu/geos-chem/index.php/MERRA-2"
+target="_blank">MERRA-2</a> reanalysis product for 1979-present has a
+  horizontal resolution of 0.5° latitude x 0.625° longitude, again
+  with 72 vertical levels. Off-line simulations can be conducted with
+  OpenMP shared-memory parallelization (GEOS-Chem Classic, called
+  GC-Classic) or with MPI distributed-memory parallelization
+  (<a href="https://gchp.readthedocs.io" target="_blank">GEOS-Chem
 high-performance, called GCHP</a>). GC-Classic operates on a
-rectilinear grid and GCHP operates on a cubed-sphere grid. GEOS-Chem
-simulations can be conducted globally at the native grid resolution or
-at user-selected lower resolution. They can also be conducted
-over user-selected regions with dynamic boundary conditions
-(nested mode) or in stretched-grid mode with zoom over a
-region of interest.
+  rectilinear grid and GCHP operates on a cubed-sphere grid. GEOS-Chem
+  simulations can be conducted globally at the native grid resolution
+  or at user-selected lower resolution. They can also be conducted
+  over user-selected regions with dynamic boundary conditions (nested
+  mode) or in stretched-grid mode with zoom over a region of interest.
 </p>
 
-<p>
-On-line applications of GEOS-Chem use the stand-alone
-GEOS-Chem chemical module that performs chemistry, aerosol
-microphysics, radiation, emissions, and deposition on 1-D
-atmospheric columns for any grid specified at run time. In
-on-line applications, chemical transport is performed by a
-weather or climate model coupled to GEOS-Chem. The emission
-component of GEOS-Chem
-(<a href="https://hemco.readthedocs.io" target="_blank">HEMCO</a>)
-can also be used independently of the rest of GEOS-Chem or as a
-generalized data broker in the weather/climate model. GEOS-Chem has in
-this manner been coupled with the NASA GEOS Earth System Model (ESM),
-the WRF weather model, the Beijing Climate Center ESM, and the NCAR
-CESM.
+<p>On-line applications of GEOS-Chem use the stand-alone GEOS-Chem
+  chemical module that performs chemistry, aerosol microphysics,
+  radiation, emissions, and deposition on 1-D atmospheric columns for
+  any grid specified at run time. In on-line applications, chemical
+  transport is performed by a weather or climate model coupled to
+  GEOS-Chem. The emission component of GEOS-Chem
+  (<a href="https://hemco.readthedocs.io" target="_blank">HEMCO</a>)
+  can also be used independently of the rest of GEOS-Chem or as a
+  generalized data broker in the weather/climate model. GEOS-Chem has
+  in this manner been coupled with the NASA GEOS Earth System Model
+  (ESM), the WRF weather model, the Beijing Climate Center ESM, and
+  the NCAR CESM.
 </p>
 
-<p align="justify">
-All
-<a href="https://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_versions"
-target="_blank">versions of the GEOS-Chem
-model </a>use the same standard code maintained by
-the <a href="support-team.html" target="_blank">GEOS-Chem
-Support Team</a>. Updated versions of this standard code are
-released regularly. Detailed GEOS-Chem on-line documentation
-is available including
-a <a href="https://geos-chem.readthedocs.io/en/stable/geos-chem-shared-docs/supplemental-guides/related-docs.html"
-target="_blank">User's Guide</a>. The code is fully modular
-and highly parallelized. It is presently being used on several types
-of
+<p>All
+  <a href="https://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_versions"
+     target="_blank">versions of the GEOS-Chem model</a>
+  use the same  standard code maintained by the
+  <a href="support-team.html" target="_blank">GEOS-Chem Support Team</a>.
+  Updated versions of this standard code are released
+  regularly. Detailed GEOS-Chem on-line documentation is available
+  including
+  a <a href="https://geos-chem.readthedocs.io/en/stable/geos-chem-shared-docs/supplemental-guides/related-docs.html"
+  target="_blank">User's Guide</a>. The code is fully modular and
+  highly parallelized. It is presently being used on several types of
 <a href="https://geos-chem.readthedocs.io/en/latest/getting-started/system-req-hard.html"
-target="_blank">Linux-like computing platforms</a> running Ubuntu,
-Fedora, Red Hat, Rocky Linux, Alma Linux, Amazon Linux, MacOS, and
-similar operating systems. It supports Intel Fortran and the
-open-source GNU Fortran compilers.
+   target="_blank">Linux-like computing platforms</a> running Ubuntu,
+   Fedora, Red Hat, Rocky Linux, Alma Linux, Amazon Linux, MacOS, and
+   similar operating systems. It supports Intel Fortran and the
+   open-source GNU Fortran compilers.
 </p>
 
-<p align="justify">
-An adjoint of the GEOS-Chem model is maintained by the
-GEOS-Chem community under the direction
-of <a href="http://spot.colorado.edu/~henzed"
-target="_blank">Adjoint Model Scientist Daven Henze</a> for
-inverse modeling, data assimilation, and sensitivity studies. See the
-<a href="https://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_Adjoint"
-target="_blank">GEOS-Chem Adjoint web site</a> for more details.
+<p>An adjoint of the GEOS-Chem model is maintained by the GEOS-Chem
+  community under the direction of <a href="http://spot.colorado.edu/~henzed"
+target="_blank">Adjoint Model Scientist Daven Henze</a> for inverse
+  modeling, data assimilation, and sensitivity studies. See
+  the <a href="https://wiki.seas.harvard.edu/geos-chem/index.php/GEOS-Chem_Adjoint"
+  target="_blank">GEOS-Chem Adjoint web site</a> for more details.
 </p>
 
-<p align="justify">
-Several
-<a href="https://wiki.seas.harvard.edu/geos-chem/index.php/Software_maintained_by_GEOS-Chem_community_members"
-target="blank">software tools</a>
-facilitate the processing of GEOS-Chem model outputs. This
-includes <a href="https://gcpy.readthedocs.io"
+<p>Several
+   <a href="https://wiki.seas.harvard.edu/geos-chem/index.php/Software_maintained_by_GEOS-Chem_community_members"
+   target="blank">software tools</a> facilitate the processing of
+   GEOS-Chem model outputs. This includes <a href="https://gcpy.readthedocs.io"
 target="_blank">GCPy</a>, a package of free and open-source Python
-tools specifically designed for GEOS-Chem output analysis and
-visualization.
+   tools specifically designed for GEOS-Chem output analysis and
+   visualization.
 </p>
 
-<p align="justify">
-
-GEOS-Chem is a freely accessible community model. It is owned
-and supported by its <a href="users.html">user
-community</a> under the purview
-of <a href="working-groups.html">Working Groups</a>
-and an international <a href="steering-committee.html">Steering Committee</a>. User participation,
-responsibility, and feedback are essential. See
-our <a href="welcome.html">welcome page for new
-users</a>. The model is maintained as a robust
-state-of-the-science facility by combining a nimble
-grass-roots approach to code development with strong version
-control. All development is done by users in support of their
-own research needs and then shared with the community. General
-management of GEOS-Chem is supported by the US NASA Earth
-Science Division, the Canadian National Science and
-Engineering Research Council, and the Nanjing University of
-Information Sciences and Technology.
+<p>GEOS-Chem is a freely accessible community model. It is owned and
+  supported by its <a href="users.html">user community</a> under the
+  purview of <a href="working-groups.html">Working Groups</a>
+  and an international
+  <a href="steering-committee.html">Steering Committee</a>. User
+  participation, responsibility, and feedback are essential. See
+  our <a href="welcome.html">welcome page for new users</a>. The model
+  is maintained as a robust state-of-the-science facility by combining
+  a nimble grass-roots approach to code development with strong
+  version control. All development is done by users in support of
+  their own research needs and then shared with the community. General
+  management of GEOS-Chem is supported by the US NASA Earth Science
+  Division, the Canadian National Science and Engineering Research
+  Council, and the Nanjing University of Information Sciences and
+  Technology.
 </p>
 
 </div>
@@ -233,48 +201,16 @@ Information Sciences and Technology.
 </div>
 </div>
 
-<!--footer region beg-->
+<!--footer-->
 <footer id="footer" class="clearfix" role="contentinfo">
-
-<!-- Three column 3x33 Gpanel -->
-<div class="at-panel gpanel panel-display footer clearfix">
-<div class="region region-footer-bottom">
-<div class="region-inner clearfix">
-<div id="block-boxes-1616879798" class="block block-boxes block-boxes-os_boxes_media no-title"  module="boxes" delta="1616879798">
-<div class="block-inner clearfix">
-<div class="block-content content">
-<div id='boxes-box-1616879798' class='boxes-box'>
 <div class="boxes-box-content">
-<div id="file-3900146" class="file file-html file-html-embed">
-<h2 class="element-invisible"><a href="">css-brand</a></h2>
-<div class="content">
-<div class="file-info">
+  <p style="text-align:center">
+    Copyright © 2026 by the International GEOS-Chem Community. All rights reserved.
+  </p>
 </div>
-<div class="field field-name-field-html-code field-type-text-long field-label-hidden view-mode-full">
-<div class="field-items">
-<div class="field-item even">
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!--footer region end-->
 </footer>
-</div>
-</div>
 
-<!--page area ends-->
-<div id="extradiv"></div>
+</div>
 </div>
 
 </body>
