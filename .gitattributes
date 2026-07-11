@@ -1,0 +1,22 @@
+# Normalize line endings to LF for text files
+* text=auto eol=lf
+
+# Binary assets - never diff or line-ending-normalize
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.svg -text
+
+# Vendored third-party libraries - exclude from GitHub language stats and diffs
+leaflet/* linguist-vendored
+md5.min.js linguist-vendored
+css/css_*.css linguist-vendored linguist-generated
+
+# Large generated visualizations with embedded plot data - exclude from diffs
+# and language stats (these are multi-megabyte Plotly exports, not hand-authored)
+cube-sphere-comparison.html linguist-generated -diff
+cube-sphere-step.html linguist-generated -diff
+cube-sphere-stretch.html linguist-generated -diff
