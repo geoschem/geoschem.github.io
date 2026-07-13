@@ -4,9 +4,6 @@
 // %%%% for a dropdown menu into the GEOS-Chem web pages.        %%%%
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-// Make sure all the dropdown menus go into hiding on page load
-window.onload=show;
-
 function inlineDropDownMenu() {
   // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   // %%%% Function to inline HTML code for the dropdown menus   %%%%
@@ -101,5 +98,39 @@ function inlineDropDownMenu() {
   // Write the HTML code into the document
   document.write( txt );
 }
+
+// Top-level menu items with a dropdown (all except HOME) have no href,
+// since on desktop the submenu opens via CSS :hover. Touch devices never
+// fire :hover, so without this listener those submenus can never be
+// opened on mobile. This mirrors the max-width:1008px breakpoint already
+// used for the mobile menu styles in geos-chem.css, toggling the same
+// ".over" class those styles expect.
+document.addEventListener('click', function (event) {
+  if (!window.matchMedia('(max-width: 1008px)').matches) {
+    return;
+  }
+
+  var heading = event.target.closest('.menuparent > a.menu-heading');
+  if (!heading) {
+    return;
+  }
+
+  var li = heading.parentElement;
+  var submenu = li.querySelector('ul');
+  if (!submenu) {
+    // No dropdown to toggle (e.g. HOME) - let the link navigate normally.
+    return;
+  }
+
+  event.preventDefault();
+
+  var wasOpen = li.classList.contains('over');
+  Array.prototype.forEach.call(li.parentElement.children, function (sibling) {
+    sibling.classList.remove('over');
+  });
+  if (!wasOpen) {
+    li.classList.add('over');
+  }
+});
 
 //-->
