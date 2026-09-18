@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="img/geos-chem-logo-favicon.png" />
+<link rel="canonical" href="benchmark-obs-data.html" />
+<link rel="shortlink" href="benchmark-obs-data.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Observational data used in GEOS-Chem benchmarks" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Observational data used in GEOS-Chem benchmarks" />
+<meta name="twitter:description" content="Download the observational data used in GEOS-Chem benchmark simulations" />
+<meta name="twitter:image" content="https://geos-chem.org" />
+<title>Observational data used in GEOS-Chem benchmarks</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link type="text/css" rel="stylesheet" href="css/css_Ku-3OcT9qU9h7dnGig5e23q6EVryY8orK4wzVDxsweE%EF%B9%96m=1675397367.css" media="all" />
+<link type="text/css" rel="stylesheet" href="css/css_vprtFTrWyg23GbY50_zJZHWGYMNfS8vsrRS26i4-ISk%EF%B9%96m=1675397406.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="css/blue_sky.css" media="all" />
+<link type="text/css" rel="stylesheet" href="css/responsive.blue_sky.css" media="all" />
+<link type="text/css" rel="stylesheet" href="css/geos-chem.css" media="all"/>
+<script type="text/javascript" src="dropdown-menu.js"></script>
+<style type="text/css">
+  pre.gc-command {
+    background: #f4f4f4;
+    border: 1px solid #cccccc;
+    border-left: 4px solid #215990;
+    padding: 10px 12px;
+    overflow-x: auto;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    font-size: 0.85em;
+    line-height: 1.5;
+  }
+</style>
+</head>
+
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1585687 node-type-page og-context og-context-node og-context-node-1585652 navbar-on">
+<div id="skip-link">
+<a href="#main-content" class="element-invisible element-focusable" tabindex="1">Skip to main content</a>
+</div>
+
+<div id="page_wrap" class="page_wrap">
+<div id="page" class="container page header-main content-top footer-none">
+<div id="page-wrapper">
+
+<!--header regions beg-->
+<header id="header" class="clearfix" role="banner">
+<div id="header-container">
+<div id="header-panels" class="at-panel gpanel panel-display three-col clearfix">
+<div class="region region-header-second"><div class="region-inner clearfix">
+<section id="block-boxes-1630413211" class="block block-boxes block-boxes-os_boxes_html"  module="boxes" delta="1630413211">
+<div class="block-inner clearfix">
+<h2 class="block-title" ng-non-bindable="">Site-Logo</h2>
+<div class="block-content content" ng-non-bindable="">
+<div id='boxes-box-1630413211' class='boxes-box'>
+<div class="boxes-box-content">
+<p style="text-align:center"><a href="index.html" title=""><img alt="Welcome to the GEOS-Chem website" src="img/geos-chem-logo.png" style="width:420px" /></a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!--header regions end-->
+
+<!--main menu region beg-->
+<div id="menu-bar" class="nav region-menu-bar clearfix">
+<nav id="block-os-primary-menu" class="block block-os no-title menu-wrapper menu-bar-wrapper clearfix"  module="os" delta="primary-menu">
+<script>inlineDropDownMenu();</script>
+</nav>
+</div>
+<!--main menu region end-->
+
+<div id="columns" class="clearfix">
+<div class="hg-container">
+<div id="content-column" role="main">
+<div class="content-inner">
+<a name="main-content"></a>
+<header id="main-content-header">
+<a name="main-content"></a>
+<h1 id="page-title" ng-non-bindable="">Observational data used in GEOS-Chem benchmarks</h1>
+</header>
+
+<!--front panel regions beg-->
+<div id="content-panels" class="at-panel gpanel panel-display content clearfix">
+<div class="region region-content-top">
+<div class="region-inner clearfix">
+<div id="block-os-pages-main-content" class="block block-os-pages no-title"  module="os_pages" delta="main_content">
+<div class="block-inner clearfix">
+<div class="block-content content" ng-non-bindable="">
+<article id="node-1585687" class="node node-page article clearfix" role="article">
+<div class="node-content" ng-non-bindable="">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full">
+<div class="field-items">
+<div class="field-item even">
+
+<p>The <a href="support-team.html">GEOS-Chem Support Team</a>
+  benchmarks each new version of GEOS-Chem before it is released.  The
+  1-year full-chemistry benchmarks include comparisons of modeled
+  ozone against observations, both at the surface and as
+  vertical profiles.</p>
+
+<p>The observational data used in those comparisons is listed below
+  and is freely available to the GEOS-Chem community.  You can use it
+  to reproduce the benchmark plots yourself, or to evaluate your own
+  GEOS-Chem simulations.</p>
+
+<h2>Downloading the data</h2>
+
+<p>Both datasets are bundled into a single tarball of approximately 7
+  MB.  Download it with the <a href="https://aws.amazon.com/cli/">AWS
+  Command Line Interface</a>:</p>
+
+<pre class="gc-command">aws s3 cp s3://geos-chem-1yr-benchmarks/obs_data_for_bmk.tar.gz .</pre>
+
+<p>or with <code>wget</code>:</p>
+
+<pre class="gc-command">wget https://geos-chem-1yr-benchmarks.s3.amazonaws.com/obs_data_for_bmk.tar.gz</pre>
+
+<p>Then extract the tarball:</p>
+
+<pre class="gc-command">tar xvzf obs_data_for_bmk.tar.gz</pre>
+
+<h2>What the tarball contains</h2>
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th width="300px">Directory</th>
+    <th width="350px">Contents</th>
+    <th width="250px">Source</th>
+  </tr>
+
+  <tr valign="top">
+    <td><code>obs_data_for_bmk/ebas_sfc_o3_2019</code></td>
+    <td>Hourly surface ozone observations for 2019, in NASA Ames format.</td>
+    <td>
+      <ul>
+        <li><a href="https://ebas-data.nilu.no/">EBAS</a>, hosted by the Norwegian Institute
+        for Air Research (NILU)</li>
+        <li>Retrieved 15 May 2023</li>
+      </ul>
+    </td>
+  </tr>
+
+  <tr valign="top">
+    <td><code>obs_data_for_bmk/sondes_2010-2019</code></td>
+    <td>Ozonesonde profiles for 2010&ndash;2019
+    (<code>allozonesondes_2010-2019.csv</code>), plus the locations and elevations of the
+    sonde launch sites (<code>allozonesondes_site_elev.csv</code>).</td>
+    <td>
+      <ul>
+        <li>A compilation of global ozonesonde profiles assembled for GEOS-Chem
+        benchmarking</li>
+      </ul>
+    </td>
+  </tr>
+
+</table>
+
+<h2>Creating the benchmark plots</h2>
+
+<p>The observational comparisons are produced
+  by <a href="https://gcpy.readthedocs.io">GCPy</a>, the GEOS-Chem
+  Python toolkit.  In outline:</p>
+
+<ol>
+  <li>
+    <p>Install GCPy, as described in
+      the <a href="https://gcpy.readthedocs.io/en/stable/Getting-Started-with-GCPy.html">Getting
+      Started with GCPy</a> chapter.  We recommend installing
+      the <a href="https://anaconda.org/conda-forge/geoschem-gcpy">geoschem-gcpy</a>
+      package from conda-forge.</p>
+  </li>
+
+  <li>
+    <p>Download the 1-year full-chemistry benchmark configuration file,
+      <a <href="https://raw.githubusercontent.com/geoschem/gcpy/refs/heads/main/gcpy/benchmark/config/1yr_fullchem_benchmark.yml"><code>1yr_fullchem_benchmark.yml</code></a>.</p>
+  </li>
+
+  <li>
+    <p>Edit the configuration file to point to the model output
+      directories on your system, and to the observational data
+      directories that you extracted above.  To reduce the run time,
+      select only the plots and tables that you actually need.</p>
+  </li>
+
+  <li>
+    <p>Activate your Python environment and run the benchmark driver script:
+      <pre class="gc-command">conda activate gcpy_env
+python -m gcpy.benchmark.run_benchmark 1yr_fullchem_benchmark.yml
+conda deactivate</pre>
+    </p>
+  </li>
+</ol>
+
+<p><strong>For the full instructions</strong>, including a description
+  of every section of the configuration file and of each plot and
+  table that GCPy can produce, see
+  the <a href="https://gcpy.readthedocs.io/en/latest/Benchmarking.html">Benchmarking</a>
+  chapter of the GCPy documentation.  The datasets described above are
+  documented
+  at <a href="https://gcpy.readthedocs.io/en/latest/Benchmarking.html#bmk-obs-data">Observational
+  data used in the benchmarks</a>.</p>
+
+<h2>Questions</h2>
+
+<p>If you have questions about the benchmark observational data or
+  about GCPy,
+  please <a href="https://github.com/geoschem/gcpy/issues/new/choose">open
+  an issue on the GCPy GitHub repository</a>.</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--front panel regions end-->
+
+</div>
+</div>
+</div>
+</div>
+
+<!--footer-->
+<footer id="footer" class="clearfix" role="contentinfo">
+<div class="boxes-box-content">
+  <p style="text-align:center">
+    Copyright © 2026 by the International GEOS-Chem Community. All rights reserved.
+  </p>
+</div>
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>

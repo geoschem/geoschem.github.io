@@ -67,6 +67,7 @@ function inlineDropDownMenu() {
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_versions" >Version History</a></li>\
       <li><a href="http://wiki.geos-chem.org/Guide_to_GEOS-Chem_simulations" >Simulations</a></li>\
       <li><a href="http://wiki.geos-chem.org/GEOS-Chem_benchmarking"  title="">Benchmarking</a></li>\
+      <li><a href="benchmark-obs-data.html" >Observational data used in benchmarks</a></li>\
       <li><a href="http://wiki.geos-chem.org/Guide_to_compilers_for_GEOS-Chem" >Compilers</a></li>\
       <li><a href="https://geos-chem.readthedocs.io/en/latest/geos-chem-shared-docs/supplemental-guides/debug-guide.html" >Debugging tips</a></li>\
       <li><a href="https://geos-chem.readthedocs.io" >GEOS-Chem Classic</a></li>\
